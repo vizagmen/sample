@@ -19,7 +19,7 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        /*padding: 20px 0;*/
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -255,41 +255,41 @@ border:1px solid #333333;
     box-shadow: 0 0 1px rgba(255,255,255,0.9);
 }
 .ch-img-1 { 
-    background-image: url(../images/numerology-out.jpg);
+    background-image: url(/assets/numerology-out.jpg);
     z-index: 12;
 }
 
 .ch-img-2 { 
-    background-image: url(../images/astrology-out.jpg);
+    background-image: url(/assets/astrology-out.jpg);
     z-index: 11;
 }
 
 .ch-img-3 { 
-    background-image: url(../images/graha-out.jpg);
+    background-image: url(/assets/graha-out.jpg);
     z-index: 10;
 }
 .ch-img-4 { 
-    background-image: url(../images/mantram.jpg);
+    background-image: url(/assets/mantram.jpg);
     z-index: 10;
 }
 .ch-img-5 { 
-    background-image: url(../images/lucky-number.jpg);
+    background-image: url(/assets/lucky-number.jpg);
     z-index: 10;
 }
 .ch-img-6 { 
-    background-image: url(../images/rasi-chakra.jpg);
+    background-image: url(/assets/rasi-chakra.jpg);
     z-index: 10;
 }
 .ch-img-7 { 
-    background-image: url(../images/vastu.jpg);
+    background-image: url(/assets/vastu.jpg);
     z-index: 10;
 }
 .ch-img-8 { 
-    background-image: url(../images/stones.jpg);
+    background-image: url(/assets/stones.jpg);
     z-index: 10;
 }
 .ch-img-9 { 
-    background-image: url(../images/fengshui-vaastu.jpg);
+    background-image: url(/assets/fengshui-vaastu.jpg);
     z-index: 10;
 }
 .ch-info {
