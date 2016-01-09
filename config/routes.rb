@@ -4,6 +4,14 @@ Rails.application.routes.draw do
   resources :welcome, only: :index
   resources :dashboard, only: :index
   root 'welcome#index'
+
+  post 'numerologys/luckynumber' 
+  post 'numerologys/cellnumbermatch' 
+  post 'numerologys/vehiclenumbermatch' 
+  post 'numerologys/digital'
+  post 'numerologys/friendship'
+  post 'numerologys/getfavs'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
