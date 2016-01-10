@@ -11,7 +11,9 @@
                 <!-- <a class="navbar-brand" href="index.html">Sri Saii Laharri</a> -->
                 <%= link_to "Sri Saii Laharri", dashboard_index_path, class: "navbar-brand"%>
             </div>
-            <!-- Top Menu Items -->
+
+            <% if user_signed_in? %>
+            <!-- Top Menu Items -->            
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
@@ -93,11 +95,20 @@
                         </li>
                     </ul>
                 </li>
+
+             
+                
+             
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <%= link_to dashboard_index_path, class: "dropdown-toggle", "data-toggle": "dropdown" do %>
+                        <%= current_user.name %>
+                    <%end%> 
+
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <%= link_to edit_user_registration_path do %>
+                                <i class="fa fa-fw fa-user"></i> Profile
+                            <%end%>                            
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
@@ -106,81 +117,23 @@
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
+
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <%= link_to destroy_user_session_path, :method => :delete do %>
+                            <i class="fa fa-fw fa-power-off"></i> Log Out
+                            <% end %>
+                            
                         </li>
                     </ul>
                 </li>
             </ul>
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <!-- <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a> -->
-                        <%= link_to dashboard_index_path  do %>
-                            <i class="fa fa-fw fa-dashboard"></i>Dashboard
-                        <% end%>
-                    </li>
-
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Numerology <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <%= link_to "Lucky Number", numerologys_luckynumber_path %>
-                            </li>
-                            <li>
-                                <%= link_to "Cell Number Match",numerologys_cellnumbermatch_path %>
-                            </li>
-
-                            <li>
-                                <%= link_to "Vechicle NUmber Match",numerologys_vehiclenumbermatch_path %>
-                            </li>
-                            <li>
-                                <%= link_to "Digital",numerologys_digital_path %>
-                            </li>
-                            <li>
-                                <%= link_to "Friendship",numerologys_friendship_path %>
-                            </li>
-                            <li>
-                                <%= link_to "Get Favs",numerologys_getfavs_path %>
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                    </li>
-                    <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <% else %> 
+                <li>                
+                    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default" %>
+                </li>
+                <li>
+                    <%= link_to "Sign in", new_user_session_path, class: "btn btn-success" %>
+                </li>
+            <% end %>
+            
         </nav>

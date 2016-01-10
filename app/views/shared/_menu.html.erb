@@ -8,7 +8,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Sri Saii Laharri</a>
+            <!-- <a class="navbar-brand page-scroll" href="#page-top">Sri Saii Laharri</a> -->
+            <%= link_to "Sri Saii Laharri", root_path(anchor: "page-top"), class: "navbar-brand page-scroll" %>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,13 +34,21 @@
               <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
               <li class="hidden">
                 <a class="page-scroll" href="#page-top"></a>
-              </li>
-              <li>                
+              </li>       
+
+              <% if user_signed_in? %>
+                <li><%= link_to current_user.email, dashboard_index_path%> </li>
+                <li>
+                  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                </li>                
+              <% else %>                
+                <li>                
                 <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default" %>
               </li>
               <li>
                 <%= link_to "Sign in", new_user_session_path, class: "btn btn-success" %>
               </li>
+              <% end %>
             </ul>
           </div>
 

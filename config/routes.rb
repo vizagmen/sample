@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :welcome, only: :index
   resources :dashboard, only: :index
+  resources :numerologys, only: :index
   root 'welcome#index'
 
   post 'numerologys/luckynumber' 
