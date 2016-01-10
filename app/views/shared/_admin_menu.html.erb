@@ -8,7 +8,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <!-- <a class="navbar-brand" href="index.html">Sri Saii Laharri</a> -->
+                <%= link_to "Sri Saii Laharri", dashboard_index_path, class: "navbar-brand"%>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -115,8 +116,38 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <!-- <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a> -->
+                        <%= link_to dashboard_index_path  do %>
+                            <i class="fa fa-fw fa-dashboard"></i>Dashboard
+                        <% end%>
                     </li>
+
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Numerology <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <%= link_to "Lucky Number", numerologys_luckynumber_path %>
+                            </li>
+                            <li>
+                                <%= link_to "Cell Number Match",numerologys_cellnumbermatch_path %>
+                            </li>
+
+                            <li>
+                                <%= link_to "Vechicle NUmber Match",numerologys_vehiclenumbermatch_path %>
+                            </li>
+                            <li>
+                                <%= link_to "Digital",numerologys_digital_path %>
+                            </li>
+                            <li>
+                                <%= link_to "Friendship",numerologys_friendship_path %>
+                            </li>
+                            <li>
+                                <%= link_to "Get Favs",numerologys_getfavs_path %>
+                            </li>
+                        </ul>
+                    </li>
+
+
                     <li>
                         <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
                     </li>
