@@ -1,4 +1,8 @@
-<div class="row">
+<div class="container-fuild bg-gray padding-10">
+	dfdas
+</div>
+<br>
+<!-- <div class="container">
 	<div class="col-sm-6">
 		<div class="panel panel-primary">
 		  <div class="panel-heading">
@@ -16,22 +20,8 @@
 			      <% born_on = Time.now %>
 			      <div class="form-control">
 			      	<%= select_date(born_on, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }) %>	
-			      </div>
-			      
+			      </div>			      
 			    </div>
-			    <!-- <%= date_select :dateinstructed, :order => [:day, :month, :year] %> -->
-		<!-- 	    <div class="form-group">
-			      <%= label_tag :date_of_birth %>
-			      <%= date_field("born_on","", class: "form-control") %>
-			    </div>
-		 -->
-			    
-		<!-- 
-			    <div class="form-group">
-			      <%= label_tag :date_of_birth %>
-			      <%= select_date(Time.now, discard_type: true) %>
-			    </div>
-		 -->
 		 					
 			 		<div class="form-group">
 			      <%= label_tag :option, "Choose Your Option" %>
@@ -93,4 +83,45 @@
 		  </div>
 		</div>
 	</div>
-</div>  
+</div>   -->
+
+<div class="container">
+	<div class="row">
+	  <div class="col-md-4 block">	    
+	    <%= link_to '#', class: "circle2"  do %>	    
+	    	<span>Lucky<br> Number</span>
+	    <%end%>
+	  </div>
+
+	  <div class="col-md-4 block">
+	    <%= link_to '#', class: "circle2"  do %>	    
+	    	<span>Cell Number Matcr</span>
+	    <%end%>
+	  </div>
+
+	  <div class="col-md-4 block">
+	    <%= link_to '#', class: "circle2"  do %>	    
+	    	<span>Vechicle <br>Number <br>Match</span>
+	    <%end%>
+	  </div>
+
+	  <div class="col-md-4 block">
+	    <%= link_to '#', class: "circle2"  do %>	    
+	    	<span>Digital</span>
+	    <%end%>
+	  </div>
+
+	  <div class="col-md-4 block">
+	    <%= link_to '#', class: "circle2"  do %>	    
+	    	<span>Friendship</span>
+	    <%end%>
+	  </div>
+
+	  <div class="col-md-4 block">
+	    <%= link_to '#', class: "circle2"  do %>	    
+	    	<span>Get Favorites</span>
+	    <%end%>
+	  </div>
+	  
+	</div>
+</div>

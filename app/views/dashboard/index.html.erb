@@ -1,92 +1,54 @@
-<h1 class="page-header">Dashboard</h1>
-<div class="row">
-	
-	<div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-        <%= image_tag("numerology-out.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><%= link_to "Numerology", numerologys_path %></h4>                
-            </div>            
-        </div>
+<%= render 'shared/slider'%>
+<div class="container">
+
+  <h1 class="page-header">Dashboard</h1>
+
+  <div class="row">
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("numerology-out.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>
+      <h4><%= link_to "Numerology", numerologys_path %></h4>    
     </div>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <%= image_tag("astrology-out.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><a href="#">Astrology</a>
-                </h4>                
-            </div>            
-        </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("astrology-out.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>       
+      <h4><a href="#">Astrology</a></h4>                    
     </div>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <%= image_tag("graha-out.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><a href="#">Navgrah</a>
-                </h4>                
-            </div>            
-        </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("graha-out.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+      <h3><a href="#">Navgrah</a></h3>
     </div>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <%= image_tag("mantram.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><a href="#">Mantram</a>
-                </h4>                
-            </div>            
-        </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("mantram.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>        
+      <h3><a href="#">Mantram</a></h3>      
     </div>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <%= image_tag("lucky-number.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><a href="#">Lucky Number</a>
-                </h4>                
-            </div>            
-        </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("lucky-number.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+      <h3><a href="#">Lucky Number</a></h3>                
+      
     </div>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <%= image_tag("rasi-chakra.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><a href="#">Rasulu</a>
-                </h4>                
-            </div>            
-        </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("rasi-chakra.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+      <h3><a href="#">Rasulu</a></h3>                
+      
     </div>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <%= image_tag("vastu.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><a href="#">Vastu</a>
-                </h4>                
-            </div>            
-        </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("vastu.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>    
+      <h3><a href="#">Vastu</a></h3>                
     </div>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <%= image_tag("stones.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><a href="#">Stones</a>
-                </h4>                
-            </div>            
-        </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("stones.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+      <h3><a href="#">Stones</a></h3>
     </div>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <%= image_tag("fengshui-vaastu.jpg", class: "dash-img", alt: "Edit Entry") %>
-            <div class="caption">                
-                <h4><a href="#">Fengshui Vaastu</a>
-                </h4>                
-            </div>            
-        </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+      <%= image_tag("fengshui-vaastu.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+      <h3><a href="#">Fengshui Vaastu</a></h3>
     </div>
+  </div>
 </div>

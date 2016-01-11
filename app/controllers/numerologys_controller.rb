@@ -1,5 +1,5 @@
 class NumerologysController < ApplicationController
-	layout 'admin'
+	# layout 'admin'
 	def getfavs
 	#params is date of birth
     # @dob = params[:user][:born_on]
