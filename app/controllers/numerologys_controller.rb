@@ -1,7 +1,7 @@
 class NumerologysController < ApplicationController
 	layout 'admin'
 	def getfavs
-		raise params.inspect
+		#aise params.inspect
 	#params is date of birth
     # @dob = params[:user][:born_on]
     #@date = @dob.split('-').map{|s| s.to_i}[2]
