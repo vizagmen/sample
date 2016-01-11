@@ -35,12 +35,63 @@
         </div>
 
         <div class="form-group">
-          <%= f.label :aadhar_card %>
-          <%= f.text_field :aadhar_card, class: "form-control", placeholder: "Aadhar Card Number" %>
+          <%= label_tag :option, "Choose Your Type" %>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="radio">            
+                <%= label_tag do %>
+                  <%= radio_button_tag 'paid', "flase" %> Free User
+                <%end%>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="radio">
+                <%= label_tag do %>
+                  <%= radio_button_tag 'paid', "true" %> Life Time User (Paid)
+                <%end%>
+              </div>
+            </div>
+          </div>
         </div>
+        <div id="paid">
+          <div class="form-group">
+            <%= f.label :aadhar_card %>
+            <%= f.text_field :aadhar_card, class: "form-control", placeholder: "Aadhar Card Number" %>
+          </div>
 
+
+          <div class="form-group">
+            <%= label_tag :option, "Choose Your Option" %>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="radio">
+                  <%= label_tag do %>
+                    <%= radio_button_tag 'customer_type', 'old' %> Old Customer
+                  <%end%>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="radio">
+                  <%= label_tag do %>
+                    <%= radio_button_tag 'customer_type', 'new' %> New Customer
+                  <%end%>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" id="reference-no">
+            <%= f.label :reference_no, "Reference Number" %>
+            <%= f.text_field :reference_no, class: "form-control", placeholder: "Enter the reference number" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :address %>
+            <%= f.text_area :address, class: "form-control", placeholder: "Enter the reference number" %>
+          </div>        
+        </div>
         <div class="actions">
-          <%= f.submit "Sign up", class: "btn btn-success" %>
+          <%= f.submit "Sign up", class: "btn btn-success btn-block" %>
         </div>
       <% end %>
 
@@ -49,3 +100,26 @@
   </div>
 </div>
 
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#reference-no').hide();
+  $('#paid').hide();
+
+  $('input[type=radio][name=paid]').change(function() {
+    if (this.value == 'true') {            
+      $('#paid').show();            
+    }
+    else if (this.value == 'false') {
+      $('#paid').hide();
+    }
+  });
+  $('input[type=radio][name=customer_type]').change(function() {
+    if (this.value == 'old') {            
+      $('#reference-no').show();            
+    }
+    else if (this.value == 'new') {
+      $('#reference-no').hide();
+    }
+  });
+});
+</script>
