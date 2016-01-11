@@ -3,7 +3,18 @@ Rails.application.routes.draw do
   devise_for :users#, :controllers => {:registrations => "registrations"}
   resources :welcome, only: :index
   resources :dashboard, only: :index
-  resources :numerologys, only: :index
+  # resources :numerologys, only: :index
+  resources :numerologys, only: :index do
+    collection do
+      get 'get_digital'
+      get 'get_friendship'
+      get 'get_favorites'      
+      get 'lucky_number'
+      get 'cell_number_match'
+      get 'vechicle_number_match'
+    end
+  end
+
   root 'welcome#index'
 
   post 'numerologys/luckynumber' 

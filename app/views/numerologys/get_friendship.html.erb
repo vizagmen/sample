@@ -1,0 +1,30 @@
+<div class="container-fuild bg-gray padding-10">
+	a
+</div>
+<div class="container-fluid">
+	<h2 class="page-header">Friendship</h2>
+	<br>
+	<div class="col-sm-6">
+		<div class="panel panel-primary black-panel">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Numerology</h3>
+		  </div>
+		  <div class="panel-body">
+		    <%= form_tag numerologys_getfavs_path do %>
+			  	
+				<% render 'form' %>    
+			<%end%>
+		  </div>
+		</div>		
+	</div>
+	<div class="col-sm-6">
+		<div class="panel panel-success red-panel">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Result</h3>
+		  </div>
+		  <div class="panel-body" id="result">
+		    To get the result fill the form and submit.
+		  </div>
+		</div>
+	</div>
+</div>
