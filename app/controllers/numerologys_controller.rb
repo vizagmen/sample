@@ -1,8 +1,9 @@
 class NumerologysController < ApplicationController
 	layout 'admin'
 	def getfavs
-		#aise params.inspect
+
 	#params is date of birth
+
     # @dob = params[:user][:born_on]
     #@date = @dob.split('-').map{|s| s.to_i}[2]
     @date = params[:date][:day].to_i
@@ -302,5 +303,94 @@ class NumerologysController < ApplicationController
   end
  
   end
+
+def cellnumbermatch
+
+    #raise params.inspect
+    @lucky1,@lucky2=luckynum
+    l=[@lucky1,@lucky2]
+    #raise @lucky1.inspect
+    a=params[:phno]
+    b=a.split('').map{|s| s.to_i}
+    @rescell=b.inject(0, :+)
+    #raise @rescell.inspect
+    while @rescell >=10
+      tmp=@rescell.to_s.split('').map { |e| e.to_i  }
+      @rescell=tmp.inject(0, :+)
+    end
+    #raise @rescell.inspect
+    #if @rescell == (@lucky2 || @lucky1)
+     if l.include?(@rescell)   
+      @msg= "matched with luckynumber"
+    else
+      @msg = "Phone number not matched with your luckynumber"
+    end
+    #raise @msg.inspect
+    respond_to do|format|
+      format.js
+    end
+  end
+
+
+#calculates cellnumber is matched or not with dob  
+  def vehiclenumbermatch
+    raise params.inspect
+     #A,F=3,9
+     #raise A+F+2.inspect
+     #
+# a=i=j=q=y = 1
+# 	b=k=r = 2
+# 	c=g=l=s = 3
+# 	d=m=t = 4
+# 	e=h=n=x= 5
+# 	u=v=w= 6
+# 	o=z = 7
+# 	p= 8
+# 	f = 9
+	#TN23BV1703
+     @luck1,@luck2 = luckynum
+     vehicle_number=params[:vehiclenumber]
+     vehiclenumber_array=vehicle_number.split('')
+     #raise b.inspect
+
+     @result_of_vehicle=vehiclenumber_array.inject(0, :+)
+     #raise @rescell.inspect      
+  end
+
+  def luckynumber
+#   raise params.inspect
+    @luclk1,@lucky2=luckynum
+    respond_to do |format|
+      format.js
+    end
+  end
+
+
+
+
+private 
+  def luckynum
+    
+    @dob = params[:user][:born_on]
+    @dob.gsub!(/[^0-9A-Za-z]/, '')
+    #raise @dob.inspect
+    s=@dob.split('').map{|s| s.to_i}
+    length=s.length
+    @lucky1 = s[length-1]+s[length-2]
+    @lucky2= s.inject(0,:+)
+
+    while  @lucky2 >= 10
+    tmp=@lucky2.to_s.split('').map { |e| e.to_i  }
+    @lucky2 = tmp.inject(0, :+)
+    end
+    #raise @lucky2.inspect
+    return @lucky1,@lucky2
+#    respond_to do|format|
+ #    format.js
+  #  end
+  end
+
+
+
 
 end
