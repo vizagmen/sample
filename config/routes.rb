@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :nakshatras
   devise_for :users#, :controllers => {:registrations => "registrations"}
   resources :welcome, only: :index
   resources :dashboard, only: :index
@@ -14,6 +15,8 @@ Rails.application.routes.draw do
       get 'vechicle_number_match'
     end
   end
+
+  resources :matrimony
 
   root 'welcome#index'
 

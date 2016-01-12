@@ -25,6 +25,8 @@ gem 'twitter-bootstrap-rails'
 gem 'less-rails', github: 'metaskills/less-rails'
 gem 'devise'
 gem 'wow-rails'
+gem 'carrierwave'
+gem "mini_magick"
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
