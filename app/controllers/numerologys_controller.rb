@@ -20,14 +20,12 @@ class NumerologysController < ApplicationController
 	end
 
 	def getfavs
-
-	#params is date of birth
-
     # @dob = params[:user][:born_on]
     #@date = @dob.split('-').map{|s| s.to_i}[2]
+   
     @date = params[:date][:day].to_i
     #@date[2] #date is calculated 
-    
+   
 	  case @date
 
 	  when 1,10,19,28
@@ -84,34 +82,33 @@ class NumerologysController < ApplicationController
     
 	# Finds Digital relation ship 
     def digital
-			@person1_dob = params[:user][:born_on]
-			@person2_dob = params[:friend][:born_on]
-			@person1_dob= @person1_dob.split('-').map{|s| s.to_i}
-			@person2_dob = @person2_dob.split('-').map{|s| s.to_i}
+			@person1_dob = params[:date][:day]
+			@person2_dob = params[:date][:day]
+			
 	    
-      case @person1_dob[2]
+      case @person1_dob
 		    when 1,10,19,28
-		     if [9,8,27].include?(@person2_dob[2]) 
+		     if [9,8,27].include?(@person2_dob) 
 		       @relation = "Vibrates"
-		     elsif [4,13,22,31].include?(@person2_dob[2])
+		     elsif [4,13,22,31].include?(@person2_dob)
 		     	 @relation= "Attracts"
-		     elsif [8,17,26,6,15,24,7,16,25].include?(@person2_dob[2])
+		     elsif [8,17,26,6,15,24,7,16,25].include?(@person2_dob)
 		     	 @relation = "DisAgree"
-		     elsif [2,11,20,29,3,12,21,30,5,14,23].include?(@person2_dob[2])
+		     elsif [2,11,20,29,3,12,21,30,5,14,23].include?(@person2_dob)
 		     	 @relation = "Passive"
 		     else
 		     	 @relation = "Neutral"
 		     end
 
 		    when 2,11,20,29 
-		      if [8,17,26].include?(@person2_dob[2]) 
+		      if [8,17,26].include?(@person2_dob) 
 		       @relation = "Vibrates"
-		     elsif [7,16,25,9,18,27].include?(@person2_dob[2])
+		     elsif [7,16,25,9,18,27].include?(@person2_dob)
    		     @relation= "Attracts"
 
-		     elsif [5,14,23].include?(@person2_dob[2])
+		     elsif [5,14,23].include?(@person2_dob)
 		     	 @relation = "DisAgree"
-		     elsif [1,10,19,28,3,12,21,30,4,13,22,31,6,15,24].include?(@person2_dob[2])
+		     elsif [1,10,19,28,3,12,21,30,4,13,22,31,6,15,24].include?(@person2_dob)
 		     	 @relation = "Passive"
 		     else
 		     	 @relation = "Neutral"	
@@ -119,27 +116,27 @@ class NumerologysController < ApplicationController
 
 		    when 3,12,21,30
 
-	    	if [7,16,25].include?(@person2_dob[2]) 
+	    	if [7,16,25].include?(@person2_dob) 
 		      @relation = "Vibrates"
-		    elsif [5,14,23,6,15,24,9,18,27].include?(@person2_dob[2])
+		    elsif [5,14,23,6,15,24,9,18,27].include?(@person2_dob)
 		     	@relation= "Attracts"
-		    elsif [4,13,22,31,8,17,26].include?(@person2_dob[2])
+		    elsif [4,13,22,31,8,17,26].include?(@person2_dob)
 		     	@relation = "DisAgree"
-		    elsif [1,10,19,28,2,11,20,29].include?(@person2_dob[2])
+		    elsif [1,10,19,28,2,11,20,29].include?(@person2_dob)
 		     	@relation = "Passive"
 		    else
 		     	@relation = "Neutral"		
 		    end
 
 			when 4,13,22,31
-		     if [6,15,24].include?(@person2_dob[2]) 
+		     if [6,15,24].include?(@person2_dob) 
 		      @relation = "Vibrates"
-		     elsif [1,10,19,28,8,17,26].include?(@person2_dob[2])
+		     elsif [1,10,19,28,8,17,26].include?(@person2_dob)
 		     	@relation= "Attracts"
 
-		     elsif [3,12,21,30,5,14,23].include?(@person2_dob[2])
+		     elsif [3,12,21,30,5,14,23].include?(@person2_dob)
 		     	@relation = "DisAgree"
-		     elsif [2,11,20,29,7,16,25,9,18,27].include?(@person2_dob[2])
+		     elsif [2,11,20,29,7,16,25,9,18,27].include?(@person2_dob)
 		     	@relation = "Passive"
 		     else
 		     	@relation = "Neutral"
@@ -148,14 +145,14 @@ class NumerologysController < ApplicationController
 			
 			when 5,14,23
 
-			if [5,14,23].include?(@person2_dob[2]) 
+			if [5,14,23].include?(@person2_dob) 
 		      @relation = "Vibrates"
-		     elsif [3,12,21,30].include?(@person2_dob[2])
+		     elsif [3,12,21,30].include?(@person2_dob)
 		     	@relation= "Attracts"
 
-		     elsif [2,11,20,19,4,13,22,31].include?(@person2_dob[2])
+		     elsif [2,11,20,19,4,13,22,31].include?(@person2_dob)
 		     	@relation = "DisAgree"
-		     elsif [1,10,19,28,6,15,24,7,16,25,8,17,26,9,18,27].include?(@person2_dob[2])
+		     elsif [1,10,19,28,6,15,24,7,16,25,8,17,26,9,18,27].include?(@person2_dob)
 		     	@relation = "Passive"
 		     else
 		     	@relation = "Neutral"
@@ -164,14 +161,14 @@ class NumerologysController < ApplicationController
 			when 6,15,24
 
 			
-		if [4,13,22,31].include?(@person2_dob[2]) 
+		if [4,13,22,31].include?(@person2_dob) 
 		      @relation = "Vibrates"
-		     elsif [3,12,21,30,9,18,27].include?(@person2_dob[2])
+		     elsif [3,12,21,30,9,18,27].include?(@person2_dob)
 		     	@relation= "Attracts"
 
-		     elsif [1,10,19,28,8,17,26].include?(@person2_dob[2])
+		     elsif [1,10,19,28,8,17,26].include?(@person2_dob)
 		     	@relation = "DisAgree"
-		     elsif [2,11,20,29,5,14,23,7,16,25].include?(@person2_dob[2])
+		     elsif [2,11,20,29,5,14,23,7,16,25].include?(@person2_dob)
 		     	@relation = "Passive"
 		     else
 		     	@relation = "Neutral"
@@ -179,28 +176,28 @@ class NumerologysController < ApplicationController
 		     end
 
 			when 7,16,25
-		if [3,12,21,30].include?(@person2_dob[2]) 
+		if [3,12,21,30].include?(@person2_dob) 
 		      @relation = "Vibrates"
-		     elsif [2,11,20,29].include?(@person2_dob[2])
+		     elsif [2,11,20,29].include?(@person2_dob)
 		     	@relation= "Attracts"
 
-		     elsif [1,10,19,28,9,18,27].include?(@person2_dob[2])
+		     elsif [1,10,19,28,9,18,27].include?(@person2_dob)
 		     	@relation = "DisAgree"
-		     elsif [4,13,22,31,5,14,23,6,15,24,8,17,26].include?(@person2_dob[2])
+		     elsif [4,13,22,31,5,14,23,6,15,24,8,17,26].include?(@person2_dob)
 		     	@relation = "Passive"
 		     else
 		     	@relation = "Neutral"
 		     		
 		     end
 			when 8,17,26
-		if [2,11,20,29].include?(@person2_dob[2]) 
+		if [2,11,20,29].include?(@person2_dob) 
 		      @relation = "Vibrates"
-		     elsif [1,10,19,28,4,13,22,31].include?(@person2_dob[2])
+		     elsif [1,10,19,28,4,13,22,31].include?(@person2_dob)
 		     	@relation= "Attracts"
 
-		     elsif [3,12,21,30,6,15,24].include?(@person2_dob[2])
+		     elsif [3,12,21,30,6,15,24].include?(@person2_dob)
 		     	@relation = "DisAgree"
-		     elsif [5,14,23,7,16,25,9,18,27].include?(@person2_dob[2])
+		     elsif [5,14,23,7,16,25,9,18,27].include?(@person2_dob)
 		     	@relation = "Passive"
 		     else
 		     	@relation = "Neutral"
@@ -208,14 +205,14 @@ class NumerologysController < ApplicationController
 		     end
 			when  9,18,27
 
-		if [1,10,19,28].include?(@person2_dob[2]) 
+		if [1,10,19,28].include?(@person2_dob) 
 		      @relation = "Vibrates"
-		     elsif [2,11,20,29,3,12,21,30,6,15,24].include?(@person2_dob[2])
+		     elsif [2,11,20,29,3,12,21,30,6,15,24].include?(@person2_dob)
 		     	@relation= "Attracts"
 
-		     elsif [7,16,25].include?(@person2_dob[2])
+		     elsif [7,16,25].include?(@person2_dob)
 		     	@relation = "DisAgree"
-		     elsif [4,13,22,31,5,14,23,8,17,26].include?(@person2_dob[2])
+		     elsif [4,13,22,31,5,14,23,8,17,26].include?(@person2_dob)
 		     	@relation = "Passive"
 		     else
 		     	@relation = "Neutral"
@@ -230,12 +227,13 @@ class NumerologysController < ApplicationController
 
 # Finds friendship percentage params is date of birth 
   def friendship
-
-    @my_dob = params[:user][:born_on]
-    @my_date = @my_dob.split('-').map{|s| s.to_i}[2]
-    @friend_dob = params[:friend][:born_on]
-    @friend_dob.gsub!(/[^0-9A-Za-z]/, '')
-    @friend_dob=@friend_dob.split('').map{|s| s.to_i}
+    @my_date = params[:date][:day]
+    @friend_dob = []
+    @friend_dob << params[:date][:day].to_i
+    @friend_dob << params[:date][:month].to_i
+    @friend_dob << params[:date][:year].to_i
+    #@friend_dob.gsub!(/[^0-9A-Za-z]/, '')
+   # @friend_dob=@friend_dob.split('').map{|s| s.to_i}
     @lucky2= @friend_dob.inject(0,:+)
 
   	while  @lucky2 >= 10
@@ -358,12 +356,12 @@ def cellnumbermatch
    "E": 5, "H": 5, "N": 5, "X": 5, "U": 6, "V": 6, "W": 6, "O": 7, "Z": 7, "P": 8, "F": 9}
    arr1 = []
    arr2 = []
-   phone = params[:ph]
-   va = params[:ph].gsub(/[^a-zA-Z]/, '')
+   vehiclenumber = params[:vehiclenumber]
+   va = params[:vehiclenumber].gsub(/[^a-zA-Z]/, '')
    va.each_char do|e|  
      arr1 << hash[:"#{e}"]
    end
-   arr2 << phone.split("").map{|x| x.to_i}
+   arr2 << vehiclenumber.split("").map{|x| x.to_i}
    
    result =  arr1.zip(arr2).flatten.compact.inject(0, :+)
    while result > 10
@@ -418,16 +416,16 @@ def cellnumbermatch
 private 
   def luckynum
     @lucky1 = params[:date][:day].to_i
-    @dob = params[:date]
-    @dob.gsub!(/[^0-9A-Za-z]/, '')
-    #raise @dob.inspect
-    date_split=@dob.split('').map{|s| s.to_i}
-    @lucky2= date_split.inject(0,:+)
+    arr = []
+    arr << params[:date][:day].to_i
+    arr << params[:date][:month].to_i
+    arr << params[:date][:year].to_i
+    @lucky2 = arr.inject(0, :+)
 
-    while  @lucky2 >= 10
-    tmp=@lucky2.to_s.split('').map { |e| e.to_i  }
-    @lucky2 = tmp.inject(0, :+)
-    end
+   while @lucky2 >=10
+      tmp=@lucky2.to_s.split('').map { |e| e.to_i  }
+      @lucky2=tmp.inject(0, :+)
+   end
     #raise @lucky2.inspect
     return @lucky1,@lucky2
 #    respond_to do|format|
