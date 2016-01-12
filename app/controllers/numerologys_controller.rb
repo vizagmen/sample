@@ -353,28 +353,56 @@ def cellnumbermatch
 
 #calculates cellnumber is matched or not with dob  
   def vehiclenumbermatch
-    raise params.inspect
-     #A,F=3,9
-     #raise A+F+2.inspect
-     #
-# a=i=j=q=y = 1
-# 	b=k=r = 2
-# 	c=g=l=s = 3
-# 	d=m=t = 4
-# 	e=h=n=x= 5
-# 	u=v=w= 6
-# 	o=z = 7
-# 	p= 8
-# 	f = 9
-	#TN23BV1703
-     @luck1,@luck2 = luckynum
-     vehicle_number=params[:vehiclenumber]
-     vehiclenumber_array=vehicle_number.split('')
-     #raise b.inspect
+   
+   hash = {"A": 1, "I": 1, "J": 1, "Q": 1, "Y": 1, "B": 2, "K": 2, "R": 2, "c": 3, "G": 3, "L": 3, "S": 3, "D": 4, "M": 4, "T": 4,
+   "E": 5, "H": 5, "N": 5, "X": 5, "U": 6, "V": 6, "W": 6, "O": 7, "Z": 7, "P": 8, "F": 9}
+   arr1 = []
+   arr2 = []
+   phone = params[:ph]
+   va = params[:ph].gsub(/[^a-zA-Z]/, '')
+   va.each_char do|e|  
+     arr1 << hash[:"#{e}"]
+   end
+   arr2 << phone.split("").map{|x| x.to_i}
+   
+   result =  arr1.zip(arr2).flatten.compact.inject(0, :+)
+   while result > 10
+     result = result.to_s.split("").map(&:to_i).inject(0, :+)
+   end
+   @lucky1,@lucky2=luckynum
+    l=[@lucky1,@lucky2]
+    if l.include?(result)   
+      @msg= "matched with luckynumber"
+    else
+      @msg = "vehiclenumber number not matched with your luckynumber"
+    end
 
-     @result_of_vehicle=vehiclenumber_array.inject(0, :+)
-     #raise @rescell.inspect      
   end
+
+
+  def name_correction
+  	arr1 = []
+    hash = {"A": 1, "I": 1, "J": 1, "Q": 1, "Y": 1, "B": 2, "K": 2, "R": 2, "c": 3, "G": 3, "L": 3, "S": 3, "D": 4, "M": 4, "T": 4,
+    "E": 5, "H": 5, "N": 5, "X": 5, "U": 6, "V": 6, "W": 6, "O": 7, "Z": 7, "P": 8, "F": 9}
+  	name = params[:name]
+  	name.split("").each_char do|e|
+  	  arr1 << hash[:"#{e}"] if e.present?
+  	end
+  	result = arr1.inject(0, :+)
+    while result > 10
+     result = result.to_s.split("").map(&:to_i).inject(0, :+)
+   end
+   @lucky1,@lucky2=luckynum
+    l=[@lucky1,@lucky2]
+    if l.include?(result)   
+      @msg= "matched"
+    else
+      @msg = "not matched "
+    end
+  end
+
+
+
 
   def luckynumber
 #   raise params.inspect
@@ -389,14 +417,12 @@ def cellnumbermatch
 
 private 
   def luckynum
-    
-    @dob = params[:user][:born_on]
+    @lucky1 = params[:date][:day].to_i
+    @dob = params[:date]
     @dob.gsub!(/[^0-9A-Za-z]/, '')
     #raise @dob.inspect
-    s=@dob.split('').map{|s| s.to_i}
-    length=s.length
-    @lucky1 = s[length-1]+s[length-2]
-    @lucky2= s.inject(0,:+)
+    date_split=@dob.split('').map{|s| s.to_i}
+    @lucky2= date_split.inject(0,:+)
 
     while  @lucky2 >= 10
     tmp=@lucky2.to_s.split('').map { |e| e.to_i  }
