@@ -1,5 +1,24 @@
 class NumerologysController < ApplicationController
-	layout 'admin'
+	# layout 'admin'
+
+	def get_digital		
+	end
+
+	def get_friendship		
+	end
+
+	def get_favorites		
+	end
+
+	def lucky_number		
+	end
+
+	def cell_number_match		
+	end
+
+	def vechicle_number_match		
+	end
+
 	def getfavs
 
 	#params is date of birth
