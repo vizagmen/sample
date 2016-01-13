@@ -1,24 +1,6 @@
 class NumerologysController < ApplicationController
 	# layout 'admin'
 
-	def get_digital		
-	end
-
-	def get_friendship		
-	end
-
-	def get_favorites		
-	end
-
-	def lucky_number		
-	end
-
-	def cell_number_match		
-	end
-
-	def vechicle_number_match		
-	end
-
 	def getfavs
     # @dob = params[:user][:born_on]
     #@date = @dob.split('-').map{|s| s.to_i}[2]
@@ -81,149 +63,148 @@ class NumerologysController < ApplicationController
 	end
     
 	# Finds Digital relation ship 
-    def digital
-			@person1_dob = params[:date][:day]
-			@person2_dob = params[:date][:day]
+  def digital
+		@person1_dob = params[:date][:day]
+		@person2_dob = params[:date][:day]
 			
-	    
-      case @person1_dob
-		    when 1,10,19,28
-		     if [9,8,27].include?(@person2_dob) 
-		       @relation = "Vibrates"
-		     elsif [4,13,22,31].include?(@person2_dob)
-		     	 @relation= "Attracts"
-		     elsif [8,17,26,6,15,24,7,16,25].include?(@person2_dob)
-		     	 @relation = "DisAgree"
-		     elsif [2,11,20,29,3,12,21,30,5,14,23].include?(@person2_dob)
-		     	 @relation = "Passive"
-		     else
-		     	 @relation = "Neutral"
-		     end
+    
+    case @person1_dob
+    when 1,10,19,28
+     	if [9,8,27].include?(@person2_dob) 
+       @relation = "Vibrates"
+     	elsif [4,13,22,31].include?(@person2_dob)
+     	 @relation= "Attracts"
+     	elsif [8,17,26,6,15,24,7,16,25].include?(@person2_dob)
+     	 @relation = "DisAgree"
+     	elsif [2,11,20,29,3,12,21,30,5,14,23].include?(@person2_dob)
+     	 @relation = "Passive"
+     	else
+     	 @relation = "Neutral"
+     	end
 
-		    when 2,11,20,29 
-		      if [8,17,26].include?(@person2_dob) 
-		       @relation = "Vibrates"
-		     elsif [7,16,25,9,18,27].include?(@person2_dob)
-   		     @relation= "Attracts"
+    when 2,11,20,29 
+      if [8,17,26].include?(@person2_dob) 
+       @relation = "Vibrates"
+     	elsif [7,16,25,9,18,27].include?(@person2_dob)
+		     @relation= "Attracts"
 
-		     elsif [5,14,23].include?(@person2_dob)
-		     	 @relation = "DisAgree"
-		     elsif [1,10,19,28,3,12,21,30,4,13,22,31,6,15,24].include?(@person2_dob)
-		     	 @relation = "Passive"
-		     else
-		     	 @relation = "Neutral"	
-		     end
+     	elsif [5,14,23].include?(@person2_dob)
+     	 @relation = "DisAgree"
+     	elsif [1,10,19,28,3,12,21,30,4,13,22,31,6,15,24].include?(@person2_dob)
+     	 @relation = "Passive"
+     	else
+     	 @relation = "Neutral"	
+     	end
 
-		    when 3,12,21,30
+	   when 3,12,21,30
 
-	    	if [7,16,25].include?(@person2_dob) 
-		      @relation = "Vibrates"
-		    elsif [5,14,23,6,15,24,9,18,27].include?(@person2_dob)
-		     	@relation= "Attracts"
-		    elsif [4,13,22,31,8,17,26].include?(@person2_dob)
-		     	@relation = "DisAgree"
-		    elsif [1,10,19,28,2,11,20,29].include?(@person2_dob)
-		     	@relation = "Passive"
-		    else
-		     	@relation = "Neutral"		
-		    end
+    	if [7,16,25].include?(@person2_dob) 
+	      @relation = "Vibrates"
+	    elsif [5,14,23,6,15,24,9,18,27].include?(@person2_dob)
+	     	@relation= "Attracts"
+	    elsif [4,13,22,31,8,17,26].include?(@person2_dob)
+	     	@relation = "DisAgree"
+	    elsif [1,10,19,28,2,11,20,29].include?(@person2_dob)
+	     	@relation = "Passive"
+	    else
+	     	@relation = "Neutral"		
+	    end
 
-			when 4,13,22,31
-		     if [6,15,24].include?(@person2_dob) 
-		      @relation = "Vibrates"
-		     elsif [1,10,19,28,8,17,26].include?(@person2_dob)
-		     	@relation= "Attracts"
+		when 4,13,22,31
+	     if [6,15,24].include?(@person2_dob) 
+	      @relation = "Vibrates"
+	     elsif [1,10,19,28,8,17,26].include?(@person2_dob)
+	     	@relation= "Attracts"
 
-		     elsif [3,12,21,30,5,14,23].include?(@person2_dob)
-		     	@relation = "DisAgree"
-		     elsif [2,11,20,29,7,16,25,9,18,27].include?(@person2_dob)
-		     	@relation = "Passive"
-		     else
-		     	@relation = "Neutral"
-		     		
-		     end
-			
-			when 5,14,23
+	     elsif [3,12,21,30,5,14,23].include?(@person2_dob)
+	     	@relation = "DisAgree"
+	     elsif [2,11,20,29,7,16,25,9,18,27].include?(@person2_dob)
+	     	@relation = "Passive"
+	     else
+	     	@relation = "Neutral"
+	     		
+	     end
+		
+		when 5,14,23
 
 			if [5,14,23].include?(@person2_dob) 
-		      @relation = "Vibrates"
-		     elsif [3,12,21,30].include?(@person2_dob)
-		     	@relation= "Attracts"
+	      @relation = "Vibrates"
+	     elsif [3,12,21,30].include?(@person2_dob)
+	     	@relation= "Attracts"
 
-		     elsif [2,11,20,19,4,13,22,31].include?(@person2_dob)
-		     	@relation = "DisAgree"
-		     elsif [1,10,19,28,6,15,24,7,16,25,8,17,26,9,18,27].include?(@person2_dob)
-		     	@relation = "Passive"
-		     else
-		     	@relation = "Neutral"
-		     		
-		     end
-			when 6,15,24
+	     elsif [2,11,20,19,4,13,22,31].include?(@person2_dob)
+	     	@relation = "DisAgree"
+	     elsif [1,10,19,28,6,15,24,7,16,25,8,17,26,9,18,27].include?(@person2_dob)
+	     	@relation = "Passive"
+	     else
+	     	@relation = "Neutral"
+	     		
+	     end
+		when 6,15,24
 
-			
-		if [4,13,22,31].include?(@person2_dob) 
-		      @relation = "Vibrates"
-		     elsif [3,12,21,30,9,18,27].include?(@person2_dob)
-		     	@relation= "Attracts"
+		
+			if [4,13,22,31].include?(@person2_dob) 
+	      @relation = "Vibrates"
+	     elsif [3,12,21,30,9,18,27].include?(@person2_dob)
+	     	@relation= "Attracts"
 
-		     elsif [1,10,19,28,8,17,26].include?(@person2_dob)
-		     	@relation = "DisAgree"
-		     elsif [2,11,20,29,5,14,23,7,16,25].include?(@person2_dob)
-		     	@relation = "Passive"
-		     else
-		     	@relation = "Neutral"
-		     		
-		     end
+	     elsif [1,10,19,28,8,17,26].include?(@person2_dob)
+	     	@relation = "DisAgree"
+	     elsif [2,11,20,29,5,14,23,7,16,25].include?(@person2_dob)
+	     	@relation = "Passive"
+	     else
+	     	@relation = "Neutral"
+	     		
+	     end
 
-			when 7,16,25
-		if [3,12,21,30].include?(@person2_dob) 
-		      @relation = "Vibrates"
-		     elsif [2,11,20,29].include?(@person2_dob)
-		     	@relation= "Attracts"
+		when 7,16,25
+			if [3,12,21,30].include?(@person2_dob) 
+	      @relation = "Vibrates"
+	     elsif [2,11,20,29].include?(@person2_dob)
+	     	@relation= "Attracts"
 
-		     elsif [1,10,19,28,9,18,27].include?(@person2_dob)
-		     	@relation = "DisAgree"
-		     elsif [4,13,22,31,5,14,23,6,15,24,8,17,26].include?(@person2_dob)
-		     	@relation = "Passive"
-		     else
-		     	@relation = "Neutral"
-		     		
-		     end
-			when 8,17,26
-		if [2,11,20,29].include?(@person2_dob) 
-		      @relation = "Vibrates"
-		     elsif [1,10,19,28,4,13,22,31].include?(@person2_dob)
-		     	@relation= "Attracts"
+	     elsif [1,10,19,28,9,18,27].include?(@person2_dob)
+	     	@relation = "DisAgree"
+	     elsif [4,13,22,31,5,14,23,6,15,24,8,17,26].include?(@person2_dob)
+	     	@relation = "Passive"
+	     else
+	     	@relation = "Neutral"
+	     		
+	     end
+		when 8,17,26
+			if [2,11,20,29].include?(@person2_dob) 
+	      @relation = "Vibrates"
+	     elsif [1,10,19,28,4,13,22,31].include?(@person2_dob)
+	     	@relation= "Attracts"
 
-		     elsif [3,12,21,30,6,15,24].include?(@person2_dob)
-		     	@relation = "DisAgree"
-		     elsif [5,14,23,7,16,25,9,18,27].include?(@person2_dob)
-		     	@relation = "Passive"
-		     else
-		     	@relation = "Neutral"
-		     		
-		     end
-			when  9,18,27
+	     elsif [3,12,21,30,6,15,24].include?(@person2_dob)
+	     	@relation = "DisAgree"
+	     elsif [5,14,23,7,16,25,9,18,27].include?(@person2_dob)
+	     	@relation = "Passive"
+	     else
+	     	@relation = "Neutral"
+	     		
+	     end
+		when  9,18,27
 
-		if [1,10,19,28].include?(@person2_dob) 
-		      @relation = "Vibrates"
-		     elsif [2,11,20,29,3,12,21,30,6,15,24].include?(@person2_dob)
-		     	@relation= "Attracts"
+			if [1,10,19,28].include?(@person2_dob) 
+	      @relation = "Vibrates"
+	     elsif [2,11,20,29,3,12,21,30,6,15,24].include?(@person2_dob)
+	     	@relation= "Attracts"
 
-		     elsif [7,16,25].include?(@person2_dob)
-		     	@relation = "DisAgree"
-		     elsif [4,13,22,31,5,14,23,8,17,26].include?(@person2_dob)
-		     	@relation = "Passive"
-		     else
-		     	@relation = "Neutral"
-		     		
-		     end
-	    	respond_to do|format|
-	        format.js
-	    	end	
-    end
+	     elsif [7,16,25].include?(@person2_dob)
+	     	@relation = "DisAgree"
+	     elsif [4,13,22,31,5,14,23,8,17,26].include?(@person2_dob)
+	     	@relation = "Passive"
+	     else
+	     	@relation = "Neutral"
+	     		
+	     end
+    	respond_to do|format|
+        format.js
+    	end	
+  	end
   end
-
 
 # Finds friendship percentage params is date of birth 
   def friendship
@@ -241,8 +222,8 @@ class NumerologysController < ApplicationController
     @lucky2 = tmp.inject(0, :+)
   	end
 
-  case  @my_date
-   when 1,10,19,28
+	  case  @my_date
+	  when 1,10,19,28
       if  [1,3,4,6,8].include?(@lucky2)
         @percentage = "80%"
       else 
@@ -263,65 +244,65 @@ class NumerologysController < ApplicationController
 	   end
 
 
-	when 4,13,22,31
+		when 4,13,22,31
 
-	if [1,4,6,8].include?(@lucky2)
-		@percentage = "75%"
-	else
-		@percentage = "0%"
-	end
+			if [1,4,6,8].include?(@lucky2)
+				@percentage = "75%"
+			else
+				@percentage = "0%"
+			end
 
-	when 5,14,23
+			when 5,14,23
 
-	if [3,5,6,8].include?(@lucky2)
-		@percentage = "70%"
-	else
-		@percentage = "0%"
-	end
+			if [3,5,6,8].include?(@lucky2)
+				@percentage = "70%"
+			else
+				@percentage = "0%"
+			end
 
-	when 6,15,24
+		when 6,15,24
 
-	if [1,5,6,8,9].include?(@lucky2)
-		@percentage = "90%"
-	else
-		@percentage = "0%"
-	end
-
-
-	when 7,16,25
-
-	if [2,3,7,9].include?(@lucky2)
-		@percentage = "65%"
-	else
-		@percentage = "0%"
-	end
+		if [1,5,6,8,9].include?(@lucky2)
+			@percentage = "90%"
+		else
+			@percentage = "0%"
+		end
 
 
-	when 8,17,26
+		when 7,16,25
 
-	if [1,2,3,4,5,7].include?(@lucky2)
-		@percentage = "69%"
-	else
-		@percentage = "0%"
-	end
+		if [2,3,7,9].include?(@lucky2)
+			@percentage = "65%"
+		else
+			@percentage = "0%"
+		end
 
-	when  9,18,27
 
-	if [1,3,6,7,9].include?(@lucky2)
-		@percentage = "85%"
-	else
-		@percentage = "0%"
-	end
+		when 8,17,26
+
+		if [1,2,3,4,5,7].include?(@lucky2)
+			@percentage = "69%"
+		else
+			@percentage = "0%"
+		end
+
+		when  9,18,27
+
+			if [1,3,6,7,9].include?(@lucky2)
+				@percentage = "85%"
+			else
+				@percentage = "0%"
+			end
 
 
     end
-  respond_to do|format|
-     format.js
-  end
+	  respond_to do|format|
+	     format.js
+	  end
  
   end
 
-def cellnumbermatch
+	def cellnumbermatch
 
     #raise params.inspect
     @lucky1,@lucky2=luckynum
@@ -347,7 +328,6 @@ def cellnumbermatch
       format.js
     end
   end
-
 
 #calculates cellnumber is matched or not with dob  
   def vehiclenumbermatch
@@ -399,21 +379,15 @@ def cellnumbermatch
     end
   end
 
-
-
-
   def luckynumber
-#   raise params.inspect
+		#   raise params.inspect
     @luclk1,@lucky2=luckynum
     respond_to do |format|
       format.js
     end
   end
 
-
-
-
-private 
+	private 
   def luckynum
     @lucky1 = params[:date][:day].to_i
     arr = []
@@ -432,8 +406,4 @@ private
  #    format.js
   #  end
   end
-
-
-
-
 end

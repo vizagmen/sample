@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users#, :controllers => {:registrations => "registrations"}
   resources :welcome, only: :index
   resources :dashboard, only: :index
+  resources :users, only: :show
   # resources :numerologys, only: :index
   resources :numerologys, only: :index do
     collection do

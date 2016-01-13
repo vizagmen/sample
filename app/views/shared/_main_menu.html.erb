@@ -69,13 +69,18 @@
 
           <li class="dropdown">
             <%= link_to  dashboard_index_path, class: "dropdown-toggle", "data-toggle": "dropdown", role: "button",  "aria-haspopup": "true", "aria-expanded": "false" do %>
-              <%= image_tag(current_user.avatar.thumb.url, class: "img-circle") %>
+              <%= image_tag(current_user.avatar.thumb.url, class: "img-circle", size: "30x30") %>
               <%= current_user.email %> <span class="fa fa-chevron-down"></span>
             <%end%>            
             <ul class="dropdown-menu">
               <li>
-                <%= link_to edit_user_registration_path do %>
+                <%= link_to user_path(current_user) do %>
                     <i class="fa fa-fw fa-user"></i> Profile
+                <%end%> 
+              </li>
+              <li>
+                <%= link_to edit_user_registration_path do %>
+                    <i class="fa fa-edit"></i> Edit Profile
                 <%end%> 
               </li>
               <li><a href="#">Another action</a></li>
