@@ -8,11 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container-fuild" id="page-wrapper">
-    <% if notice.present?  %> 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    <% end %>
+	<div class="container-fuild" id="page-wrapper">    
 		<div class="container-fluid head-note bg-red">
 	    <div class="col-sm-6">
 	      <p><kbd>Hello</kbd> this some note.</p>
@@ -25,7 +21,12 @@
 	    </div>
 	  </div>
 		<%= render 'shared/main_menu' %>		
-		
+		<% if notice.present?  %>
+      <div class="alert alert-success" role="alert"><p class="notice"><%= notice %></p></div>
+    <% end %>
+    <% if alert.present?  %>
+      <div class="alert alert-danger" role="alert"><p class="alert"><%= alert %></p></div> 
+    <% end %>
 		<%= yield %>
 
 	</div>

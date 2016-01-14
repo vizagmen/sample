@@ -40,18 +40,14 @@
                 <li><%= link_to current_user.email, dashboard_index_path%> </li>
                 <li>
                   <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-                </li>                
-              <% else %>                
-                <li>                
-                <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default" %>
-              </li>
-              <li class="nav-btn">
-                <%= link_to "Sign in", new_user_session_path, class: "btn btn-success" %>
-              </li>
+                </li>
               <% end %>
             </ul>
-
-            <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+            <ul class="nav navbar-nav navbar-right">
+              <%= link_to "Sign Up", new_user_registration_path,  class: "btn navbar-btn btn-warning " %>
+              <%= link_to "Sign In", new_user_session_path,  class: "btn navbar-btn btn-primary" %>
+            </ul>
+              
           </div>
 
           <!-- /.navbar-collapse -->
