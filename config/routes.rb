@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get 'lucky_number'
       get 'cell_number_match'
       get 'vechicle_number_match'
+      get 'get_name_correction'
     end
   end
 
@@ -21,13 +22,13 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  post 'numerologys/luckynumber' 
-  post 'numerologys/cellnumbermatch' 
-  post 'numerologys/vehiclenumbermatch' 
-  post 'numerologys/digital'
-  post 'numerologys/friendship'
-  post 'numerologys/getfavs'
-
+  get 'numerologys/luckynumber', defaults: { format: 'js' }
+  get 'numerologys/cellnumbermatch' , defaults: { format: 'js' }
+  get 'numerologys/vehiclenumbermatch', defaults: { format: 'js' } 
+  get 'numerologys/digital', defaults: { format: 'js' }
+  get 'numerologys/friendship', defaults: { format: 'js' }
+  get 'numerologys/getfavs', defaults: { format: 'js' }
+  get 'numerologys/name_correction', defaults: {format: 'js'}
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -2,18 +2,18 @@
 	a
 </div>
 <div class="container-fluid">
-	<h2 class="page-header">Favorites</h2>
-	<br>
+<h2 class="page-header">Name Correction</h2>
+<br>
 	<div class="col-sm-6">
 		<div class="panel panel-primary black-panel">
 		  <div class="panel-heading">
 		    <h3 class="panel-title">Numerology</h3>
 		  </div>
-		  <div class="panel-body">
-		    <%= form_tag numerologys_getfavs_path , remote: true, method: :get do %>
+		  <div class="panel-body">	  	
+				<%= form_tag numerologys_name_correction_path , remote: true, method: :get do %>
 			  	<div class="form-group">
-					  <%= label_tag :name1, "Your Name" %><br />
-					  <%= text_field_tag :name1, "",autofocus: true, class: "form-control", placeholder: "Enter Name" %>
+					  <%= label_tag :name, "Your Name" %><br />
+					  <%= text_field_tag :name, "",autofocus: true, class: "form-control", placeholder: "Enter Name" %>
 					</div>
 
 					<div class="form-group">
@@ -24,9 +24,11 @@
 					  </div>			      
 					</div>
 
+
 					<div class="form-group">
 					 	<%= submit_tag "Get Result", class: "btn btn-success btn-block" %>
 					</div>
+  
 			<%end%>
 		  </div>
 		</div>		
@@ -36,7 +38,7 @@
 		  <div class="panel-heading">
 		    <h3 class="panel-title">Result</h3>
 		  </div>
-		  <div class="panel-body" id="fav">
+		  <div class="panel-body" id="namecorrection">
 		    To get the result fill the form and submit.
 		  </div>
 		</div>

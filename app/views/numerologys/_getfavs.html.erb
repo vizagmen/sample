@@ -1,21 +1,23 @@
-
-<b>Fav Dates:</b>
+<h3>
+<b>Fav Dates : </b>
 <%@fav_dates.each do|fav_date|%>
    <%= fav_date %>
 <% end %>
+</h3>
 
-</br>
-<b>Fav Months:</b>
-
+<h3>
+<b>Fav Months : </b>
 <% @fav_months.each do|fav_month| %>
-    <%= fav_month %>,
+    <%= fav_month.capitalize %>,
 <% end %>
-</br>
+</h3>
 
-<b>Fav week</b>
+<h3>
+<b>Fav week : </b>
 <% @fav_weeks.each do|fav_week| %>
-   <%= fav_week %>,
+   <%= fav_week.capitalize %>,
 <% end %>
+</h3>
 
 
 
