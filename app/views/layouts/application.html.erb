@@ -28,10 +28,10 @@
     <% end %>
     <% if alert.present?  %>
       <div class="alert alert-danger" role="alert"><p class="alert"><%= alert %></p></div> 
-    <% end %>
+    <% end %>    
 		<%= yield %>
-
 	</div>
+  
 	<script>
     $('#myCarousel').carousel({
       interval:   4000
