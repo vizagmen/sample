@@ -14,7 +14,6 @@ class RegistrationsController < Devise::RegistrationsController
     	render 'new'
     end
 
-
   end
 
   def update

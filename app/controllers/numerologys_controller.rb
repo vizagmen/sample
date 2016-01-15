@@ -337,29 +337,95 @@ class NumerologysController < ApplicationController
 
 
   def name_correction
+  	#raise params.inspect
   	arr1 = []
     hash = {"A": 1, "I": 1, "J": 1, "Q": 1, "Y": 1, "B": 2, "K": 2, "R": 2, "C": 3, "G": 3, "L": 3, "S": 3, "D": 4, "M": 4, "T": 4,
     "E": 5, "H": 5, "N": 5, "X": 5, "U": 6, "V": 6, "W": 6, "O": 7, "Z": 7, "P": 8, "F": 9}
   	name = params[:name].upcase
-
+    @date = params[:your_dob][:day].to_i
+    	while  @date > 9
+	    tmp=@date.to_s.split('').map { |e| e.to_i  }
+	    @date = tmp.inject(0, :+)
+  	   end
+#raise @date.inspect
   	name.split("").each do|e|
   	  arr1 << hash[:"#{e}"] if e.present?
   	end
 
-  	result = arr1.inject(0, :+)
+  	@result = arr1.inject(0, :+)
 
-    while result > 10
-     result = result.to_s.split("").map(&:to_i).inject(0, :+)
+    while @result > 10
+     @result = @result.to_s.split("").map(&:to_i).inject(0, :+)
    	end
+    
+    case @date
+      when 1
+      	if [2,3,5,9].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
 
-   	@lucky1,@lucky2=luckynum
-    l=[@lucky1,@lucky2]
 
-    if l.include?(result)   
-      @msg= "matched"
-    else
-      @msg = "not matched "
+      when 2
+      	if [1,3,5,6,8,9].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
+
+    when 3
+      	if [1,2,8,9].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
+
+    when 4
+      	if [1,5,6].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
+
+
+    when 5
+      	if [1,3,6,8,9].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
+
+    when 6
+      	if [3,5,9].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
+
+
+    when 7
+      	if [1,2,3,5,6,8,9].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
+
+    when 8
+      	if [1,3,5,6].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
+    when 9
+      	if [1,2,3,6,8].include?(@result)
+      		@msg= "Matched"
+        else
+      	     @msg = "Name Correction is Neeed"
+        end
+
     end
+
 
     respond_to do |format|
       format.js
@@ -378,6 +444,10 @@ class NumerologysController < ApplicationController
   def luckynum
   	# raise params[:your_dob][:month].to_i.inspect
     @lucky1 = params[:your_dob][:day].to_i
+    while @lucky1>9
+     tmp=@lucky1.to_s.split('').map { |e| e.to_i  }
+      @lucky1=tmp.inject(0, :+)
+    end
     arr = []
     arr << params[:your_dob][:day].to_i
     arr << params[:your_dob][:month].to_i
