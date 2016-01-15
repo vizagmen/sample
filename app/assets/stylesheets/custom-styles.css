@@ -2,13 +2,15 @@ body{
 	background-color: #FFF;
 	color: #2F4052;
 	font-family: "Open Sans";
-	font-weight: 400;
+	font-weight: 400;	
+}
+body#gallexy-bg{
 	background-image: url("/assets/bg.jpg");
 	background: url("/assets/bg.jpg") no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .bg-gray-white{
 	background-color: #D6DADB !important;	
