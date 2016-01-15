@@ -3,7 +3,12 @@ body{
 	color: #2F4052;
 	font-family: "Open Sans";
 	font-weight: 400;
-	background-image: url("/assets/bg2.png");
+	background-image: url("/assets/bg.jpg");
+	background: url("/assets/bg.jpg") no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;;
 }
 .bg-gray-white{
 	background-color: #D6DADB !important;	
@@ -188,5 +193,8 @@ img.img-circle.img-responsive.img-center {
 }
 
 .page-header{
-	margin: 20px 0 0 0px !important;
+	margin: 20px 0 0 0px !important;	
+}
+.font-white{
+	color: #FFF !important;
 }
