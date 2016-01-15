@@ -3,7 +3,7 @@ body{
 	color: #2F4052;
 	font-family: "Open Sans";
 	font-weight: 400;
-	background-image: url("/assets/bg1.png");
+	background-image: url("/assets/bg2.png");
 }
 .bg-gray-white{
 	background-color: #D6DADB !important;	
@@ -19,8 +19,8 @@ body{
 	margin-bottom: 0px;
 }
 .navbar-white{
-	/*background-color: #FFF;*/
-	background-color: #FFF9C4 !important;
+	background-color: #FFF;
+	/*background-color: #FFF9C4 !important;*/
 	z-index: 10;
 	border-bottom: solid 2px #2F4052;
 	border-radius: 0px; 
