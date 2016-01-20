@@ -42,6 +42,7 @@ of those sections to manage the look and feel of the site. */
     /*background: #fff;*/
     z-index: 3;
     text-align: left;
+    clear: both;
 }
 .intro-section h1{
     font-size: 75px;
@@ -51,6 +52,7 @@ of those sections to manage the look and feel of the site. */
 }
 .intro-section .left{
     /*margin-top: 50px;*/
+    display: block;
 }
 .intro-section .right{
     padding: 100px;

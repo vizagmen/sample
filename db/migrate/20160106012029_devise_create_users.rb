@@ -31,11 +31,17 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.datetime :locked_at
 
       t.string :name
-      t.string :phone
+      t.string :avatar
+      t.date :dob
+      t.boolean :gender
+      t.string :phone, unique: true
       t.string :aadhar_card
-      t.date :dob      
-      t.string :serial_no
+      t.text :address
+      t.string :serial_no, unique: true
       t.string :reference
+      t.boolean :is_admin, default: false      
+      t.boolean :is_paid, default: false
+      
 
       t.timestamps null: false
     end
