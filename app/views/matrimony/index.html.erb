@@ -1,9 +1,43 @@
-<div class="container-fuild bg-gray padding-10">
-	a
-</div>
-<br>
 <div class="container">
 	<h1 class="page-header font-white">Matrimony</h1>
+
+  <div class="well">
+    <form class="form-inline">
+      <div class="form-group">
+        <select class="form-control">
+          <option>Select Cast</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <select class="form-control">
+          <option>Select Region</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+
+        <b>Age:  18 </b> <input id="ex2" type="text" class="span2" value="" data-slider-min="18" data-slider-max="100" data-slider-step="1" data-slider-value="[25,35]"/> <b> 100</b>
+      </div>
+      
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </form>
+  </div>
 
 	<div class="col-md-4 col-sm-4 profile" id="my-profile">
     <div class="user-wrapper">        
@@ -101,3 +135,7 @@
     </div>
 	</div>
 </div>
+
+<script type="text/javascript">
+  $("#ex2").slider({});
+</script>
