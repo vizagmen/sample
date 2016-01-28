@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :casts
   resources :nakshatras
   devise_for :users
   resources :welcome, only: :index
