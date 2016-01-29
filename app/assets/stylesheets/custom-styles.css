@@ -5,6 +5,8 @@ body{
 	font-weight: 400;	
 }
 body#gallexy-bg{
+	padding-top: 100px;
+	padding-bottom: 50px;
 	background-image: url("/assets/bg.jpg");
 	background: url("/assets/bg.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -26,7 +28,7 @@ body#gallexy-bg{
 	margin-bottom: 0px;
 }
 .navbar-white{
-	background-color: #FFF;
+	background-color: #2F4052;
 	/*background-color: #FFF9C4 !important;*/
 	z-index: 10;
 	border-bottom: solid 2px #2F4052;
@@ -34,8 +36,8 @@ body#gallexy-bg{
 }
 @media(min-width: 768px){
 	.navbar-white{
-		padding-top: 25px;
-		padding-bottom: 25px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 }
@@ -55,13 +57,19 @@ body#gallexy-bg{
 	font-size: 22px;
 }
 .navbar-white .navbar-brand small{
-	color: #2F4052;	
+	color: #D6DADB;	
 }
-.navbar-white .navbar-nav>li>a {
-	padding-top: 19px;
-	padding-bottom: 15px;
-	color: #2F4052;
+.navbar-white .navbar-nav>li>a {	
+	color: #D6DADB;
 	font-weight: 600;
+}
+.navbar-white .navbar-nav>li>a:hover {
+	background: transparent;
+	color: #F84549;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+background: transparent;
+	color: #F84549;	
 }
 .navbar-white .navbar-nav>li.active>a {
 	color: #F84549;
@@ -98,13 +106,14 @@ body#gallexy-bg{
 }
 
 .head-note{
-	padding: 5px;
-	z-index: 50 !important;
+	padding: 3px;
 }
 .head-note p{	
 	margin: 0px;
 	font-weight: bold;
 	color: #FFF;
+	font-size: 12px;
+	line-height: 25px;
 }
 ul.circle-nav{
 	margin: 0px;
@@ -199,4 +208,7 @@ img.img-circle.img-responsive.img-center {
 }
 .font-white{
 	color: #FFF !important;
+}
+.well{
+	margin-bottom: 0;
 }

@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   
+  resources :casts
   resources :nakshatras
-  devise_for :users#, :controllers => {:registrations => "registrations"}
+  devise_for :users
   resources :welcome, only: :index
   resources :dashboard, only: :index
   resources :users, only: :show
-  # resources :numerologys, only: :index
+  
   resources :numerologys, only: :index do
     collection do
       get 'get_digital'

@@ -11,7 +11,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160112162448) do
+ActiveRecord::Schema.define(version: 20160128020456) do
+
+  create_table "casts", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "mobile"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "matrimonies", force: :cascade do |t|
+    t.string   "full_name"
+    t.string   "surname"
+    t.string   "qualfication"
+    t.integer  "cast_id"
+    t.string   "category"
+    t.string   "gowtram"
+    t.string   "income"
+    t.string   "working_company"
+    t.string   "company_address"
+    t.string   "designation"
+    t.string   "marriage_status"
+    t.string   "height"
+    t.string   "weight"
+    t.string   "hobbies"
+    t.string   "body_skin_color"
+    t.integer  "nakshatra_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "user_id"
+  end
+
+  add_index "matrimonies", ["cast_id"], name: "index_matrimonies_on_cast_id"
+  add_index "matrimonies", ["nakshatra_id"], name: "index_matrimonies_on_nakshatra_id"
+  add_index "matrimonies", ["user_id"], name: "index_matrimonies_on_user_id"
 
   create_table "nakshatras", force: :cascade do |t|
     t.string   "name"
@@ -42,14 +85,16 @@ ActiveRecord::Schema.define(version: 20160112162448) do
     t.string   "aadhar_card"
     t.text     "address"
     t.string   "serial_no"
-    t.string   "reference"
+    t.string   "reference_no"
     t.boolean  "is_admin",               default: false
     t.boolean  "is_paid",                default: false
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
+    t.integer  "contact_id"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
+  add_index "users", ["contact_id"], name: "index_users_on_contact_id"
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 

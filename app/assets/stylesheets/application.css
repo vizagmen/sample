@@ -12,8 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap-slider
  */
-
 
 /* USER PROFILE STYLES */
 .profile{
@@ -70,6 +70,9 @@
 
 .db-user-wrapper {
     font-family: Verdana;
+    overflow-y: scroll;
+    height: 800px;
+
 }
 .media, .media .media {
     margin-top: 5px;
@@ -108,4 +111,10 @@
 
 .list-group{
     margin-bottom: 0px;
+}
+.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;    
 }

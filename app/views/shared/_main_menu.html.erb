@@ -24,7 +24,7 @@
       </div>
 
       <ul class="nav navbar-nav navbar-right">
-        <li class="hidden">
+        <!-- <li class="hidden">
           <a class="page-scroll" href="#page-top"></a>
         </li>
         <li class="active">          
@@ -37,7 +37,7 @@
         <li>
           <a class="page-scroll" href="#contact">Contact</a>
           <% #link_to "Contact", root_path(anchor: "#contact"), class: "page-scroll" %>
-        </li>
+        </li> -->
 
         <% if user_signed_in? %>
           <li class="dropdown">
@@ -70,7 +70,7 @@
 
           <li class="dropdown">
             <%= link_to  dashboard_index_path, class: "dropdown-toggle", "data-toggle": "dropdown", role: "button",  "aria-haspopup": "true", "aria-expanded": "false" do %>
-              <%= image_tag(current_user.avatar.thumb.url, class: "img-circle", size: "30x30") %>
+              <%= image_tag(current_user.avatar.thumb.url, class: "img-circle", size: "20x20") %>
               <%= current_user.email %> <span class="fa fa-chevron-down"></span>
             <%end%>            
             <ul class="dropdown-menu">
