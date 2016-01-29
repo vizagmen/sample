@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :welcome, only: :index
   resources :dashboard, only: :index
-  resources :users, only: :show
+  resources :users
   
   resources :numerologys, only: :index do
     collection do

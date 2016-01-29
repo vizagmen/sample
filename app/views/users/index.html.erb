@@ -1,13 +1,14 @@
 <p id="notice"><%= notice %></p>
-<%= link_to new_nakshatra_path, class: "btn btn-circle btn-success btn-lg pull-right" do %>
+<%= link_to new_user_path, class: "btn btn-circle btn-success btn-lg pull-right" do %>
   <i class="fa fa-plus"></i>
 <%end%>
 
-<h1 class="page-header">Listing Nakshatras</h1>
+<h1 class="page-header ">Users</h1>
 
 <table class="table table-striped table-hover table-condensed">
   <thead>
     <tr>
+      <th>Email</th>
       <th>Name</th>
       <th>Show</th>
       <th>Edit</th>
@@ -16,17 +17,19 @@
   </thead>
 
   <tbody>
-    <% @nakshatras.each do |nakshatra| %>
+    <% @users.each do |user| %>
       <tr>
-        <td><%= nakshatra.name %></td>
-        <td><%= link_to 'Show', nakshatra %></td>
+        <td><%= user.email %></td>
+        <td><%= user.name %></td>
+        <td><%= link_to 'Show', user %></td>
         <td>
-          <%= link_to edit_nakshatra_path(nakshatra) do %>
+          <%= link_to edit_user_path(user) do %>
             <i class="fa fa-pencil-square-o"></i>
           <%end%>
+
         </td>
         <td>
-          <%= link_to nakshatra, method: :delete, data: { confirm: 'Are you sure?' } do%>
+          <%= link_to user, method: :delete, data: { confirm: 'Are you sure?' } do%>
             <i class="fa fa-trash-o"></i>
           <%end%>
         </td>
