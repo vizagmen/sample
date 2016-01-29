@@ -6,6 +6,7 @@ body{
 }
 body#gallexy-bg{
 	padding-top: 100px;
+	padding-bottom: 50px;
 	background-image: url("/assets/bg.jpg");
 	background: url("/assets/bg.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
