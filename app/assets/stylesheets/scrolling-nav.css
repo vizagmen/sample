@@ -262,37 +262,41 @@ border:1px solid #333333;
 }
 
 .ch-img-2 { 
-    background-image: url(/assets/astrology-out.jpg);
+    background-image: url(/assets/astrology.jpg);
     z-index: 11;
+    background-size: cover;
 }
 
 .ch-img-3 { 
-    background-image: url(/assets/graha-out.jpg);
+    background-image: url(/assets/babynames.jpg);
     z-index: 10;
 }
 .ch-img-4 { 
-    background-image: url(/assets/mantram.jpg);
+    background-image: url(/assets/products.jpg);
     z-index: 10;
 }
 .ch-img-5 { 
-    background-image: url(/assets/lucky-number.jpg);
+    background-image: url(/assets/vastu.png);
     z-index: 10;
+    background-size: cover;
 }
 .ch-img-6 { 
     background-image: url(/assets/rasi-chakra.jpg);
     z-index: 10;
 }
 .ch-img-7 { 
-    background-image: url(/assets/vastu.jpg);
+    background-image: url(/assets/mantras.jpg);
     z-index: 10;
+    background-size: cover;
 }
 .ch-img-8 { 
-    background-image: url(/assets/stones.jpg);
+    background-image: url(/assets/remedies.jpg);
     z-index: 10;
 }
 .ch-img-9 { 
-    background-image: url(/assets/fengshui-vaastu.jpg);
+    background-image: url(/assets/pandit.jpg);    
     z-index: 10;
+    background-size: cover;
 }
 .ch-info {
     position: absolute;
