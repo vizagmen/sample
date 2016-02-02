@@ -1,6 +1,7 @@
 class NakshatrasController < ApplicationController
   before_action :set_nakshatra, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  before_action :is_admin?
   # GET /nakshatras
   # GET /nakshatras.json
   def index

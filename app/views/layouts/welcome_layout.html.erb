@@ -11,6 +11,12 @@
 	<div class="container-fuild" id="page-wrapper">
 		<%= render 'shared/menu' %>		
 		
+      <% if notice.present?  %>
+        <div class="alert alert-success" role="alert"><p class="notice"><%= notice %></p></div>
+      <% end %>
+      <% if alert.present?  %>
+        <div class="alert alert-danger" role="alert"><p class="alert"><%= alert %></p></div> 
+      <% end %>
 		<%= yield %>
 
 	</div>

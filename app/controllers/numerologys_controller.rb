@@ -1,4 +1,6 @@
 class NumerologysController < ApplicationController
+  before_action :authenticate_user!
+  
 	# layout 'admin'
 
 	def getfavs
