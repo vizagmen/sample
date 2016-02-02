@@ -358,7 +358,9 @@ class NumerologysController < ApplicationController
     while @result > 10
      @result = @result.to_s.split("").map(&:to_i).inject(0, :+)
    	end
-    
+
+puts  @result
+  puts @date
     case @date
       when 1
       	if [2,3,5,9].include?(@result)
@@ -424,6 +426,9 @@ class NumerologysController < ApplicationController
         else
       	     @msg = "Name Correction is Neeed"
         end
+
+      else
+        @msg = "enter correct format"
 
     end
 
