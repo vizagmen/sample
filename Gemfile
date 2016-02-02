@@ -38,6 +38,7 @@ gem 'wow-rails'
 gem 'carrierwave'
 gem "mini_magick"
 gem 'bootstrap-slider-rails'
+gem 'gmail'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
