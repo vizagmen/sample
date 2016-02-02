@@ -37,8 +37,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :phone, unique: true
       t.string :aadhar_card
       t.text :address
-      t.string :serial_no, unique: true
       t.string :reference_no
+      t.string :serial_no, unique: true      
       t.boolean :is_admin, default: false      
       t.boolean :is_paid, default: false
       

@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+cast = Cast.create([{ name: 'OC' }, { name: 'OBC' }, { name: 'BC-A' }, { name: 'BC-B' }])
+nakshatra = Nakshatra.create([{ name: 'nakshatra 1' }, { name: 'nakshatra 2' }, { name: 'nakshatra 3' }, { name: 'nakshatra 4' }])
