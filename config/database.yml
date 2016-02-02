@@ -21,8 +21,19 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
+  # <<: *default
+  # adapter: postgresql
+  # database: db/production.sqlite3
+  # host: localhost
+  # user: owning_user
+
   adapter: postgresql
-  database: db/production.sqlite3
-  host: localhost
-  user: owning_user
+  host: ec2-54-83-40-119.compute-1.amazonaws.com
+  database: dbilf7vb6gt3lb
+  encoding: utf8
+  pool: 5
+  username: zbmidzbehidkqt
+  port: 5432
+  password: 8L_WQe9d9axpJ8ynmgA2EfocPn
+  url: postgres://zbmidzbehidkqt:8L_WQe9d9axpJ8ynmgA2EfocPn@ec2-54-83-40-119.compute-1.amazonaws.com:5432/dbilf7vb6gt3lb
+  timeout: 5000
