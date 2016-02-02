@@ -319,7 +319,7 @@ class NumerologysController < ApplicationController
    vehiclenumber = params[:vehiclenumber]
    va = params[:vehiclenumber].gsub(/[^a-zA-Z]/, '')
    va.each_char do|e|  
-     arr1 << hash[:"#{e}"]
+     arr1 << hash["#{e}"]
    end
    arr2 << vehiclenumber.split("").map{|x| x.to_i}
    
