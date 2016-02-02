@@ -84,8 +84,8 @@ ActiveRecord::Schema.define(version: 20160128020456) do
     t.string   "phone"
     t.string   "aadhar_card"
     t.text     "address"
+    t.string   "reference_no"
     t.string   "serial_no"
-    t.string   "reference"
     t.boolean  "is_admin",               default: false
     t.boolean  "is_paid",                default: false
     t.datetime "created_at",                             null: false

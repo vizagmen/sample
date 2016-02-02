@@ -409,39 +409,39 @@ class MatrimonyController < ApplicationController
 
     case @user1_lucky_number
      
-     when 1
-          if [4,13,22,31,5,14,23,6,15,24].include?(@user2_lucky_number.date)
+    when 1
+        if [4,13,22,31,5,14,23,6,15,24].include?(@user2_lucky_number.date)
              @msg = "matched" 
              
-          else
+        else
              @msg = "Not Matched"
-          end
+        end
     when 2                                       
      
-         if [3,12,21,30,5,14,23,8,17,26].include?(@user2_lucky_number.date)
+        if [3,12,21,30,5,14,23,8,17,26].include?(@user2_lucky_number.date)
              @msg = "matched" 
              
-          else
+        else
              @msg = "Not Matched"
-          end
+        end
 
      when 3                                      
      
-         if [6,15,24,8,17,26,9,18,27 ].include?(@user2_lucky_number.date)
-             @msg = "matched" 
+        if [6,15,24,8,17,26,9,18,27 ].include?(@user2_lucky_number.date)
+            @msg = "matched" 
              
-          else
-             @msg = "Not Matched"
-          end
+        else
+            @msg = "Not Matched"
+        end
 
      when 4                                     
      
-         if [ 1,10,19,28,7,16,25,9,18,27].include?(@user2_lucky_number.date)
-             @msg = "matched" 
+        if [ 1,10,19,28,7,16,25,9,18,27].include?(@user2_lucky_number.date)
+          @msg = "matched" 
              
-          else
-             @msg = "Not Matched"
-          end
+        else
+            @msg = "Not Matched"
+        end
 
     when 5                                     
      
@@ -488,11 +488,12 @@ class MatrimonyController < ApplicationController
           else
              @msg = "Not Matched"
           end
-    end
+    
    else 
     @msg= "enter correct format"
        
   end
+end
 
 
 
