@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20160128020456) do
   create_table "matrimonies", force: :cascade do |t|
     t.string   "full_name"
     t.string   "surname"
-    t.string   "qualfication"
+    t.string   "qualification"
     t.integer  "cast_id"
     t.string   "category"
     t.string   "gowtram"
@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 20160128020456) do
     t.string   "aadhar_card"
     t.text     "address"
     t.string   "serial_no"
-    t.string   "reference_no"
+    t.string   "reference"
     t.boolean  "is_admin",               default: false
     t.boolean  "is_paid",                default: false
     t.datetime "created_at",                             null: false

@@ -10,7 +10,7 @@ end
 
 group :production do
 	gem 'rails_12factor'
-	gem 'pg', '~>0.18.3'
+	#gem 'pg', '~>0.18.3'
 end
 
 # Use SCSS for stylesheets
