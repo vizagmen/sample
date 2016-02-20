@@ -1,5 +1,5 @@
 class MatrimonyController < ApplicationController
-    before_action :authenticate_user!  
+   # before_action :authenticate_user!  
 	
 	def index
 		
@@ -390,35 +390,116 @@ class MatrimonyController < ApplicationController
     #       "DHANISTA-3,4"=> 0, "STHABISHAM" => 0, "PURVABHADRA-1,2,3"=> 0, "PURVABHADRA-4" => 29.5, "UTTARABHADRA"=> 33, "REVATHI"=> 28
     #     }
       
-
-
     # ]
-
-
-
 
   end
 
+def life_partner_match_report
+   # @user1_date_number, @user1_fate_number = luckynum(1)
+    #@user2_date_number, @user2_fate_number = luckynum(user2)
+
+    @result1 = numerology_matching_report1(1, 14)
+    @result2 = numerology_matching_report1(3, 31)
+
+    if @result1 == "matched" && @result2 == "matched"
+
+        @msg = "NOT MATCHED (CROSSED CHECKED)"
+            raise @msg.inspect         
+    elsif @result1 == "matched" && @result2 == "Not Matched"
+        @msg = "matched in step1 "
+       raise @msg.inspect
+    elsif @result1 == "not matched" && @result2 == "matched"
+        @msg = "matched in step1"
+        raise @msg.inspect
+    else         
+        @msg = "go to next matching"
+        raise @msg.inspect
+        @second_match = numerology_matching_report2(@user1_date_number, @user2_date_number)
+            if @second_match == "pair matched"
+            @final_numerology_result = "matched in numerology"
+            else
+             @final_numerology_result = "Not matched in numerology"
+            end    
+    end
+
+   
+
+end
+ 
 
 
-
-  def numerology_matching_report
-
-    @user1_lucky_number = 1
-    @user2_lucky_number = 4
-
-    case @user1_lucky_number
+ def numerology_matching_report2(user1_date_number, user2_date_number)
+  
+   @user1_date = params[:user1_date_number]
+   @user2_date = params[:user2_date_number]
+   @user1_date_day_result = params[:user1_date_number].to_i
+   @user2_date_day_result = params[:user2_date_number].to_i
+    
+    while @user1_date_number_day>9
+     tmp=@user1_date_number_day.to_s.split('').map { |e| e.to_i  }
+      @user1_date_number_day=tmp.inject(0, :+)
+    end
+    
+     while @user2_date_number_day > 9
+         tmp1 = @user1_date_number_day.to_s.split('').map { |e| e.to_i  }
+         @user2_date_number=tmp1.inject(0, :+)
+     end
      
+     @res1 = numerology_matching_report2_logic(@user1_date_number_day, @user2_date_number_day)
+     @res2 = numerology_matching_report2_logic(@user2_date_number_day, @user1_date_number_day)
+      
+     if @res1 == "matched" || @res2 == "matched"
+       @message = "pair matched" 
+       
+     else
+       @message = "pair not matched"
+
+     end
+
+
+
+
+   #table two logic
+ end
+
+
+ 
+
+
+
+  def numerology_matching_report(fate, date)
+   
+   # @user1_lucky_number = 1
+    #@user2_lucky_number = 4
+    #==========
+    #user1
+
+    #user_date_number, user_fate_number = params[:date],params[:fate]
+    user_date_number, user_fate_number = date,fate
+    case user_fate_number
+     
+<<<<<<< HEAD
+     when 1
+          if [4,13,22,31,5,14,23,6,15,24].include?(user_date_number)
+=======
     when 1
         if [4,13,22,31,5,14,23,6,15,24].include?(@user2_lucky_number.date)
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
              @msg = "matched" 
              
         else
              @msg = "Not Matched"
+<<<<<<< HEAD
+          end
+     when 2                                       
+     
+         if [3,12,21,30,5,14,23,8,17,26].include?(@user2_lucky_number)
+=======
         end
     when 2                                       
      
         if [3,12,21,30,5,14,23,8,17,26].include?(@user2_lucky_number.date)
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
              @msg = "matched" 
              
         else
@@ -427,8 +508,13 @@ class MatrimonyController < ApplicationController
 
      when 3                                      
      
+<<<<<<< HEAD
+         if [6,15,24,8,17,26,9,18,27 ].include?(@user2_lucky_number)
+             @msg = "matched" 
+=======
         if [6,15,24,8,17,26,9,18,27 ].include?(@user2_lucky_number.date)
             @msg = "matched" 
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
              
         else
             @msg = "Not Matched"
@@ -436,8 +522,13 @@ class MatrimonyController < ApplicationController
 
      when 4                                     
      
+<<<<<<< HEAD
+         if [ 1,10,19,28,7,16,25,9,18,27].include?(@user2_lucky_number)
+             @msg = "matched" 
+=======
         if [ 1,10,19,28,7,16,25,9,18,27].include?(@user2_lucky_number.date)
           @msg = "matched" 
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
              
         else
             @msg = "Not Matched"
@@ -445,7 +536,7 @@ class MatrimonyController < ApplicationController
 
     when 5                                     
      
-         if [2,11,20,29,3,12,21,30,8,17,26].include?(@user2_lucky_number.date)
+         if [2,11,20,29,3,12,21,30,8,17,26].include?(@user2_lucky_number)
              @msg = "matched" 
              
           else
@@ -454,7 +545,7 @@ class MatrimonyController < ApplicationController
 
     when 6                                     
      
-         if [3,12,21,30,6,15,24,9,18,27 ].include?(@user2_lucky_number.date)
+         if [3,12,21,30,6,15,24,9,18,27 ].include?(@user2_lucky_number)
              @msg = "matched" 
              
           else
@@ -463,7 +554,7 @@ class MatrimonyController < ApplicationController
 
     when 7                                    
      
-         if [1,10,19,28,4,13,22,31,8,17,26].include?(@user2_lucky_number.date)
+         if [1,10,19,28,4,13,22,31,8,17,26].include?(@user2_lucky_number)
              @msg = "matched" 
              
           else
@@ -473,7 +564,7 @@ class MatrimonyController < ApplicationController
 
     when 8                                     
      
-         if [2,11,20,29,4,13,22,31,5,14,23].include?(@user2_lucky_number.date)
+         if [2,11,20,29,4,13,22,31,5,14,23].include?(@user2_lucky_number)
              @msg = "matched" 
              
           else
@@ -482,7 +573,7 @@ class MatrimonyController < ApplicationController
 
     when 9                                     
      
-         if [3,12,21,30,6,15,24,7,16,25].include?(@user2_lucky_number.date)
+         if [3,12,21,30,6,15,24,7,16,25].include?(@user2_lucky_number)
              @msg = "matched" 
              
           else
@@ -493,15 +584,20 @@ class MatrimonyController < ApplicationController
     @msg= "enter correct format"
        
   end
+<<<<<<< HEAD
+  
+end
+=======
 end
 
 
 
 
 
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
 
 private 
-  def luckynum
+  def luckynum(user)
       # raise params[:your_dob][:month].to_i.inspect
     @lucky1 = params[:your_dob][:day].to_i
     while @lucky1>9
@@ -523,6 +619,83 @@ private
 
   end
 
+  def numerology_matching_report2_logic(user1_date, user2_date)
+   
+    @user1_date =  params[:user1_date]
+    @user2_date =  params[:user2_date]
 
+    case @user1_date
+      
+      when 1 
+         if [1,2,4,8,9].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end 
+      
 
+      when 2 
+         if [1,2,7,8].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end 
+
+      when 3
+         if [3,5,6,7,9].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end 
+      
+
+       when 4 
+         if [1,4,8,6].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end    
+
+       when 5
+         if [3,5,9].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end 
+      
+
+       when 6 
+         if [3,4,6,9].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end 
+      
+
+       when 7
+         if [2,3,6,7].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end 
+      
+
+       when 8
+         if [1,2,4].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end 
+      
+
+      when 9 
+         if [1,3,6,8].include?(@user2_date)
+          @msg = "matched"
+         else
+          @msg = "not matched"
+         end 
+      
+  end
+
+end
 end

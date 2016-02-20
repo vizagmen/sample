@@ -9465,3 +9465,23 @@ Processing by Devise::RegistrationsController#new as HTML
   Rendered shared/_main_menu.html.erb (0.7ms)
 Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
 Started GET "/assets/bg.jpg" for 119.235.52.22 at 2016-02-20 15:19:16 +0000
+Started GET "/" for 117.198.148.201 at 2016-02-20 16:08:55 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (5.4ms)
+  Rendered shared/_menu.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/yellow-bg.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/numerology-out.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/astrology.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/babynames.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/products.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/vastu.png" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/rasi-chakra.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/mantras.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/remedies.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/assets/pandit.jpg" for 117.198.148.201 at 2016-02-20 16:08:57 +0000
+Started GET "/" for 72.5.65.215 at 2016-02-20 16:09:41 +0000
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/welcome_layout (6.1ms)
+  Rendered shared/_menu.html.erb (1.2ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
