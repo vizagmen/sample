@@ -478,39 +478,61 @@ end
     user_date_number, user_fate_number = date,fate
     case user_fate_number
      
+<<<<<<< HEAD
      when 1
           if [4,13,22,31,5,14,23,6,15,24].include?(user_date_number)
+=======
+    when 1
+        if [4,13,22,31,5,14,23,6,15,24].include?(@user2_lucky_number.date)
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
              @msg = "matched" 
              
-          else
+        else
              @msg = "Not Matched"
+<<<<<<< HEAD
           end
      when 2                                       
      
          if [3,12,21,30,5,14,23,8,17,26].include?(@user2_lucky_number)
+=======
+        end
+    when 2                                       
+     
+        if [3,12,21,30,5,14,23,8,17,26].include?(@user2_lucky_number.date)
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
              @msg = "matched" 
              
-          else
+        else
              @msg = "Not Matched"
-          end
+        end
 
      when 3                                      
      
+<<<<<<< HEAD
          if [6,15,24,8,17,26,9,18,27 ].include?(@user2_lucky_number)
              @msg = "matched" 
+=======
+        if [6,15,24,8,17,26,9,18,27 ].include?(@user2_lucky_number.date)
+            @msg = "matched" 
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
              
-          else
-             @msg = "Not Matched"
-          end
+        else
+            @msg = "Not Matched"
+        end
 
      when 4                                     
      
+<<<<<<< HEAD
          if [ 1,10,19,28,7,16,25,9,18,27].include?(@user2_lucky_number)
              @msg = "matched" 
+=======
+        if [ 1,10,19,28,7,16,25,9,18,27].include?(@user2_lucky_number.date)
+          @msg = "matched" 
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
              
-          else
-             @msg = "Not Matched"
-          end
+        else
+            @msg = "Not Matched"
+        end
 
     when 5                                     
      
@@ -562,8 +584,17 @@ end
     @msg= "enter correct format"
        
   end
+<<<<<<< HEAD
   
 end
+=======
+end
+
+
+
+
+
+>>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
 
 private 
   def luckynum(user)

@@ -38,6 +38,7 @@ gem 'wow-rails'
 gem 'carrierwave'
 gem "mini_magick"
 gem 'bootstrap-slider-rails'
+gem 'gmail'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -60,4 +61,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-#ruby "2.2.2"
+ruby "2.2.1"
