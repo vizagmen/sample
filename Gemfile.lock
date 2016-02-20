@@ -101,10 +101,10 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
+    mysql2 (0.3.20)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
-    pg (0.18.4)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -202,7 +202,7 @@ DEPENDENCIES
   jquery-rails
   less-rails!
   mini_magick
-  pg (~> 0.18.3)
+  mysql2 (~> 0.3.11)
   rails (= 4.2.4)
   rails_12factor
   sass-rails (~> 5.0)
