@@ -7664,3 +7664,1804 @@ Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
 [12889] * Starting control server on unix:///tmp/puma-status-1455944864961-12884
 [12889] - Worker 0 (pid: 12896) booted, phase: 0
 [12889] - Worker 1 (pid: 12898) booted, phase: 0
+Started GET "/" for 117.204.40.126 at 2016-02-20 05:10:28 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (383.7ms)
+  Rendered shared/_menu.html.erb (4.0ms)
+Completed 200 OK in 565ms (Views: 558.0ms | ActiveRecord: 0.0ms)
+Started GET "/assets/yellow-bg.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/numerology-out.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/astrology.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/babynames.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/products.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/vastu.png" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/rasi-chakra.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/mantras.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/remedies.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/assets/pandit.jpg" for 117.204.40.126 at 2016-02-20 05:10:29 +0000
+Started GET "/users/sign_up" for 117.204.40.126 at 2016-02-20 05:18:08 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (17.5ms)
+  Rendered shared/_main_menu.html.erb (2.2ms)
+Completed 200 OK in 83ms (Views: 62.5ms | ActiveRecord: 1.3ms)
+Started GET "/assets/bg.jpg" for 117.204.40.126 at 2016-02-20 05:18:08 +0000
+Started POST "/users" for 117.204.40.126 at 2016-02-20 05:18:14 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YnVGaETipTd3layBSvc6v5ro7R2Sb6LJOVos0GsRxub3S0czxF6zzO7kz0aurESg7vx+ztJuB2Rzv+XvZm/dMA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"", "aadhar_card"=>"", "dob(3i)"=>"", "dob(2i)"=>"", "dob(1i)"=>"", "reference_no"=>"", "name"=>"", "serial_no"=>"", "address"=>""}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered devise/registrations/new.html.erb within layouts/application (8.7ms)
+  Rendered shared/_main_menu.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 48.8ms | ActiveRecord: 0.1ms)
+Started GET "/assets/bg.jpg" for 117.204.40.126 at 2016-02-20 05:18:14 +0000
+Started GET "/" for 210.199.227.18 at 2016-02-20 05:51:48 +0000
+Processing by WelcomeController#index as */*
+  Rendered welcome/index.html.erb within layouts/welcome_layout (6.3ms)
+  Rendered shared/_menu.html.erb (1.2ms)
+Completed 200 OK in 51ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+Started GET "/myadmin/scripts/setup.php" for 89.163.251.200 at 2016-02-20 06:19:31 +0000
+
+ActionController::RoutingError (No route matches [GET] "/myadmin/scripts/setup.php"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started GET "/" for 59.88.243.26 at 2016-02-20 07:17:32 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (5.0ms)
+  Rendered shared/_menu.html.erb (0.7ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/animate.self-9e0f512e1d8207c22a2fc10bbbbf321b66dfe587e6e4d546fa3072aee0dc532f.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:33 +0000
+Started GET "/assets/bootstrap_and_overrides.self-f067b0530c59fc1b887318bd02369b01aff6f766bbcd222773aa3c5f6a5bc2ae.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:33 +0000
+Started GET "/assets/casts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:34 +0000
+Started GET "/assets/custom-styles.self-7916bfb4df7bda451cb2a29285784324394f87d4a4437b1586474715522ba267.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:34 +0000
+Started GET "/assets/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:34 +0000
+Started GET "/assets/matrimony.self-72463d0b1efd8185237ee6b3a45702d7ccb4a9cace3c50f0b4e9ad3641ad1ee0.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:34 +0000
+Started GET "/assets/nakshatras.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:34 +0000
+Started GET "/assets/numerologys.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:34 +0000
+Started GET "/assets/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:34 +0000
+Started GET "/assets/scaffolds.self-e0575b650bc9eaf77c0a19717c954f9f2401c04c5d7d47e0e3c3ca2aaf232b5c.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:35 +0000
+Started GET "/assets/scrolling-nav.self-39721d821a063894d0834fcceeedd304b1d92d5eb53f9c7081591442287888bb.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:35 +0000
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:35 +0000
+Started GET "/assets/welcome.self-20324deec3a60cab519aeaec44816abc1516d86c2695bf62dfb0c6c59aec4c25.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:35 +0000
+Started GET "/assets/application.self-1df1d32f0e8774b1662fbbb5d35d077fc95026438049c89b6bb94b690cdd6192.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:35 +0000
+Started GET "/assets/bootstrap-slider.self-7001b248f944181abc8428fddd7dcd10ae66270235efddbb74fdb2328effd7b5.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:36 +0000
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:36 +0000
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:36 +0000
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:36 +0000
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:36 +0000
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:37 +0000
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:37 +0000
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:37 +0000
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:37 +0000
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:37 +0000
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:37 +0000
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:38 +0000
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:38 +0000
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:38 +0000
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:38 +0000
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:38 +0000
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:38 +0000
+Started GET "/assets/bootstrap-slider.self-a579319bf42976d1beee78ee1a7ba7acc4e632cd3f07828bc0c3eb5b25e6f60d.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:38 +0000
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:39 +0000
+Started GET "/assets/casts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:39 +0000
+Started GET "/assets/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:39 +0000
+Started GET "/assets/matrimony.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:39 +0000
+Started GET "/assets/nakshatras.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:39 +0000
+Started GET "/assets/numerologys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:40 +0000
+Started GET "/assets/registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:40 +0000
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:40 +0000
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:40 +0000
+Started GET "/assets/wow.self-f11c99e3d36695925003b17b9faaecf2339bd1a9b045bad6da6bd4a7f562557a.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:40 +0000
+Started GET "/assets/wow.min.self-068ab66793d2981ee217806641e2f30a0c485169493d5296b4bb55bc47ca3a13.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:40 +0000
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:41 +0000
+Started GET "/assets/yellow-bg.jpg" for 59.88.243.26 at 2016-02-20 07:17:52 +0000
+Started GET "/assets/numerology-out.jpg" for 59.88.243.26 at 2016-02-20 07:17:52 +0000
+Started GET "/assets/astrology.jpg" for 59.88.243.26 at 2016-02-20 07:17:53 +0000
+Started GET "/assets/babynames.jpg" for 59.88.243.26 at 2016-02-20 07:17:53 +0000
+Started GET "/assets/products.jpg" for 59.88.243.26 at 2016-02-20 07:17:54 +0000
+Started GET "/assets/vastu.png" for 59.88.243.26 at 2016-02-20 07:17:55 +0000
+Started GET "/assets/rasi-chakra.jpg" for 59.88.243.26 at 2016-02-20 07:17:55 +0000
+Started GET "/assets/mantras.jpg" for 59.88.243.26 at 2016-02-20 07:17:55 +0000
+Started GET "/" for 59.88.243.26 at 2016-02-20 07:17:56 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (4.9ms)
+  Rendered shared/_menu.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/animate.self-9e0f512e1d8207c22a2fc10bbbbf321b66dfe587e6e4d546fa3072aee0dc532f.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/bootstrap_and_overrides.self-f067b0530c59fc1b887318bd02369b01aff6f766bbcd222773aa3c5f6a5bc2ae.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/casts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/custom-styles.self-7916bfb4df7bda451cb2a29285784324394f87d4a4437b1586474715522ba267.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/matrimony.self-72463d0b1efd8185237ee6b3a45702d7ccb4a9cace3c50f0b4e9ad3641ad1ee0.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/nakshatras.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/numerologys.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/scaffolds.self-e0575b650bc9eaf77c0a19717c954f9f2401c04c5d7d47e0e3c3ca2aaf232b5c.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/scrolling-nav.self-39721d821a063894d0834fcceeedd304b1d92d5eb53f9c7081591442287888bb.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:57 +0000
+Started GET "/assets/welcome.self-20324deec3a60cab519aeaec44816abc1516d86c2695bf62dfb0c6c59aec4c25.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:58 +0000
+Started GET "/assets/application.self-1df1d32f0e8774b1662fbbb5d35d077fc95026438049c89b6bb94b690cdd6192.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:58 +0000
+Started GET "/assets/bootstrap-slider.self-7001b248f944181abc8428fddd7dcd10ae66270235efddbb74fdb2328effd7b5.css?body=1" for 59.88.243.26 at 2016-02-20 07:17:58 +0000
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:58 +0000
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:58 +0000
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:58 +0000
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:58 +0000
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:58 +0000
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/bootstrap-slider.self-a579319bf42976d1beee78ee1a7ba7acc4e632cd3f07828bc0c3eb5b25e6f60d.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/casts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:17:59 +0000
+Started GET "/assets/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/matrimony.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/nakshatras.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/numerologys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/wow.self-f11c99e3d36695925003b17b9faaecf2339bd1a9b045bad6da6bd4a7f562557a.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/wow.min.self-068ab66793d2981ee217806641e2f30a0c485169493d5296b4bb55bc47ca3a13.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 59.88.243.26 at 2016-02-20 07:18:00 +0000
+Started GET "/assets/yellow-bg.jpg" for 59.88.243.26 at 2016-02-20 07:18:02 +0000
+Started GET "/assets/numerology-out.jpg" for 59.88.243.26 at 2016-02-20 07:18:02 +0000
+Started GET "/assets/astrology.jpg" for 59.88.243.26 at 2016-02-20 07:18:02 +0000
+Started GET "/assets/babynames.jpg" for 59.88.243.26 at 2016-02-20 07:18:02 +0000
+Started GET "/assets/products.jpg" for 59.88.243.26 at 2016-02-20 07:18:03 +0000
+Started GET "/assets/vastu.png" for 59.88.243.26 at 2016-02-20 07:18:03 +0000
+Started GET "/assets/rasi-chakra.jpg" for 59.88.243.26 at 2016-02-20 07:18:03 +0000
+Started GET "/assets/mantras.jpg" for 59.88.243.26 at 2016-02-20 07:18:03 +0000
+Started GET "/assets/remedies.jpg" for 59.88.243.26 at 2016-02-20 07:18:03 +0000
+Started GET "/assets/pandit.jpg" for 59.88.243.26 at 2016-02-20 07:18:03 +0000
+Started GET "/users/sign_in" for 59.88.243.26 at 2016-02-20 07:20:44 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered shared/_main_menu.html.erb (0.6ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:20:45 +0000
+Started POST "/users/sign_in" for 59.88.243.26 at 2016-02-20 07:22:07 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4yxJNK39s0sQuBThWK89iKK9JZzRjbLHEYze0GtNaQUcJqSh4sDZzbZ6GH9BCh3O5Ol6VjMiwz92YSLfmyE4uA==", "user"=>{"email"=>"' OR 0=0; --", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4yxJNK39s0sQuBThWK89iKK9JZzRjbLHEYze0GtNaQUcJqSh4sDZzbZ6GH9BCh3O5Ol6VjMiwz92YSLfmyE4uA==", "user"=>{"email"=>"' OR 0=0; --", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_main_menu.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:22:08 +0000
+Started POST "/users/sign_in" for 59.88.243.26 at 2016-02-20 07:22:54 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7gnWFw2uYYXmimtr8npIRZToBT6BW+QO+aNGMjSuhngRAzuCQpMLA0BIZ/Xr32gD0rxa9GP0lfaeTro9xMLXxQ==", "user"=>{"password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7gnWFw2uYYXmimtr8npIRZToBT6BW+QO+aNGMjSuhngRAzuCQpMLA0BIZ/Xr32gD0rxa9GP0lfaeTro9xMLXxQ==", "user"=>{"password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered shared/_main_menu.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:22:55 +0000
+Started POST "/users/sign_in" for 59.88.243.26 at 2016-02-20 07:24:47 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AlED/Ta6iMd9Mz1RniZFU/mdDNpdyzFc83yWkvaPxgz9W+5oeYfiQdvxMc+Hg2UVv8lTEL9kQKSUkWqdBuOXsQ==", "user"=>{"email"=>"test", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'test'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 5ms (ActiveRecord: 1.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AlED/Ta6iMd9Mz1RniZFU/mdDNpdyzFc83yWkvaPxgz9W+5oeYfiQdvxMc+Hg2UVv8lTEL9kQKSUkWqdBuOXsQ==", "user"=>{"email"=>"test", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered shared/_main_menu.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:24:48 +0000
+Started POST "/users/sign_in" for 59.88.243.26 at 2016-02-20 07:25:03 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g8SPc5Lg5x17EdW2I+x0OJCWff7N2POaN7b4GT1+Jqh8zmLm3d2Nm93T2Sg6SVR+1sIiNC93gmJQWwQWzRJ3FQ==", "user"=>{"email"=>"test@abc.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'test@abc.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g8SPc5Lg5x17EdW2I+x0OJCWff7N2POaN7b4GT1+Jqh8zmLm3d2Nm93T2Sg6SVR+1sIiNC93gmJQWwQWzRJ3FQ==", "user"=>{"email"=>"test@abc.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_main_menu.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:25:04 +0000
+Started POST "/users/sign_in" for 59.88.243.26 at 2016-02-20 07:25:51 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MgKuY051gGaURgqje0bvHPkYyA6ruD/aHPbn4xK6/YvNCEP2AUjq4DKEBj1i489av0yXxEkXTiJ7Gxvs4tasNg==", "user"=>{"email"=>"admin@abc.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@abc.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MgKuY051gGaURgqje0bvHPkYyA6ruD/aHPbn4xK6/YvNCEP2AUjq4DKEBj1i489av0yXxEkXTiJ7Gxvs4tasNg==", "user"=>{"email"=>"admin@abc.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_main_menu.html.erb (0.6ms)
+Completed 200 OK in 124ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:25:52 +0000
+Started GET "/users/sign_up" for 59.88.243.26 at 2016-02-20 07:28:45 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (8.5ms)
+  Rendered shared/_main_menu.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:28:46 +0000
+Started POST "/users" for 59.88.243.26 at 2016-02-20 07:30:00 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"onpmNWre1etDzr04GUgJ7hyZf7N6axO98mCpU6N8UiVdcIugJeO/beUMsaYA7SmoWs0geZjEYkWVjVVcUxADmA==", "user"=>{"email"=>"sample@sample.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"9999999999", "aadhar_card"=>"123456789098", "dob(3i)"=>"1", "dob(2i)"=>"1", "dob(1i)"=>"1916", "reference_no"=>"1234567890", "name"=>"jaffa", "gender"=>"false", "serial_no"=>"", "address"=>"U suck idiot"}, "paid"=>"false", "customer_type"=>"new", "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sample@sample.com' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'c7bbf3848f0f8abc74ead18a55a7407e9fa656561f6c347c106db5b33a17f237'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `aadhar_card`, `phone`, `address`, `gender`, `serial_no`, `dob`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('jaffa', 'sample@sample.com', '$2a$10$dCbd7cTJmUQ7k/LLn/eiC.SmCsojUoZ.dP8W92nOwteYvQZiDxgJy', '123456789098', '9999999999', 'U suck idiot', 0, '', '1916-01-01', '2016-02-20 07:30:00', '2016-02-20 07:30:00', 'PtVHAQ6RZEN4hovcvafm', '2016-02-20 07:30:00')[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.9ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 123.4ms
+
+Sent mail to sample@sample.com (508.9ms)
+Date: Sat, 20 Feb 2016 07:30:00 +0000
+From: remedyvans@gmail.com
+Reply-To: remedyvans@gmail.com
+To: sample@sample.com
+Message-ID: <56c815f869f11_32622cb24a498531@ip-172-31-26-8.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome sample@sample.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://www.sairemedyvani.com/users/confirmation?confirmation_token=PtVHAQ6RZEN4hovcvafm">Confirm my account</a></p>
+
+  [1m[35m (3.5ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 904ms (ActiveRecord: 4.4ms)
+
+Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbuDe
+):
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+  mail (2.6.3) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.6.3) lib/mail/message.rb:2141:in `do_delivery'
+  mail (2.6.3) lib/mail/message.rb:236:in `block in deliver'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.3) lib/mail/message.rb:236:in `deliver'
+  actionmailer (4.2.4) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (3.5.3) lib/devise/models/authenticatable.rb:170:in `send_devise_notification'
+  devise (3.5.3) lib/devise/models/confirmable.rb:116:in `send_confirmation_instructions'
+  devise (3.5.3) lib/devise/models/confirmable.rb:172:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.4) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.4) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.4) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.4) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.4) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.3) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.4) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.4) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.4) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started POST "/users" for 59.88.243.26 at 2016-02-20 07:30:33 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"onpmNWre1etDzr04GUgJ7hyZf7N6axO98mCpU6N8UiVdcIugJeO/beUMsaYA7SmoWs0geZjEYkWVjVVcUxADmA==", "user"=>{"email"=>"sample@sample.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"9999999999", "aadhar_card"=>"123456789098", "dob(3i)"=>"1", "dob(2i)"=>"1", "dob(1i)"=>"1916", "reference_no"=>"1234567890", "name"=>"jaffa", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fbdd8e04e38 @tempfile=#<Tempfile:/tmp/RackMultipart20160220-12898-9e9ad8.js>, @original_filename="sample.js", @content_type="application/javascript", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"sample.js\"\r\nContent-Type: application/javascript\r\n">, "gender"=>"false", "serial_no"=>"", "address"=>"U suck idiot"}, "paid"=>"false", "customer_type"=>"new", "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sample@sample.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/registrations/new.html.erb within layouts/application (8.4ms)
+  Rendered shared/_main_menu.html.erb (0.8ms)
+Completed 200 OK in 163ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:30:35 +0000
+Started POST "/users" for 59.88.243.26 at 2016-02-20 07:32:28 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N1/AjntCvaaoRTaQuVm5TM961E3bKdeHhQUOIEY/VkHIVS0bNH/XIA6HOg6g/JkKiS6LhzmGpn/i6PIvtlMH/A==", "user"=>{"email"=>"sample@sample.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"9999999999", "aadhar_card"=>"123456789098", "dob(3i)"=>"1", "dob(2i)"=>"1", "dob(1i)"=>"1916", "reference_no"=>"", "name"=>"jaffa", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fbde374b500 @tempfile=#<Tempfile:/tmp/RackMultipart20160220-12898-1t4yard.txt>, @original_filename="notice.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"notice.txt\"\r\nContent-Type: text/plain\r\n">, "gender"=>"false", "serial_no"=>"", "address"=>"U suck idiot"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sample@sample.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered devise/registrations/new.html.erb within layouts/application (8.0ms)
+  Rendered shared/_main_menu.html.erb (0.7ms)
+Completed 200 OK in 1642ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:32:30 +0000
+Started POST "/users" for 59.88.243.26 at 2016-02-20 07:32:44 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xBIrSTeuWJ8Df+PBfpKZKsIkq3RwNyT/E9bZ9lFR/8E7GMbceJMyGaW9719nN7lshHD0vpKYVQd0OyX5oT2ufA==", "user"=>{"email"=>"sample@sample.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"9999999999", "aadhar_card"=>"123456789098", "dob(3i)"=>"1", "dob(2i)"=>"1", "dob(1i)"=>"1916", "reference_no"=>"", "name"=>"jaffa", "gender"=>"false", "serial_no"=>"", "address"=>"U suck idiot"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sample@sample.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/registrations/new.html.erb within layouts/application (6.9ms)
+  Rendered shared/_main_menu.html.erb (0.7ms)
+Completed 200 OK in 118ms (Views: 45.7ms | ActiveRecord: 0.3ms)
+Started GET "/assets/bg.jpg" for 59.88.243.26 at 2016-02-20 07:32:45 +0000
+Started POST "/users" for 59.88.243.26 at 2016-02-20 07:33:02 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i5QsHbvhh7zbwShdQ7Myo1CtoaePKrBpYoKUwseSLxF0nsGI9NztOn0DJMNaFhLlFvn+bW2FwZEFb2jNN/5+rA==", "user"=>{"email"=>"sample@sample.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"9999999999", "aadhar_card"=>"123456789098", "dob(3i)"=>"1", "dob(2i)"=>"1", "dob(1i)"=>"1916", "reference_no"=>"", "name"=>"jaffa", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x0000000647a878 @tempfile=#<Tempfile:/tmp/RackMultipart20160220-12898-nzx4jf.txt>, @original_filename="notice.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"notice.txt\"\r\nContent-Type: text/plain\r\n">, "gender"=>"false", "serial_no"=>"", "address"=>"U suck idiot"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sample@sample.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = '7c3f611e3fdf3befc1f9116ef86dc02d7d076a6e95cd3d20e634f2e5e1cffac9'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `aadhar_card`, `phone`, `address`, `avatar`, `gender`, `serial_no`, `dob`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('jaffa', 'sample@sample.com', '$2a$10$ug6eMumuUsG/m4Ks3VPbbuGDhkkRoF.yBWWWCJBRLNr7wpXJpmGzq', '123456789098', '9999999999', 'U suck idiot', 'notice.txt', 0, '', '1916-01-01', '2016-02-20 07:33:04', '2016-02-20 07:33:04', 'qemikgX-sy95g3KVYZzR', '2016-02-20 07:33:04')[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+
+Sent mail to sample@sample.com (457.5ms)
+Date: Sat, 20 Feb 2016 07:33:04 +0000
+From: remedyvans@gmail.com
+Reply-To: remedyvans@gmail.com
+To: sample@sample.com
+Message-ID: <56c816b04f30c_32622cb24a4986d2@ip-172-31-26-8.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome sample@sample.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://www.sairemedyvani.com/users/confirmation?confirmation_token=qemikgX-sy95g3KVYZzR">Confirm my account</a></p>
+
+  [1m[35m (3.3ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 2004ms (ActiveRecord: 3.9ms)
+
+Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbuTs
+):
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+  mail (2.6.3) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.6.3) lib/mail/message.rb:2141:in `do_delivery'
+  mail (2.6.3) lib/mail/message.rb:236:in `block in deliver'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.3) lib/mail/message.rb:236:in `deliver'
+  actionmailer (4.2.4) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (3.5.3) lib/devise/models/authenticatable.rb:170:in `send_devise_notification'
+  devise (3.5.3) lib/devise/models/confirmable.rb:116:in `send_confirmation_instructions'
+  devise (3.5.3) lib/devise/models/confirmable.rb:172:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.4) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.4) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.4) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.4) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.4) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.3) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.4) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.4) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.4) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started GET "/" for 106.76.40.223 at 2016-02-20 07:43:59 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (5.3ms)
+  Rendered shared/_menu.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/animate.self-9e0f512e1d8207c22a2fc10bbbbf321b66dfe587e6e4d546fa3072aee0dc532f.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:01 +0000
+Started GET "/assets/bootstrap_and_overrides.self-f067b0530c59fc1b887318bd02369b01aff6f766bbcd222773aa3c5f6a5bc2ae.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:01 +0000
+Started GET "/assets/casts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:01 +0000
+Started GET "/assets/custom-styles.self-7916bfb4df7bda451cb2a29285784324394f87d4a4437b1586474715522ba267.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:01 +0000
+Started GET "/assets/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:02 +0000
+Started GET "/assets/matrimony.self-72463d0b1efd8185237ee6b3a45702d7ccb4a9cace3c50f0b4e9ad3641ad1ee0.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:02 +0000
+Started GET "/assets/nakshatras.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:03 +0000
+Started GET "/assets/numerologys.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:03 +0000
+Started GET "/assets/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:04 +0000
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:05 +0000
+Started GET "/assets/scrolling-nav.self-39721d821a063894d0834fcceeedd304b1d92d5eb53f9c7081591442287888bb.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:05 +0000
+Started GET "/assets/scaffolds.self-e0575b650bc9eaf77c0a19717c954f9f2401c04c5d7d47e0e3c3ca2aaf232b5c.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:05 +0000
+Started GET "/assets/welcome.self-20324deec3a60cab519aeaec44816abc1516d86c2695bf62dfb0c6c59aec4c25.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:05 +0000
+Started GET "/assets/application.self-1df1d32f0e8774b1662fbbb5d35d077fc95026438049c89b6bb94b690cdd6192.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:05 +0000
+Started GET "/assets/bootstrap-slider.self-7001b248f944181abc8428fddd7dcd10ae66270235efddbb74fdb2328effd7b5.css?body=1" for 106.76.40.223 at 2016-02-20 07:44:08 +0000
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:09 +0000
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:09 +0000
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:10 +0000
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:10 +0000
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:10 +0000
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:12 +0000
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:13 +0000
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:14 +0000
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:14 +0000
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:14 +0000
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:16 +0000
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:18 +0000
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:18 +0000
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:19 +0000
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:20 +0000
+Started GET "/assets/bootstrap-slider.self-a579319bf42976d1beee78ee1a7ba7acc4e632cd3f07828bc0c3eb5b25e6f60d.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:21 +0000
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:21 +0000
+Started GET "/assets/casts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:22 +0000
+Started GET "/assets/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:22 +0000
+Started GET "/assets/matrimony.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:23 +0000
+Started GET "/assets/nakshatras.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:23 +0000
+Started GET "/assets/numerologys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:24 +0000
+Started GET "/assets/registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:24 +0000
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:25 +0000
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:26 +0000
+Started GET "/assets/wow.self-f11c99e3d36695925003b17b9faaecf2339bd1a9b045bad6da6bd4a7f562557a.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:26 +0000
+Started GET "/assets/wow.min.self-068ab66793d2981ee217806641e2f30a0c485169493d5296b4bb55bc47ca3a13.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:27 +0000
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:27 +0000
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 106.76.40.223 at 2016-02-20 07:44:27 +0000
+Started GET "/assets/yellow-bg.jpg" for 106.76.40.223 at 2016-02-20 07:45:04 +0000
+Started GET "/assets/numerology-out.jpg" for 106.76.40.223 at 2016-02-20 07:45:06 +0000
+Started GET "/assets/astrology.jpg" for 106.76.40.223 at 2016-02-20 07:45:07 +0000
+Started GET "/assets/babynames.jpg" for 106.76.40.223 at 2016-02-20 07:45:25 +0000
+Started GET "/assets/products.jpg" for 106.76.40.223 at 2016-02-20 07:45:28 +0000
+Started GET "/assets/vastu.png" for 106.76.40.223 at 2016-02-20 07:45:32 +0000
+Started GET "/assets/mantras.jpg" for 106.76.40.223 at 2016-02-20 07:45:33 +0000
+Started GET "/assets/rasi-chakra.jpg" for 106.76.40.223 at 2016-02-20 07:45:38 +0000
+Started GET "/assets/pandit.jpg" for 106.76.40.223 at 2016-02-20 07:45:44 +0000
+Started GET "/assets/remedies.jpg" for 106.76.40.223 at 2016-02-20 07:45:45 +0000
+Started GET "/users/sign_up" for 106.76.40.223 at 2016-02-20 07:47:08 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (7.1ms)
+  Rendered shared/_main_menu.html.erb (0.6ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 106.76.40.223 at 2016-02-20 07:47:10 +0000
+Started POST "/users" for 106.76.40.223 at 2016-02-20 07:54:06 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q5HCyw/ITD5jK/RuOm8ZgOkBt09ZeMo0FcJjPz93WA3ysnDTcJgU6ppP7OgT15V2nNO3AG8hyL99vIp9kvVMhw==", "user"=>{"email"=>"vijjur32@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"7386185333", "aadhar_card"=>"694883352427", "dob(3i)"=>"15", "dob(2i)"=>"6", "dob(1i)"=>"1986", "reference_no"=>"", "name"=>"VIJAY", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fbdd87bd570 @tempfile=#<Tempfile:/tmp/RackMultipart20160220-12898-1l5sevm.jpg>, @original_filename="IMG_20160218_174013.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"IMG_20160218_174013.jpg\"\r\nContent-Type: image/jpeg\r\n">, "gender"=>"true", "serial_no"=>"", "address"=>"Door no :53-18-37/2(1)Krm colony Visakhapatnam."}, "paid"=>"false", "customer_type"=>"new", "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'vijjur32@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = '0ea76f2370897eeee12baf418b2626bc39f2b63157e8e5c168c046a4fa0bbc5d'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `encrypted_password`, `aadhar_card`, `phone`, `address`, `avatar`, `gender`, `serial_no`, `dob`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('VIJAY', 'vijjur32@gmail.com', '$2a$10$Fg/dCxAPa3m6ckR2hwFIueWkl4ciCrTUMPxacdybFsDQVpitystbe', '694883352427', '7386185333', 'Door no :53-18-37/2(1)Krm colony Visakhapatnam.', 'IMG_20160218_174013.jpg', 1, '', '1986-06-15', '2016-02-20 07:54:06', '2016-02-20 07:54:06', '6v7nwLunF2gFAS8uFZEq', '2016-02-20 07:54:06')
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+
+Sent mail to vijjur32@gmail.com (444.1ms)
+Date: Sat, 20 Feb 2016 07:54:06 +0000
+From: remedyvans@gmail.com
+Reply-To: remedyvans@gmail.com
+To: vijjur32@gmail.com
+Message-ID: <56c81b9eaaf8e_32622cb24a4987e0@ip-172-31-26-8.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vijjur32@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://www.sairemedyvani.com/users/confirmation?confirmation_token=6v7nwLunF2gFAS8uFZEq">Confirm my account</a></p>
+
+  [1m[36m (4.0ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 1097ms (ActiveRecord: 4.8ms)
+
+Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbtaD
+):
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+  mail (2.6.3) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.6.3) lib/mail/message.rb:2141:in `do_delivery'
+  mail (2.6.3) lib/mail/message.rb:236:in `block in deliver'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.3) lib/mail/message.rb:236:in `deliver'
+  actionmailer (4.2.4) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (3.5.3) lib/devise/models/authenticatable.rb:170:in `send_devise_notification'
+  devise (3.5.3) lib/devise/models/confirmable.rb:116:in `send_confirmation_instructions'
+  devise (3.5.3) lib/devise/models/confirmable.rb:172:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.4) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.4) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.4) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.4) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.4) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.3) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.4) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.4) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.4) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started POST "/users" for 106.76.40.223 at 2016-02-20 07:54:57 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1DEepOmyAXN6wcsWU238k88Ak94moe2lC/M3TVj3qe+NEqy8luJZp4Ol05B61XBlutKTkRD47y5jjd4P9XW9ZQ==", "user"=>{"email"=>"vijjur32@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"7386185333", "aadhar_card"=>"694883352427", "dob(3i)"=>"15", "dob(2i)"=>"6", "dob(1i)"=>"1986", "reference_no"=>"", "name"=>"VIJAY", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fbdd870e728 @tempfile=#<Tempfile:/tmp/RackMultipart20160220-12898-1irgzsc.jpg>, @original_filename="IMG_20160218_174013.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"IMG_20160218_174013.jpg\"\r\nContent-Type: image/jpeg\r\n">, "gender"=>"true", "serial_no"=>"", "address"=>"Door no :53-18-37/2(1)Krm colony Visakhapatnam."}, "paid"=>"false", "customer_type"=>"new", "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'vijjur32@gmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'f34417ab7c6d604663123bc52bf1e9935c27566e96a2ba2acdf3c16cf3d19c6d'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `aadhar_card`, `phone`, `address`, `avatar`, `gender`, `serial_no`, `dob`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('VIJAY', 'vijjur32@gmail.com', '$2a$10$89.6QpxbiDG4N8WyFfYWVeisAwM8YoUFBLxwKQc/2/xhTZNv615d2', '694883352427', '7386185333', 'Door no :53-18-37/2(1)Krm colony Visakhapatnam.', 'IMG_20160218_174013.jpg', 1, '', '1986-06-15', '2016-02-20 07:54:57', '2016-02-20 07:54:57', 'BHFvmsFsAsmHZk-1aFy6', '2016-02-20 07:54:57')[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.3ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+
+Sent mail to vijjur32@gmail.com (485.5ms)
+Date: Sat, 20 Feb 2016 07:54:57 +0000
+From: remedyvans@gmail.com
+Reply-To: remedyvans@gmail.com
+To: vijjur32@gmail.com
+Message-ID: <56c81bd1a3227_32622cb24a49888d@ip-172-31-26-8.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vijjur32@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://www.sairemedyvani.com/users/confirmation?confirmation_token=BHFvmsFsAsmHZk-1aFy6">Confirm my account</a></p>
+
+  [1m[35m (4.0ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 1111ms (ActiveRecord: 4.8ms)
+
+Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbuOk
+):
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+  mail (2.6.3) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.6.3) lib/mail/message.rb:2141:in `do_delivery'
+  mail (2.6.3) lib/mail/message.rb:236:in `block in deliver'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.3) lib/mail/message.rb:236:in `deliver'
+  actionmailer (4.2.4) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (3.5.3) lib/devise/models/authenticatable.rb:170:in `send_devise_notification'
+  devise (3.5.3) lib/devise/models/confirmable.rb:116:in `send_confirmation_instructions'
+  devise (3.5.3) lib/devise/models/confirmable.rb:172:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.4) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.4) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.4) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.4) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.4) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.3) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.4) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.4) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.4) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started POST "/users" for 106.76.40.223 at 2016-02-20 07:55:29 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1DEepOmyAXN6wcsWU238k88Ak94moe2lC/M3TVj3qe+NEqy8luJZp4Ol05B61XBlutKTkRD47y5jjd4P9XW9ZQ==", "user"=>{"email"=>"vijjur32@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"7386185333", "aadhar_card"=>"694883352427", "dob(3i)"=>"15", "dob(2i)"=>"6", "dob(1i)"=>"1986", "reference_no"=>"", "name"=>"VIJAY", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fbde3ce8f30 @tempfile=#<Tempfile:/tmp/RackMultipart20160220-12898-1khgt8z.jpg>, @original_filename="IMG_20160218_174013.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"IMG_20160218_174013.jpg\"\r\nContent-Type: image/jpeg\r\n">, "gender"=>"true", "serial_no"=>"", "address"=>"Door no :53-18-37/2(1)Krm colony Visakhapatnam."}, "paid"=>"false", "customer_type"=>"new", "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'vijjur32@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'c07749b1c216acf5d2466e45a5e271e24ad77d61b4d4714ac907fdb86d74281d'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `encrypted_password`, `aadhar_card`, `phone`, `address`, `avatar`, `gender`, `serial_no`, `dob`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('VIJAY', 'vijjur32@gmail.com', '$2a$10$k5cIBSeF7tqULN4nT5GHauEXJXmFS/TWHzz1hKnvM7cckKXP7Ffai', '694883352427', '7386185333', 'Door no :53-18-37/2(1)Krm colony Visakhapatnam.', 'IMG_20160218_174013.jpg', 1, '', '1986-06-15', '2016-02-20 07:55:30', '2016-02-20 07:55:30', 'bRDzPoVbsM5k9vsi_pRN', '2016-02-20 07:55:30')
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+
+Sent mail to vijjur32@gmail.com (477.3ms)
+Date: Sat, 20 Feb 2016 07:55:30 +0000
+From: remedyvans@gmail.com
+Reply-To: remedyvans@gmail.com
+To: vijjur32@gmail.com
+Message-ID: <56c81bf25ec99_32622cb24a4989ac@ip-172-31-26-8.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vijjur32@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://www.sairemedyvani.com/users/confirmation?confirmation_token=bRDzPoVbsM5k9vsi_pRN">Confirm my account</a></p>
+
+  [1m[36m (4.3ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 1103ms (ActiveRecord: 5.2ms)
+
+Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbuvW
+):
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+  mail (2.6.3) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.6.3) lib/mail/message.rb:2141:in `do_delivery'
+  mail (2.6.3) lib/mail/message.rb:236:in `block in deliver'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.3) lib/mail/message.rb:236:in `deliver'
+  actionmailer (4.2.4) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (3.5.3) lib/devise/models/authenticatable.rb:170:in `send_devise_notification'
+  devise (3.5.3) lib/devise/models/confirmable.rb:116:in `send_confirmation_instructions'
+  devise (3.5.3) lib/devise/models/confirmable.rb:172:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.4) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.4) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.4) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.4) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.4) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.3) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.4) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.4) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.4) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started POST "/users" for 106.76.40.223 at 2016-02-20 07:56:36 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1DEepOmyAXN6wcsWU238k88Ak94moe2lC/M3TVj3qe+NEqy8luJZp4Ol05B61XBlutKTkRD47y5jjd4P9XW9ZQ==", "user"=>{"email"=>"vijjur32@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"7386185333", "aadhar_card"=>"694883352427", "dob(3i)"=>"15", "dob(2i)"=>"6", "dob(1i)"=>"1986", "reference_no"=>"", "name"=>"VIJAY", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fbde2b7a370 @tempfile=#<Tempfile:/tmp/RackMultipart20160220-12898-177mzzp.jpg>, @original_filename="IMG_20160218_174013.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"IMG_20160218_174013.jpg\"\r\nContent-Type: image/jpeg\r\n">, "gender"=>"true", "serial_no"=>"", "address"=>"Door no :53-18-37/2(1)Krm colony Visakhapatnam."}, "paid"=>"false", "customer_type"=>"new", "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'vijjur32@gmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'a1033874e504311eb08b5133f410048a02f4b6545dfc0840c143d92fa8214c93'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `aadhar_card`, `phone`, `address`, `avatar`, `gender`, `serial_no`, `dob`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('VIJAY', 'vijjur32@gmail.com', '$2a$10$QrpaXjCjBw9K2MXy9yaMT.TWf2Q8iBx6w8V2gOlA1OGK/2Oyc24OS', '694883352427', '7386185333', 'Door no :53-18-37/2(1)Krm colony Visakhapatnam.', 'IMG_20160218_174013.jpg', 1, '', '1986-06-15', '2016-02-20 07:56:37', '2016-02-20 07:56:37', 'Jk_xdbymrnzeqhuKzZW7', '2016-02-20 07:56:37')[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.3ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+
+Sent mail to vijjur32@gmail.com (464.3ms)
+Date: Sat, 20 Feb 2016 07:56:37 +0000
+From: remedyvans@gmail.com
+Reply-To: remedyvans@gmail.com
+To: vijjur32@gmail.com
+Message-ID: <56c81c356f0d0_32622cb24a4990d7@ip-172-31-26-8.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vijjur32@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://www.sairemedyvani.com/users/confirmation?confirmation_token=Jk_xdbymrnzeqhuKzZW7">Confirm my account</a></p>
+
+  [1m[35m (4.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 1092ms (ActiveRecord: 5.1ms)
+
+Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbsV6
+):
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+  mail (2.6.3) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.6.3) lib/mail/message.rb:2141:in `do_delivery'
+  mail (2.6.3) lib/mail/message.rb:236:in `block in deliver'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.3) lib/mail/message.rb:236:in `deliver'
+  actionmailer (4.2.4) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (3.5.3) lib/devise/models/authenticatable.rb:170:in `send_devise_notification'
+  devise (3.5.3) lib/devise/models/confirmable.rb:116:in `send_confirmation_instructions'
+  devise (3.5.3) lib/devise/models/confirmable.rb:172:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.4) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.4) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.4) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.4) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.4) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.3) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.4) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.4) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.4) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started GET "/users/sign_in" for 106.76.40.223 at 2016-02-20 07:57:08 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered shared/_main_menu.html.erb (0.9ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 106.76.40.223 at 2016-02-20 07:57:22 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uVFuiYGnQY+G/H93s1sweQ4KOzcVnNQHwg7fq+VDxAngctyR/vcZW3+YZ/Ga47yPe9g7eCPF1oyqcDbpSMHQgw==", "user"=>{"email"=>"vijjur32@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'vijjur32@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uVFuiYGnQY+G/H93s1sweQ4KOzcVnNQHwg7fq+VDxAngctyR/vcZW3+YZ/Ga47yPe9g7eCPF1oyqcDbpSMHQgw==", "user"=>{"email"=>"vijjur32@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered shared/_main_menu.html.erb (0.8ms)
+Completed 200 OK in 131ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 106.76.40.223 at 2016-02-20 07:57:23 +0000
+Started GET "/users/sign_in" for 106.76.40.223 at 2016-02-20 07:57:30 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered shared/_main_menu.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 106.76.40.223 at 2016-02-20 07:57:31 +0000
+Started GET "/" for 117.222.235.242 at 2016-02-20 08:12:46 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (8.4ms)
+  Rendered shared/_menu.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/animate.self-9e0f512e1d8207c22a2fc10bbbbf321b66dfe587e6e4d546fa3072aee0dc532f.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:48 +0000
+Started GET "/assets/bootstrap_and_overrides.self-f067b0530c59fc1b887318bd02369b01aff6f766bbcd222773aa3c5f6a5bc2ae.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:48 +0000
+Started GET "/assets/casts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:49 +0000
+Started GET "/assets/custom-styles.self-7916bfb4df7bda451cb2a29285784324394f87d4a4437b1586474715522ba267.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:49 +0000
+Started GET "/assets/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:49 +0000
+Started GET "/assets/matrimony.self-72463d0b1efd8185237ee6b3a45702d7ccb4a9cace3c50f0b4e9ad3641ad1ee0.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:49 +0000
+Started GET "/assets/nakshatras.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:50 +0000
+Started GET "/assets/numerologys.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:50 +0000
+Started GET "/assets/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:50 +0000
+Started GET "/assets/scaffolds.self-e0575b650bc9eaf77c0a19717c954f9f2401c04c5d7d47e0e3c3ca2aaf232b5c.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:50 +0000
+Started GET "/assets/scrolling-nav.self-39721d821a063894d0834fcceeedd304b1d92d5eb53f9c7081591442287888bb.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:51 +0000
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:51 +0000
+Started GET "/assets/welcome.self-20324deec3a60cab519aeaec44816abc1516d86c2695bf62dfb0c6c59aec4c25.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:51 +0000
+Started GET "/assets/application.self-1df1d32f0e8774b1662fbbb5d35d077fc95026438049c89b6bb94b690cdd6192.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:51 +0000
+Started GET "/assets/bootstrap-slider.self-7001b248f944181abc8428fddd7dcd10ae66270235efddbb74fdb2328effd7b5.css?body=1" for 117.222.235.242 at 2016-02-20 08:12:51 +0000
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:52 +0000
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:52 +0000
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:52 +0000
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:52 +0000
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:52 +0000
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:52 +0000
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:53 +0000
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:53 +0000
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:53 +0000
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:53 +0000
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:54 +0000
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:54 +0000
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:54 +0000
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:54 +0000
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:54 +0000
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:55 +0000
+Started GET "/assets/bootstrap-slider.self-a579319bf42976d1beee78ee1a7ba7acc4e632cd3f07828bc0c3eb5b25e6f60d.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:55 +0000
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:55 +0000
+Started GET "/assets/casts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:55 +0000
+Started GET "/assets/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:55 +0000
+Started GET "/assets/matrimony.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:56 +0000
+Started GET "/assets/nakshatras.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:56 +0000
+Started GET "/assets/numerologys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:56 +0000
+Started GET "/assets/registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:57 +0000
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:57 +0000
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:57 +0000
+Started GET "/assets/wow.self-f11c99e3d36695925003b17b9faaecf2339bd1a9b045bad6da6bd4a7f562557a.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:57 +0000
+Started GET "/assets/wow.min.self-068ab66793d2981ee217806641e2f30a0c485169493d5296b4bb55bc47ca3a13.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:58 +0000
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 117.222.235.242 at 2016-02-20 08:12:58 +0000
+Started GET "/assets/yellow-bg.jpg" for 117.222.235.242 at 2016-02-20 08:13:05 +0000
+Started GET "/assets/numerology-out.jpg" for 117.222.235.242 at 2016-02-20 08:13:05 +0000
+Started GET "/assets/astrology.jpg" for 117.222.235.242 at 2016-02-20 08:13:05 +0000
+Started GET "/assets/babynames.jpg" for 117.222.235.242 at 2016-02-20 08:13:06 +0000
+Started GET "/assets/products.jpg" for 117.222.235.242 at 2016-02-20 08:13:06 +0000
+Started GET "/assets/vastu.png" for 117.222.235.242 at 2016-02-20 08:13:07 +0000
+Started GET "/assets/rasi-chakra.jpg" for 117.222.235.242 at 2016-02-20 08:13:07 +0000
+Started GET "/assets/mantras.jpg" for 117.222.235.242 at 2016-02-20 08:13:08 +0000
+Started GET "/assets/remedies.jpg" for 117.222.235.242 at 2016-02-20 08:13:09 +0000
+Started GET "/assets/pandit.jpg" for 117.222.235.242 at 2016-02-20 08:13:10 +0000
+Started GET "/users/sign_in" for 117.222.235.242 at 2016-02-20 08:14:34 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_main_menu.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 117.222.235.242 at 2016-02-20 08:14:35 +0000
+Started GET "/users/sign_up" for 117.222.235.242 at 2016-02-20 08:14:40 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (9.2ms)
+  Rendered shared/_main_menu.html.erb (1.4ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 117.222.235.242 at 2016-02-20 08:17:29 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wT7ObzpUT6dwhyBMjmuRtNVI1PKBqis39RjUOUgNt+RNvUtRJDcWo9oIYXj1MFfqVzg6RsHoVHmY+E5Jv5h1iw==", "user"=>{"email"=>"vikas_aren@yahoo.co.in", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"9416148508", "aadhar_card"=>"", "dob(3i)"=>"8", "dob(2i)"=>"9", "dob(1i)"=>"1978", "reference_no"=>"internet", "name"=>"vikas aggarwal", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x000000039999d8 @tempfile=#<Tempfile:/tmp/RackMultipart20160220-12898-u1zpev.jpg>, @original_filename="WP_20150920_22_01_02_Pro.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"WP_20150920_22_01_02_Pro.jpg\"\r\nContent-Type: image/jpeg\r\n">, "gender"=>"true", "serial_no"=>"", "address"=>"house no. 660, near shiv park sector 14p, hissar 125001 (haryana)"}, "paid"=>"false", "customer_type"=>"new", "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'vikas_aren@yahoo.co.in' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = '603b3f72bb87196d78bc1a6777c89f946afcab0d41963204c1ef986234a97de4'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `aadhar_card`, `phone`, `address`, `avatar`, `gender`, `serial_no`, `dob`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('vikas aggarwal', 'vikas_aren@yahoo.co.in', '$2a$10$md6T9riTFTq0oOaVLcO86uZV0wftNBMxGjJUPKt8GH36pJP1bwriu', '', '9416148508', 'house no. 660, near shiv park sector 14p, hissar 125001 (haryana)', 'WP_20150920_22_01_02_Pro.jpg', 1, '', '1978-09-08', '2016-02-20 08:17:30', '2016-02-20 08:17:30', 'jrw_Qz478HjArji-MmyC', '2016-02-20 08:17:30')[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.3ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.8ms
+
+Sent mail to vikas_aren@yahoo.co.in (458.4ms)
+Date: Sat, 20 Feb 2016 08:17:30 +0000
+From: remedyvans@gmail.com
+Reply-To: remedyvans@gmail.com
+To: vikas_aren@yahoo.co.in
+Message-ID: <56c8211aaee35_32622cb24a4991ac@ip-172-31-26-8.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vikas_aren@yahoo.co.in!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://www.sairemedyvani.com/users/confirmation?confirmation_token=jrw_Qz478HjArji-MmyC">Confirm my account</a></p>
+
+  [1m[35m (3.8ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 1181ms (ActiveRecord: 4.6ms)
+
+Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbtv_
+):
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:976:in `check_auth_response'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:740:in `auth_plain'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:732:in `authenticate'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:567:in `do_start'
+  /home/deployer/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/net/smtp.rb:520:in `start'
+  mail (2.6.3) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.6.3) lib/mail/message.rb:2141:in `do_delivery'
+  mail (2.6.3) lib/mail/message.rb:236:in `block in deliver'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.4) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.3) lib/mail/message.rb:236:in `deliver'
+  actionmailer (4.2.4) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (3.5.3) lib/devise/models/authenticatable.rb:170:in `send_devise_notification'
+  devise (3.5.3) lib/devise/models/confirmable.rb:116:in `send_confirmation_instructions'
+  devise (3.5.3) lib/devise/models/confirmable.rb:172:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.4) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.4) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.4) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.4) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.4) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.4) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.4) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.4) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.4) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.4) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.3) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.4) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.4) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.4) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started GET "/users/sign_in" for 117.222.235.242 at 2016-02-20 08:17:52 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+  Rendered shared/_main_menu.html.erb (0.7ms)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 117.222.235.242 at 2016-02-20 08:18:04 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (16.3ms)
+  Rendered shared/_menu.html.erb (1.9ms)
+Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/yellow-bg.jpg" for 117.222.235.242 at 2016-02-20 08:18:07 +0000
+Started GET "/assets/astrology.jpg" for 117.222.235.242 at 2016-02-20 08:18:07 +0000
+Started GET "/assets/babynames.jpg" for 117.222.235.242 at 2016-02-20 08:18:07 +0000
+Started GET "/assets/numerology-out.jpg" for 117.222.235.242 at 2016-02-20 08:18:07 +0000
+Started GET "/assets/products.jpg" for 117.222.235.242 at 2016-02-20 08:18:07 +0000
+Started GET "/" for 198.186.192.44 at 2016-02-20 10:40:48 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (4.9ms)
+  Rendered shared/_menu.html.erb (0.6ms)
+Completed 200 OK in 50ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 54.196.127.36 at 2016-02-20 10:53:44 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (5.5ms)
+  Rendered shared/_menu.html.erb (0.6ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/animate.self-9e0f512e1d8207c22a2fc10bbbbf321b66dfe587e6e4d546fa3072aee0dc532f.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:48 +0000
+Started GET "/assets/bootstrap_and_overrides.self-f067b0530c59fc1b887318bd02369b01aff6f766bbcd222773aa3c5f6a5bc2ae.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:48 +0000
+Started GET "/assets/casts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:48 +0000
+Started GET "/assets/custom-styles.self-7916bfb4df7bda451cb2a29285784324394f87d4a4437b1586474715522ba267.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:48 +0000
+Started GET "/assets/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:48 +0000
+Started GET "/assets/matrimony.self-72463d0b1efd8185237ee6b3a45702d7ccb4a9cace3c50f0b4e9ad3641ad1ee0.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:48 +0000
+Started GET "/assets/nakshatras.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:48 +0000
+Started GET "/assets/numerologys.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/scaffolds.self-e0575b650bc9eaf77c0a19717c954f9f2401c04c5d7d47e0e3c3ca2aaf232b5c.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/scrolling-nav.self-39721d821a063894d0834fcceeedd304b1d92d5eb53f9c7081591442287888bb.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/welcome.self-20324deec3a60cab519aeaec44816abc1516d86c2695bf62dfb0c6c59aec4c25.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/application.self-1df1d32f0e8774b1662fbbb5d35d077fc95026438049c89b6bb94b690cdd6192.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/bootstrap-slider.self-7001b248f944181abc8428fddd7dcd10ae66270235efddbb74fdb2328effd7b5.css?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:49 +0000
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:50 +0000
+Started GET "/assets/bootstrap-slider.self-a579319bf42976d1beee78ee1a7ba7acc4e632cd3f07828bc0c3eb5b25e6f60d.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/casts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/matrimony.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/nakshatras.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/numerologys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/wow.self-f11c99e3d36695925003b17b9faaecf2339bd1a9b045bad6da6bd4a7f562557a.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/wow.min.self-068ab66793d2981ee217806641e2f30a0c485169493d5296b4bb55bc47ca3a13.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 54.196.127.36 at 2016-02-20 10:53:51 +0000
+Started GET "/assets/yellow-bg.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/numerology-out.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/astrology.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/babynames.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/products.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/vastu.png" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/rasi-chakra.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/remedies.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/mantras.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/assets/pandit.jpg" for 54.196.127.36 at 2016-02-20 10:54:03 +0000
+Started GET "/" for 54.196.127.36 at 2016-02-20 10:54:54 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (4.9ms)
+  Rendered shared/_menu.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/animate.self-9e0f512e1d8207c22a2fc10bbbbf321b66dfe587e6e4d546fa3072aee0dc532f.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:56 +0000
+Started GET "/assets/bootstrap_and_overrides.self-f067b0530c59fc1b887318bd02369b01aff6f766bbcd222773aa3c5f6a5bc2ae.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:56 +0000
+Started GET "/assets/casts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:56 +0000
+Started GET "/assets/custom-styles.self-7916bfb4df7bda451cb2a29285784324394f87d4a4437b1586474715522ba267.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:56 +0000
+Started GET "/assets/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:56 +0000
+Started GET "/assets/matrimony.self-72463d0b1efd8185237ee6b3a45702d7ccb4a9cace3c50f0b4e9ad3641ad1ee0.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:56 +0000
+Started GET "/assets/nakshatras.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:56 +0000
+Started GET "/assets/numerologys.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:56 +0000
+Started GET "/assets/registrations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/scaffolds.self-e0575b650bc9eaf77c0a19717c954f9f2401c04c5d7d47e0e3c3ca2aaf232b5c.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/scrolling-nav.self-39721d821a063894d0834fcceeedd304b1d92d5eb53f9c7081591442287888bb.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/welcome.self-20324deec3a60cab519aeaec44816abc1516d86c2695bf62dfb0c6c59aec4c25.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/application.self-1df1d32f0e8774b1662fbbb5d35d077fc95026438049c89b6bb94b690cdd6192.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/bootstrap-slider.self-7001b248f944181abc8428fddd7dcd10ae66270235efddbb74fdb2328effd7b5.css?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:57 +0000
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/casts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/matrimony.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/nakshatras.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/numerologys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:58 +0000
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/casts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/matrimony.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/nakshatras.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/numerologys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.196.127.36 at 2016-02-20 10:54:59 +0000
+Started GET "/assets/yellow-bg.jpg" for 54.196.127.36 at 2016-02-20 10:55:00 +0000
+Started GET "/assets/numerology-out.jpg" for 54.196.127.36 at 2016-02-20 10:55:00 +0000
+Started GET "/assets/astrology.jpg" for 54.196.127.36 at 2016-02-20 10:55:00 +0000
+Started GET "/assets/babynames.jpg" for 54.196.127.36 at 2016-02-20 10:55:00 +0000
+Started GET "/assets/products.jpg" for 54.196.127.36 at 2016-02-20 10:55:01 +0000
+Started GET "/assets/vastu.png" for 54.196.127.36 at 2016-02-20 10:55:01 +0000
+Started GET "/assets/rasi-chakra.jpg" for 54.196.127.36 at 2016-02-20 10:55:01 +0000
+Started GET "/assets/mantras.jpg" for 54.196.127.36 at 2016-02-20 10:55:01 +0000
+Started GET "/assets/remedies.jpg" for 54.196.127.36 at 2016-02-20 10:55:01 +0000
+Started GET "/assets/pandit.jpg" for 54.196.127.36 at 2016-02-20 10:55:01 +0000
+Started GET "/" for 141.212.122.160 at 2016-02-20 11:39:31 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (4.5ms)
+  Rendered shared/_menu.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+Started GET "/manager/html" for 115.239.248.30 at 2016-02-20 12:48:50 +0000
+
+ActionController::RoutingError (No route matches [GET] "/manager/html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  puma (2.16.0) lib/puma/configuration.rb:81:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+Started GET "/" for 119.235.52.22 at 2016-02-20 15:05:51 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (6.9ms)
+  Rendered shared/_menu.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/astrology.jpg" for 119.235.52.22 at 2016-02-20 15:05:54 +0000
+Started GET "/assets/babynames.jpg" for 119.235.52.22 at 2016-02-20 15:05:54 +0000
+Started GET "/assets/numerology-out.jpg" for 119.235.52.22 at 2016-02-20 15:05:54 +0000
+Started GET "/assets/yellow-bg.jpg" for 119.235.52.22 at 2016-02-20 15:05:54 +0000
+Started GET "/assets/products.jpg" for 119.235.52.22 at 2016-02-20 15:05:55 +0000
+Started GET "/assets/vastu.png" for 119.235.52.22 at 2016-02-20 15:05:55 +0000
+Started GET "/assets/rasi-chakra.jpg" for 119.235.52.22 at 2016-02-20 15:05:55 +0000
+Started GET "/assets/mantras.jpg" for 119.235.52.22 at 2016-02-20 15:05:55 +0000
+Started GET "/assets/remedies.jpg" for 119.235.52.22 at 2016-02-20 15:05:55 +0000
+Started GET "/assets/pandit.jpg" for 119.235.52.22 at 2016-02-20 15:05:55 +0000
+Started GET "/users/sign_up" for 119.235.52.22 at 2016-02-20 15:06:09 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (111.6ms)
+  Rendered shared/_main_menu.html.erb (2.9ms)
+Completed 200 OK in 269ms (Views: 238.8ms | ActiveRecord: 1.2ms)
+Started GET "/assets/bg.jpg" for 119.235.52.22 at 2016-02-20 15:06:10 +0000
+Started GET "/" for 119.235.52.22 at 2016-02-20 15:18:46 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/welcome_layout (7.3ms)
+  Rendered shared/_menu.html.erb (1.2ms)
+Completed 200 OK in 118ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/yellow-bg.jpg" for 119.235.52.22 at 2016-02-20 15:18:47 +0000
+Started GET "/assets/numerology-out.jpg" for 119.235.52.22 at 2016-02-20 15:18:47 +0000
+Started GET "/assets/products.jpg" for 119.235.52.22 at 2016-02-20 15:18:47 +0000
+Started GET "/assets/astrology.jpg" for 119.235.52.22 at 2016-02-20 15:18:47 +0000
+Started GET "/assets/babynames.jpg" for 119.235.52.22 at 2016-02-20 15:18:47 +0000
+Started GET "/assets/mantras.jpg" for 119.235.52.22 at 2016-02-20 15:18:48 +0000
+Started GET "/assets/rasi-chakra.jpg" for 119.235.52.22 at 2016-02-20 15:18:48 +0000
+Started GET "/assets/vastu.png" for 119.235.52.22 at 2016-02-20 15:18:48 +0000
+Started GET "/assets/pandit.jpg" for 119.235.52.22 at 2016-02-20 15:18:48 +0000
+Started GET "/assets/remedies.jpg" for 119.235.52.22 at 2016-02-20 15:18:48 +0000
+Started GET "/users/sign_up" for 119.235.52.22 at 2016-02-20 15:19:16 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (7.3ms)
+  Rendered shared/_main_menu.html.erb (0.7ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bg.jpg" for 119.235.52.22 at 2016-02-20 15:19:16 +0000
