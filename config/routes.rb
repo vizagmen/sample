@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 
   resources :matrimony
 
+  match "/matrimony/life_partner_match_report" => "matrimony#life_partner_match_report", via: [:get, :post]
   root 'welcome#index'
 
   get 'numerologys/luckynumber', defaults: { format: 'js' }
