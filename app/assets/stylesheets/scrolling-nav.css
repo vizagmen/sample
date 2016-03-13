@@ -85,7 +85,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 150px;
     /*background: #fff;*/
     position: relative;
-    z-index: 3;
+    z-index: 2;
     color: #f6e8df;
 }
 .services-inner-box{
@@ -120,7 +120,7 @@ of those sections to manage the look and feel of the site. */
     transform: scale(2,2); /* Standard syntax */
 }
 .circle span{
-   
+ 
     color: #cc311f;
     text-transform: uppercase;
     font-weight: bold;

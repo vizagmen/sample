@@ -12,604 +12,608 @@
           <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".6s">The city is nestled between the Eastern Ghats mountain range and the Bay of Bengal, and is often known as The Jewel of the East Coast, The City of Destiny and the Goa of the East Coast.</p>
 
 
-          <a class="btn btn-default page-scroll wow slideInLeft" data-wow-duration="1s" data-wow-delay=".9s" href="#about">Read more..!</a>
-        </div>
-        <div class="col-md-6 right wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
-          <%= image_tag "wheel.png", size: '350x350', class: "logo img-responsive", id: "img-rotate" %>
-          
-          <%= image_tag "logo.jpg",size: '150x150', class: "logo img-responsive img-circle", style: "top:200px; left: 200px;" %>
-          
+          <audio controls autoplay loop id="audioplay">            
+            <source src="<%= asset_path('Om-Namah-Shivaya-108-Times Chanting-Shiva-Mantra.mp3') %>" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+
+
+            <a class="btn btn-default page-scroll wow slideInLeft" data-wow-duration="1s" data-wow-delay=".9s" href="#about">Read more..!</a>
+          </div>
+          <div class="col-md-6 right wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
+            <%= image_tag "wheel.png", size: '350x350', class: "logo img-responsive", id: "img-rotate" %>
+
+            <%= image_tag "logo.jpg",size: '150x150', class: "logo img-responsive img-circle", style: "top:200px; left: 200px;" %>
+
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="box yellow"></div>
-    <div class="container">
-      <h1 class="col-md-6 col-md-offset-6 col-xs-offset-4">About us</h1>
-      <div class="row">
-        <div class="col-md-5">
-          <!-- <img src="images/about.png"> -->
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="box yellow"></div>
+      <div class="container">
+        <h1 class="col-md-6 col-md-offset-6 col-xs-offset-4">About us</h1>
+        <div class="row">
+          <div class="col-md-5">
+            <!-- <img src="images/about.png"> -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"  style="z-index:8; position: absolute;">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 
-            </ol>
+              </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <!-- <img src="images/slide1.jpg" alt="..."> -->
-                <%= image_tag "slide1.jpg"%>
-              </div>
-              <div class="item">
-                <%= image_tag "slide2.jpg"%>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <!-- <img src="images/slide1.jpg" alt="..."> -->
+                  <%= image_tag "slide1.jpg"%>
+                </div>
+                <div class="item">
+                  <%= image_tag "slide2.jpg"%>
+                </div>
+                <div class="item">
+                  <%= image_tag "slider1.jpg"%>
+                </div>
+                <div class="item">
+                  <%= image_tag "slider2.jpg"%>
+                </div>
               </div>
             </div>
           </div>
+
+          <div id="about" class="col-md-6 right-area wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+
+            <p>I DR.P.V.NarayanaMurthy did MBA after Bsc with dual specialization of marketing &International Marketing .Fortunately, I became a Astro-Numerologist having wide experience of 11 years. By recognizing my talent in numerology,Astrology and Vastu, I was given lifemembership in 25th international seminar-2015 under the auspicious of Institute of vedic culture for public welfare &KRISHNA MURTI INSTITUTE OF ASTROLOGY KOLKATA AND MY REGISTERED SERIAL NO. KIA/LM/0124 .I have received a  DOCTORATE on January 24th 2016 .I also feel proud to be added as a member in WWW. worldastrologersdirectory.com- vedic numerology you  can watch my profile.
+            </p>
+
+            <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
+          </div>                
         </div>
+      </div>
+    </section>
+    <%= image_tag "img2.jpg", id: "about-services-img"%>
 
-        <div id="about" class="col-md-6 right-area wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="anti-box red"></div>
+      <div class="container">
+        <h1>Services</h1>
+        <div class="row services-inner-box">
+          <ul class="ch-grid">
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Numerology</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#numerology">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-1"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Astrology</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#astrology">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-2"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Baby Names</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#babynames">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-3"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Products</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#products">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-4"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Vastu</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#vastu">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-5"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Matrimony</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#matrimony">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-6"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Mantras</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#mantras">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-7"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Remedies</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#remedies">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-8"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Pandit</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#pandit">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-9"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <%= image_tag "img3.jpg", id: "service-contact-img"%>
 
-          <p>I DR.P.V.NarayanaMurthy did MBA after Bsc with dual specialization of marketing &International Marketing .Fortunately, I became a Astro-Numerologist having wide experience of 11 years. By recognizing my talent in numerology,Astrology and Vastu, I was given lifemembership in 25th international seminar-2015 under the auspicious of Institute of vedic culture for public welfare &KRISHNA MURTI INSTITUTE OF ASTROLOGY KOLKATA AND MY REGISTERED SERIAL NO. KIA/LM/0124 .I have received a  DOCTORATE on January 24th 2016 .I also feel proud to be added as a member in WWW. worldastrologersdirectory.com- vedic numerology you  can watch my profile.
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="box yellow"></div>
+
+      <%= image_tag "contact-bg.jpg", id: "contact-bg"%>
+      <div class="container">
+        <h1>Contact Section</h1>
+        <div class="row">
+          <div class="col-md-5 col-md-offset-1 left">
+            <form>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">									    
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+              </div>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">									    
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">									   
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Mobile">
+              </div>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">									   
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject">
+              </div>
+
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">									   
+                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-default wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-5 col-md-offset-1 right">
+            <address  class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              D.NO.: XXXXXXXXX<br>
+              XXXXXXXXXXXXXXXXXXXXXX<br>
+              Visakhapatnam<br>
+              Andhra Pradesh - 530XXX<br><br>
+
+              <strong>Email: </strong> example@gmail.com<br>
+              <strong>Phone: </strong> 9988xxxxxx
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- Wrapper ENd --> 
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="numerology" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>Numerology is another modern method of divination, one whot attempts to  discern the occult significance of numbers. It too is a popular form of entertainment. Like palmistry, numerology is thousands of years old and strongly associated with the occult. The practice of using tarot cards and the cabala are rooted in numerology, and astrology also bears a relationship. Numerologists claim to offer the following information or advice: choosing the correct marriage partner, vocation, city, or house in which to live; individual “compatibility” with the products one uses; understanding one’s mate and friends better; when to buy property or invest in a business; the best days to take a trip, apply for a new job, start a new venture, have surgery, and so on. In this site we are providing  free blocks to know about your Digital Relationship
           </p>
 
-          <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
-        </div>                
-      </div>
-    </div>
-  </section>
-  <%= image_tag "img2.jpg", id: "about-services-img"%>
-  
-  <!-- Services Section -->
-  <section id="services" class="services-section">
-    <div class="anti-box red"></div>
-    <div class="container">
-      <h1>Services</h1>
-      <div class="row services-inner-box">
-        <ul class="ch-grid">
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Numerology</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#numerology">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-1"></div>
-            </div>
-          </li>
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Astrology</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#astrology">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-2"></div>
-            </div>
-          </li>
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Baby Names</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#babynames">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-3"></div>
-            </div>
-          </li>
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Products</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#products">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-4"></div>
-            </div>
-          </li>
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Vastu</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#vastu">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-5"></div>
-            </div>
-          </li>
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Matrimony</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#matrimony">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-6"></div>
-            </div>
-          </li>
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Mantras</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#mantras">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-7"></div>
-            </div>
-          </li>
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Remedies</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#remedies">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-8"></div>
-            </div>
-          </li>
-          <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-            <div class="ch-item">	
-              <div class="ch-info">
-                <h3>Pandit</h3>
-                <p>Caption <a href="#" data-toggle="modal" data-target="#pandit">Read more</a></p>
-              </div>
-              <div class="ch-thumb ch-img-9"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <%= image_tag "img3.jpg", id: "service-contact-img"%>
+          <p>Friendship Percentage, lucky number ,Favourable Date.</p>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="box yellow"></div>
+          <p>If u become a life member in my site you can see   your name correction pdf 
 
-    <%= image_tag "contact-bg.jpg", id: "contact-bg"%>
-    <div class="container">
-      <h1>Contact Section</h1>
-      <div class="row">
-        <div class="col-md-5 col-md-offset-1 left">
-          <form>
-            <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">									    
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
-            </div>
-            <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">									    
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            </div>
-            <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">									   
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Mobile">
-            </div>
-            <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">									   
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject">
-            </div>
-
-            <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">									   
-              <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-default wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Submit</button>
-          </form>
+            file.
+          </p>
         </div>
-        <div class="col-md-5 col-md-offset-1 right">
-          <address  class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-            D.NO.: XXXXXXXXX<br>
-            XXXXXXXXXXXXXXXXXXXXXX<br>
-            Visakhapatnam<br>
-            Andhra Pradesh - 530XXX<br><br>
-
-            <strong>Email: </strong> example@gmail.com<br>
-            <strong>Phone: </strong> 9988xxxxxx
-          </address>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-</div><!-- Wrapper ENd --> 
+  <div class="modal fade" id="astrology" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Astrology</h4>
+        </div>
+        <div class="modal-body">
+          <p>Astrology sees mankind as being not only influenced by hereditary factors and
 
+            the environment, but also by the state of our solar system at the moment of birth. 
 
+            The planets are regarded as basic life-forces, the tools we live by as well as the 
 
-<!-- Modal -->
-<div class="modal fade" id="numerology" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <p>Numerology is another modern method of divination, one whot attempts to  discern the occult significance of numbers. It too is a popular form of entertainment. Like palmistry, numerology is thousands of years old and strongly associated with the occult. The practice of using tarot cards and the cabala are rooted in numerology, and astrology also bears a relationship. Numerologists claim to offer the following information or advice: choosing the correct marriage partner, vocation, city, or house in which to live; individual “compatibility” with the products one uses; understanding one’s mate and friends better; when to buy property or invest in a business; the best days to take a trip, apply for a new job, start a new venture, have surgery, and so on. In this site we are providing  free blocks to know about your Digital Relationship
-        </p>
+            basis of our very substance. These planetary forces take on different forms, 
 
-        <p>Friendship Percentage, lucky number ,Favourable Date.</p>
+            depending on their zodiacal position and on the way they relate to one another.
+          </p>
 
-        <p>If u become a life member in my site you can see   your name correction pdf 
+          <p>The aspects formed between the planets describe 
 
-          file.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+            these relationships, the positions of the planets in 
+
+            relation to the place of birth tell us of their expression 
+
+            in the spheres of life depicted by the astrological 
+
+            houses.
+          </p>
+
+          <p>By interpreting the roles of these players (the planets) and their qualities (the 
+
+            elements, signs and houses) and creating a synthesis, astrology is able to 
+
+            present a complete and comprehensive picture of the person and his potential, 
+
+            based on the natal horoscope.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="astrology" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Astrology</h4>
-      </div>
-      <div class="modal-body">
-        <p>Astrology sees mankind as being not only influenced by hereditary factors and
+  <div class="modal fade" id="babynames" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Baby Names</h4>
+        </div>
+        <div class="modal-body">
+          <p>IN THIS BLOCK FOR THE FIRST TIME WE ARE INTRODUCING THE  CHILD 
 
-          the environment, but also by the state of our solar system at the moment of birth. 
+            NAMES FOR FREE  NUMEROLOGY CORRECTION UPTO 0-9 YRS CHILDHREN ONLY.
+          </p>
 
-          The planets are regarded as basic life-forces, the tools we live by as well as the 
+          <p>FOR  THIS YOU  NEED TO FILL THE FIELDS AND YOU NEED TO CHOOSE YOUR 
 
-          basis of our very substance. These planetary forces take on different forms, 
+            FAVOURATE NAME ACCORDING TO STAR SOUND AND GRAHA SOUND.
+          </p>
 
-          depending on their zodiacal position and on the way they relate to one another.
-        </p>
+          <p>AFTER THAT U NEED TO SEARCH A NICE NAME TO YOUR KID. FOR THIS FIELD YOU 
 
-        <p>The aspects formed between the planets describe 
+            NEED NOT TO BECOME A LIFE MEMBER IN OUR SITE as IT IS FREE . 
+          </p>
 
-          these relationships, the positions of the planets in 
+          <p>FROM ABOVE 10YEARS CUSTOMER CAN CHECK THE PROBLEM OF YOUR NAME IN 
 
-          relation to the place of birth tell us of their expression 
+            FREE OF COST. IF U NEED TO HAVE A CORRECTION OF YOUR NAME THEN YOU  
 
-          in the spheres of life depicted by the astrological 
+            NEED TO BECOME A LIFE MEMBER IN OUR SITE.THEN YOU CAN GET YOUR NAME 
 
-          houses.
-        </p>
+            CORRECTION PDF FILE TO YOUR  OWN PAGE. THIS NAME CORRECTION WILL 
 
-        <p>By interpreting the roles of these players (the planets) and their qualities (the 
+            NEVER BE DONE INDIVIDUALLY IN OUR SITE. SO IF YOU BECOME A LIFE MEMBER 
 
-          elements, signs and houses) and creating a synthesis, astrology is able to 
-
-          present a complete and comprehensive picture of the person and his potential, 
-
-          based on the natal horoscope.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+            THE NAME CORRECTION IS ONE OF THE PART IN THAT  PACKAGE.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="babynames" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Baby Names</h4>
-      </div>
-      <div class="modal-body">
-        <p>IN THIS BLOCK FOR THE FIRST TIME WE ARE INTRODUCING THE  CHILD 
-
-          NAMES FOR FREE  NUMEROLOGY CORRECTION UPTO 0-9 YRS CHILDHREN ONLY.
-        </p>
-
-        <p>FOR  THIS YOU  NEED TO FILL THE FIELDS AND YOU NEED TO CHOOSE YOUR 
-
-          FAVOURATE NAME ACCORDING TO STAR SOUND AND GRAHA SOUND.
-        </p>
-
-        <p>AFTER THAT U NEED TO SEARCH A NICE NAME TO YOUR KID. FOR THIS FIELD YOU 
-
-          NEED NOT TO BECOME A LIFE MEMBER IN OUR SITE as IT IS FREE . 
-        </p>
-
-        <p>FROM ABOVE 10YEARS CUSTOMER CAN CHECK THE PROBLEM OF YOUR NAME IN 
-
-          FREE OF COST. IF U NEED TO HAVE A CORRECTION OF YOUR NAME THEN YOU  
-
-          NEED TO BECOME A LIFE MEMBER IN OUR SITE.THEN YOU CAN GET YOUR NAME 
-
-          CORRECTION PDF FILE TO YOUR  OWN PAGE. THIS NAME CORRECTION WILL 
-
-          NEVER BE DONE INDIVIDUALLY IN OUR SITE. SO IF YOU BECOME A LIFE MEMBER 
-
-          THE NAME CORRECTION IS ONE OF THE PART IN THAT  PACKAGE.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+  <div class="modal fade" id="products" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Products</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="products" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Products</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+  <div class="modal fade" id="vastu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Vastu</h4>
+        </div>
+        <div class="modal-body">
+          <p>VAASTU SHASTRA is an ancient Hindu practice which tells us how to  
 
-<div class="modal fade" id="vastu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Vastu</h4>
-      </div>
-      <div class="modal-body">
-        <p>VAASTU SHASTRA is an ancient Hindu practice which tells us how to  
+            construct buildings in harmony with natural forces for the  well being of 
 
-          construct buildings in harmony with natural forces for the  well being of 
+            an individual as well as  humanity as a whole. This precious  Hindu 
 
-          an individual as well as  humanity as a whole. This precious  Hindu 
+            philosophy forms the the basis of  the  traditional Indian system of 
 
-          philosophy forms the the basis of  the  traditional Indian system of 
+            architecture.  Vaastu literally means the dwelling place. The rules of 
 
-          architecture.  Vaastu literally means the dwelling place. The rules of 
+            Vaastu are derived from 'Vaastu Purusha' who is depicted as a man lying 
 
-          Vaastu are derived from 'Vaastu Purusha' who is depicted as a man lying 
+            with his head pointing northeast, in a grid of usually 64 squares. The 
 
-          with his head pointing northeast, in a grid of usually 64 squares. The 
+            different parts and directions are assigned to different Gods and 
 
-          different parts and directions are assigned to different Gods and 
+            Guardians. The 'Vaastu Purusha' is said to be the spirit of the site.  
 
-          Guardians. The 'Vaastu Purusha' is said to be the spirit of the site.  
+            Aesthetically correct dimensions of rooms, doors windows and even the 
 
-          Aesthetically correct dimensions of rooms, doors windows and even the 
+            structural parts like plinth and pillars can be determined on the concept of 
 
-          structural parts like plinth and pillars can be determined on the concept of 
+            ‘Vaastu Purusha’. Vastu Purusha is described at the-end.
+          </p>
 
-          ‘Vaastu Purusha’. Vastu Purusha is described at the-end.
-        </p>
+          <p> The purpose of the vaastu  of  Vaastu shastra is to provide 
 
-        <p> The purpose of the vaastu  of  Vaastu shastra is to provide 
+            guidelines for proper construction of houses, shops, commercial buildings 
 
-          guidelines for proper construction of houses, shops, commercial buildings 
+            with brand name stores and   operating offices etc. Vaastu determines the 
 
-          with brand name stores and   operating offices etc. Vaastu determines the 
+            position of the house with regard to points of a compass and suggests the 
 
-          position of the house with regard to points of a compass and suggests the 
+            points to keep in mind with respect to  buildings, lines, directions, skylines, 
 
-          points to keep in mind with respect to  buildings, lines, directions, skylines, 
+            elongations, levels, slopes, water (underground and overhead), kitchen, 
 
-          elongations, levels, slopes, water (underground and overhead), kitchen, 
+            bedrooms, toilets, staircase, heights of ceilings and roofs, entrances, 
 
-          bedrooms, toilets, staircase, heights of ceilings and roofs, entrances, 
+            location of doors and windows, compound walls etc.
+          </p>
 
-          location of doors and windows, compound walls etc.
-        </p>
+          <p>The importance of Vaastu shastra lies in the fact that it is a result-
 
-        <p>The importance of Vaastu shastra lies in the fact that it is a result-
+            oriented science and gives desired results if applied properly. Vaastu 
 
-          oriented science and gives desired results if applied properly. Vaastu 
+            shastra suggests ways in which we can live in tune with the laws of nature, 
 
-          shastra suggests ways in which we can live in tune with the laws of nature, 
+            so that we can be healthy, peaceful and efficiently and prosperous.
+          </p>  
 
-          so that we can be healthy, peaceful and efficiently and prosperous.
-        </p>  
+          <p> We can describe some ideal situations of houses and buildings 
 
-        <p> We can describe some ideal situations of houses and buildings 
+            according to VastuShastra.  According to this science, an ideal plot should 
 
-          according to VastuShastra.  According to this science, an ideal plot should 
+            be a square. Its  all four sides are straight and equal in length and it has 
 
-          be a square. Its  all four sides are straight and equal in length and it has 
+            equal angle of 90 degree at all four corners. Square is the best shape of a 
 
-          equal angle of 90 degree at all four corners. Square is the best shape of a 
+            plot.   A rectangular plot having its length not more that double the 
 
-          plot.   A rectangular plot having its length not more that double the 
+            breadth (length and breadth ratio not more than 1:2) is also a good plot. 
 
-          breadth (length and breadth ratio not more than 1:2) is also a good plot. 
+            While selecting a plot,  geographical surroundings & level of the land and 
 
-          While selecting a plot,  geographical surroundings & level of the land and 
+            roads around the plot must given due importance.
+          </p>
 
-          roads around the plot must given due importance.
-        </p>
 
 
+          <p>Direction of a plot can be determined by  using a magnetic 
 
-        <p>Direction of a plot can be determined by  using a magnetic 
+            compass. It is a device for finding direction. It has a freely moving needle 
 
-          compass. It is a device for finding direction. It has a freely moving needle 
+            which always points to the magnetic North. Make two lines crossing each 
 
-          which always points to the magnetic North. Make two lines crossing each 
+            other dividing a paper in four equal parts at 90-degree angle. Place a 
 
-          other dividing a paper in four equal parts at 90-degree angle. Place a 
+            compass on paper in the middle of your plot and align it with two lines in 
 
-          compass on paper in the middle of your plot and align it with two lines in 
+            the North and the South of the needle of the compass.
+          </p>
 
-          the North and the South of the needle of the compass.
-        </p>
+          <p>Extend these lines on the plot and mark it to have exact direction.
+          </p>
 
-        <p>Extend these lines on the plot and mark it to have exact direction.
-        </p>
+          <p> The size of length, breadth  both effect the fortune of the person who lives 
 
-        <p> The size of length, breadth  both effect the fortune of the person who lives 
+            in it.  The Southwest portion of the house is meant for bedroom for adults. 
 
-          in it.  The Southwest portion of the house is meant for bedroom for adults. 
+            It may be located in the South, and will be congenial for comfortable living. 
 
-          It may be located in the South, and will be congenial for comfortable living. 
+            Master bedroom may be on the upper storey, if any, in the Southwest 
 
-          Master bedroom may be on the upper storey, if any, in the Southwest 
+            portion of the house.  Direction of a person while sleeping also has 
 
-          portion of the house.  Direction of a person while sleeping also has 
+            importance in Vaastu shastra. One should never sleep having head 
 
-          importance in Vaastu shastra. One should never sleep having head 
+            towards the North Pole and legs towards the South Pole.
+          </p>
 
-          towards the North Pole and legs towards the South Pole.
-        </p>
+          <p> However one may sleep having legs towards the West and head 
 
-        <p> However one may sleep having legs towards the West and head 
+            towards the East for mental peace, good thoughts and spirituality.  
+          </p>
 
-          towards the East for mental peace, good thoughts and spirituality.  
-        </p>
+          <p>Children room should be in the northwest or West Side. To have a 
 
-        <p>Children room should be in the northwest or West Side. To have a 
+            better concentration they should have a separate study close to their 
 
-          better concentration they should have a separate study close to their 
+            bedrooms.  Location of kitchen has health implications.
+          </p>
 
-          bedrooms.  Location of kitchen has health implications.
-        </p>
+          <p>Presiding deity of the Southeast is Agni, the God of fire; hence kitchen may 
 
-        <p>Presiding deity of the Southeast is Agni, the God of fire; hence kitchen may 
+            be located  the southeast corner of the house.
+          </p>
 
-          be located  the southeast corner of the house.
-        </p>
+          <p>The dining room should be located in the East or the West or the North 
 
-        <p>The dining room should be located in the East or the West or the North 
+            near the kitchen. Northwest corner is good for perishable goods. Dinning 
 
-          near the kitchen. Northwest corner is good for perishable goods. Dinning 
+            room may be in the Northwest direction, which leads to quicker 
 
-          room may be in the Northwest direction, which leads to quicker 
+            consumption of food. Drawing room should be preferably in the Northeast 
 
-          consumption of food. Drawing room should be preferably in the Northeast 
+            or the North or the East but not in the Southwest portion of the house. 
 
-          or the North or the East but not in the Southwest portion of the house. 
+            More vacant space should be given in the Northeast corner of the drawing 
 
-          More vacant space should be given in the Northeast corner of the drawing 
+            room.. Door is preferable on the East-towards-the-Northeast-side. 
+          </p>   
 
-          room.. Door is preferable on the East-towards-the-Northeast-side. 
-        </p>   
+          <p>While studying, one should face the North or the East or the Northeast  
 
-        <p>While studying, one should face the North or the East or the Northeast  
+            Therefore the best locations for study room are the north, east, or 
 
-          Therefore the best locations for study room are the north, east, or 
+            northeast. These directions attract the positive effects of Mercury 
 
-          northeast. These directions attract the positive effects of Mercury 
+            increasing brain power, Jupiter increasing wisdom, Sun increasing 
 
-          increasing brain power, Jupiter increasing wisdom, Sun increasing 
+            ambition and Venus helps in bringing about creativity in new thoughts 
 
-          ambition and Venus helps in bringing about creativity in new thoughts 
+            and ideas.  Books may be kept in the Southwest side of the room. Study 
 
-          and ideas.  Books may be kept in the Southwest side of the room. Study 
+            room may have door on the East or the North,orthe-Northeast
 
-          room may have door on the East or the North,orthe-Northeast
+            As per Vaastushastra, the East is the place for the bathroom. Attached 
 
-          As per Vaastushastra, the East is the place for the bathroom. Attached 
+            bathroom may preferably be in the North, or the East of a bedroom. 
 
-          bathroom may preferably be in the North, or the East of a bedroom. 
+            Shower, bathing tub and wash basin in the bathroom may be in the 
 
-          Shower, bathing tub and wash basin in the bathroom may be in the 
+            Northeast, or the North or the East direction. One may have bath in the 
 
-          Northeast, or the North or the East direction. One may have bath in the 
+            North or the East area in the bathroom. 
 
-          North or the East area in the bathroom. 
+            Bathroom should never be constructed in the center or in the southwest 
 
-          Bathroom should never be constructed in the center or in the southwest 
+            corner-of-the-house.
+          </p>
 
-          corner-of-the-house.
-        </p>
+          <p>Storeroom should be made in the Northwest or Southwest portion of the 
 
-        <p>Storeroom should be made in the Northwest or Southwest portion of the 
+            house. It is very beneficial if grains and other provisions are stored in the 
 
-          house. It is very beneficial if grains and other provisions are stored in the 
+            Northwest store. All heavy things should be kept in the Southwest of the 
 
-          Northwest store. All heavy things should be kept in the Southwest of the 
+            storeroom. Garbage may be collected in the Southern part of the house.      
 
-          storeroom. Garbage may be collected in the Southern part of the house.      
+            In this block first time in websites we design the Vaastu with images so it 
 
-          In this block first time in websites we design the Vaastu with images so it 
+            will be useful for everyone to get some  awareness .if you want any front 
 
-          will be useful for everyone to get some  awareness .if you want any front 
+            elevation structures u can take an appointment of our engineering as 
 
-          elevation structures u can take an appointment of our engineering as 
+            mention in our site.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-          mention in our site.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="matrimony" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Matrimony</h4>
-      </div>
-      <div class="modal-body">
-        <p>This is the first time we are introducing a free matrimony , which will be 
+  <div class="modal fade" id="matrimony" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Matrimony</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is the first time we are introducing a free matrimony , which will be 
 
-          useful to all categories. In this site you need to enter your details, after that 
+            useful to all categories. In this site you need to enter your details, after that 
 
-          you can search your life partner matching  free of cost .After matching then 
+            you can search your life partner matching  free of cost .After matching then 
 
-          you need to choose second option for astrologer to check the deep steps of 
+            you need to choose second option for astrologer to check the deep steps of 
 
-          the life signs and then you need to move for third option to contact the 
+            the life signs and then you need to move for third option to contact the 
 
-          particular status for address, upto the above option u have free choice, to 
+            particular status for address, upto the above option u have free choice, to 
 
-          get address of your matching partner you need to become a life member in 
+            get address of your matching partner you need to become a life member in 
 
-          our website.If once you become a life member in our website you will get 
+            our website.If once you become a life member in our website you will get 
 
-          contact numbers and addresses . you have a pandit option also to book a 
+            contact numbers and addresses . you have a pandit option also to book a 
 
-          near by  pandit from our site if you are interested.once the wedding card was 
+            near by  pandit from our site if you are interested.once the wedding card was 
 
-          printed we will post the free ad of your wedding card in our site from admin. 
+            printed we will post the free ad of your wedding card in our site from admin. 
 
-          Here the couple need to pay 1% amount to our institute through pay role 
+            Here the couple need to pay 1% amount to our institute through pay role 
 
-          option from our site.  If suppose  they fail to pay !%percent amount after 
+            option from our site.  If suppose  they fail to pay !%percent amount after 
 
-          marriage the customer page will be  blocked and the customers references 
+            marriage the customer page will be  blocked and the customers references 
 
-          of the particular pages will be cancelled with all promo codes. So they are 
+            of the particular pages will be cancelled with all promo codes. So they are 
 
-          not eligible for next process in our site.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            not eligible for next process in our site.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="mantras" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Mantras</h4>
-      </div>
-      <div class="modal-body">
-        <%= link_to "Information Pack", 'assets/pdfs/lal-kithab-remedies.pdf', :class => "links", target: "_blank" %>
-        
-
-        <%= link_to 'Download the resume', asset_path('fwdfriday/friday-navadurga-stotram-in-telugu.pdf'), target: "_blank" %>
-
-        <%= link_to 'Download the resume', "https://docs.google.com/gview?url=#{request.protocol}#{request.host_with_port}#{asset_path('friday-navadurga-stotram-in-telugu.pdf')}&embedded=true", target: "_blank" %>
+  <div class="modal fade" id="mantras" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Mantras</h4>
+        </div>
+        <div class="modal-body">            
 
 
-        <%= url = "#{request.protocol}#{request.host_with_port}#{asset_path("fwdfriday/friday-navadurga-stotram-in-telugu.pdf")}" %>
-
-        <a href="https://docs.google.com/gview?url=<%= url %>&embedded=true">Your Pdf Viewer</a>
-
-        <a href="https://docs.google.com/gview?url=<%= "#{request.protocol}#{request.host_with_port}#{asset_path('friday-navadurga-stotram-in-telugu.pdf')}"%>&embedded=true">Your Pdf Viewer</a>
 
 
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <!-- <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#sunday" aria-expanded="true" aria-controls="sunday">
@@ -620,14 +624,10 @@
             <div id="sunday" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="list-group">
 
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
 
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingTwo">
               <h4 class="panel-title">
@@ -636,13 +636,13 @@
                 </a>
               </h4>
             </div>
-            <div id="monday" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div id="monday" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
               <div class="list-group">
 
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <%= link_to 'Lingashtakam In Telugu', asset_path('fwdmondaymantras/lingashtakam-in-telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Shiva Bhujangam In Telugu', asset_path('fwdmondaymantras/Shiva-bhujangam-in- telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Shiva Panchakshara Stotram In Telugu', asset_path('fwdmondaymantras/Shiva-panchakshara -stotram-in-telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sivashtakam In Telugu', asset_path('fwdmondaymantras/Sivashtakam-in-telugu.pdf'), target: "_blank", class: "list-group-item" %>
 
               </div>
             </div>
@@ -657,10 +657,14 @@
             </div>
             <div id="tuesday" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="list-group">
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <%= link_to 'Ganesha Bhujangam in telugu', asset_path('fwdtuesdaymantras/Ganesha Bhujangam in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Hanuman chalisa in telugu', asset_path('fwdtuesdaymantras/Hanuman chalisa in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Angaraka ashtottara satanamavali in telugu', asset_path('fwdtuesdaymantras/Sri Angaraka ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>                
+                <%= link_to 'Sri Ketu ashtottara satanamavali in telugu', asset_path('fwdtuesdaymantras/Sri Ketu ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Subrahmanya ashtottara satanamavali in telugu', asset_path('fwdtuesdaymantras/Sri Subrahmanya ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Subrahmanya Bhujangam in telugu', asset_path('fwdtuesdaymantras/Subrahmanya Bhujangam in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Subrahmanya Pancharatnam in telugu', asset_path('fwdtuesdaymantras/Subrahmanya Pancharatnam in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+
               </div>
             </div>
           </div>
@@ -675,10 +679,13 @@
             </div>
             <div id="wednesday" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="list-group">
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <%= link_to 'Dakshinamurthy ashtakam in telugu', asset_path('fwdwednesdaymantras/Dakshinamurthy ashtakam in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Dakshinamurthy stotram in telugu', asset_path('fwdwednesdaymantras/Dakshinamurthy stotram in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Maha mrityunjaya stotram in telugu', asset_path('fwdwednesdaymantras/Maha mrityunjaya stotram in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Budha ashtottara satanamavali in telugu', asset_path('fwdwednesdaymantras/Sri Budha ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Lalitha ashtottara satanamavali in telugu', asset_path('fwdwednesdaymantras/Sri Lalitha ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Vishnu Sahasranama Stotram', asset_path('fwdwednesdaymantras/Sri Vishnu Sahasranama Stotram.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Vishnu Bhujanga prayata stotram in telugu', asset_path('fwdwednesdaymantras/Vishnu Bhujanga prayata stotram in telugu.pdf'), target: "_blank", class: "list-group-item" %>               
               </div>
             </div>
           </div>
@@ -694,10 +701,9 @@
             </div>
             <div id="thursday" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="list-group">
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <%= link_to 'Dakshinamurthy stotram in telugu', asset_path('fwdthursday/Dakshinamurthy stotram in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Guru Stotram in telugu', asset_path('fwdthursday/Guru Stotram in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Guru ashtottara satanamavali in telugu', asset_path('fwdthursday/Sri Guru ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
               </div>
             </div>
           </div>
@@ -712,10 +718,11 @@
             </div>
             <div id="friday" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="list-group">
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <%= link_to 'friday-navadurga-stotram-in-telugu', asset_path('fwdfriday/friday-navadurga-stotram-in-telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Navagraha stotram in telugu', asset_path('fwdfriday/Navagraha stotram in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sree Durga ashtottara satanama stotram in telugu', asset_path('fwdfriday/Sree Durga ashtottara satanama stotram in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Lakshmi ashtottara satanamavali in telugu', asset_path('fwdfriday/Sri Lakshmi ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Sukra ashtottara satanamavali in telugu', asset_path('fwdfriday/Sri Sukra ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
               </div>
             </div>
           </div>
@@ -730,10 +737,45 @@
             </div>
             <div id="saturday" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="list-group">
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <%= link_to 'Kalabhairavashtakam in telugu', asset_path('fwdsaturday/Kalabhairavashtakam in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Maha mrityunjaya stotram in telugu', asset_path('fwdsaturday/Maha mrityunjaya stotram in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Sani ashtottara satanamavali in telugu', asset_path('fwdsaturday/Sri Sani ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#sungrahamantras" aria-expanded="true" aria-controls="sungrahamantras">
+                  Sungraha Mantras
+                </a>
+              </h4>
+            </div>
+            <div id="sungrahamantras" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="list-group">
+                <%= link_to 'Aditya Hrudayam in telugu', asset_path('fwdsungrahamantras/Aditya Hrudayam in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Sri Surya ashtottara satanamavali in telugu', asset_path('fwdsungrahamantras/Sri Surya ashtottara satanamavali in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Surya Ashtakam in telugu', asset_path('fwdsungrahamantras/Surya Ashtakam in telugu.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'surya_namaskar_mantras', asset_path('fwdsungrahamantras/surya_namaskar_mantras.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'surya-namaskar-sun-salutation-poses-asanas-and-breathing', asset_path('fwdsungrahamantras/surya-namaskar-sun-salutation-poses-asanas-and-breathing.pdf'), target: "_blank", class: "list-group-item" %>
+
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#mantrasinword" aria-expanded="true" aria-controls="mantrasinword">
+                  Mantras In Word
+                </a>
+              </h4>
+            </div>
+            <div id="mantrasinword" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="list-group">
+                <%= link_to 'Mantras', asset_path('fwdmantrasinword/Mantras.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'SARADA MANTRAM', asset_path('fwdmantrasinword/SARADA MANTRAM.pdf'), target: "_blank", class: "list-group-item" %>
+                <%= link_to 'Stones Mantras', asset_path('fwdmantrasinword/Stones Mantras.pdf'), target: "_blank", class: "list-group-item" %>
               </div>
             </div>
           </div>
@@ -922,3 +964,5 @@
     </div>
   </div>
 </div>
+
+
