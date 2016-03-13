@@ -55,32 +55,10 @@
 
         <div id="about" class="col-md-6 right-area wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
 
-          <p>I P.V.NarayanaMurthy did MBA after Bsc with 
-
-            specialization of marketing &International Marketing 
-
-            .Fortunately I became aAstro-Numerologist having vide 
-
-            experience of11 years.By recognizing my talent in 
-
-            numerology,Astrology and Vastu, I was given lifemembership in 
-
-            25th international seminar-2015 under the auspicious of 
-
-            Institute of vedic culture for public welfare &KRISHNA MURTI 
-
-            INSTITUTE OF ASTROLOGY KOLKATA AND MY REGISTERED 
-
-            SERIAL NO. KIA/LM/0124 .I am aiming for DOCTORATE in the 
-
-            said field.i also feel proud to be added as a member in WWW. 
-
-            worldastrologersdirectory.com- vedic numerology you  can 
-
-            watch my profile.
+          <p>I DR.P.V.NarayanaMurthy did MBA after Bsc with dual specialization of marketing &International Marketing .Fortunately, I became a Astro-Numerologist having wide experience of 11 years. By recognizing my talent in numerology,Astrology and Vastu, I was given lifemembership in 25th international seminar-2015 under the auspicious of Institute of vedic culture for public welfare &KRISHNA MURTI INSTITUTE OF ASTROLOGY KOLKATA AND MY REGISTERED SERIAL NO. KIA/LM/0124 .I have received a  DOCTORATE on January 24th 2016 .I also feel proud to be added as a member in WWW. worldastrologersdirectory.com- vedic numerology you  can watch my profile.
           </p>
 
-          <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+          <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
         </div>                
       </div>
     </div>
@@ -615,11 +593,19 @@
         <h4 class="modal-title" id="myModalLabel">Mantras</h4>
       </div>
       <div class="modal-body">
-        <%= link_to "Information Pack", 'assets/pdfs/lal-kithab-remedies.pdf', :class => "links" %>
-        #{Rails.root}/public/your_file.pdf
-        <%= url = "#{request.protocol}#{request.host_with_port}#{asset_path("assets/pdfs/lal-kithab-remedies.pdf")}" %>
+        <%= link_to "Information Pack", 'assets/pdfs/lal-kithab-remedies.pdf', :class => "links", target: "_blank" %>
+        
 
-        <a href="https://docs.google.com/gview?url=lal-kithab-remedies.pdf&embedded=true">Your Pdf Viewer</a>
+        <%= link_to 'Download the resume', asset_path('fwdfriday/friday-navadurga-stotram-in-telugu.pdf'), target: "_blank" %>
+
+        <%= link_to 'Download the resume', "https://docs.google.com/gview?url=#{request.protocol}#{request.host_with_port}#{asset_path('friday-navadurga-stotram-in-telugu.pdf')}&embedded=true", target: "_blank" %>
+
+
+        <%= url = "#{request.protocol}#{request.host_with_port}#{asset_path("fwdfriday/friday-navadurga-stotram-in-telugu.pdf")}" %>
+
+        <a href="https://docs.google.com/gview?url=<%= url %>&embedded=true">Your Pdf Viewer</a>
+
+        <a href="https://docs.google.com/gview?url=<%= "#{request.protocol}#{request.host_with_port}#{asset_path('friday-navadurga-stotram-in-telugu.pdf')}"%>&embedded=true">Your Pdf Viewer</a>
 
 
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -911,45 +897,23 @@
         <h4 class="modal-title" id="myModalLabel">Pandit</h4>
       </div>
       <div class="modal-body">
-        <p>FOR THE FIRST TIME WE ARE GIVING A NICE OPPERTUNITY FOR PANDITS THOSE WHO ARE HAPPEN TO 
+        <p>FOR THE FIRST TIME WE ARE GIVING A NICE OPPERTUNITY FOR PANDITS THOSE WHO ARE HAPPEN TO BE A PART IN OUR SITE.</p>
 
-          BE A PART IN OUR SITE.
-        </p>
+        <p>THE PANDITS ARE GOING TO BE DIVIDED INTO 3 CATEGORIES IN THESE CATEGORIES THE FIRST ONE BELONGS TO VEDAM CERTIFIED BRAHMINS WHO WILL ONLY DO HOMAM, MARRIAGES,ETC..</p>
 
-        <p>THE PANDITS ARE GOING TO BE DIVIDED INTO 3 CATEGORIES IN THESE CATEGORIES THE FIRST ONE 
+        <p>SECOND CATEGORY PEOPLE  ARE BELONGS TO ASTROLOGER, VASTU,PALM.NUMEROLOGY ETC </p>
 
-          BELONGS TO VEDAM CERTIFIED BRAHMINS WHO WILL ONLY DO HOMAM, MARRIAGES,ETC..
-        </p>
+        <p>THIRD RUNNING CATEGORY PEOPLE ARE TO BOTH CATEGORIES.</p>
 
-        <p>SECOND CATEGORY PEOPLE  ARE BELONGS TO ASTROLOGER, VASTU,PALM.NUMEROLOGY ETC 
-        </p>
+        <p>ACCORDING TO THE CUSTOMER CHOICE THE PANDIT WILL BOOK FROM DIFFERENT DISTRICT , STATE        WISE FOR THE ABOVE SCHEDULE.</p>
 
-        <p>THIRD RUNNING CATEGORY PEOPLE ARE TO BOTH CATEGORIES.
-        </p>
+        <p>          FOR PANDIT IF HE JOIN AS A LIFE MEMBER HE NEED TO PAY THE YEARLY CHARGES TO OUR SITE.</p>
 
-        <p>ACCORDING TO THE CUSTOMER CHOICE THE PANDIT WILL BOOK FROM DIFFERENT DISTRICT , STATE 
+        <p>IF CUSTOMER BOOK ANY PANDIT FROM OUR SITE FOR ANY EVENT YOU NEED NOT TO PAY ANYTHING         TO US.YOU NEED TO NEGOTIATE DIRECTLY TO CUSTOMER,FOR PAYMENT.</p>
 
-          WISE FOR THE ABOVE SCHEDULE.
-        </p>
+        <p>ONCE YOU ARE CONDUCTING ANY EVENT YOU NEED TO TIE A COMPANY BANNER AT THAT EVENT PLACE        AND YOU NEED TO SEND A PHOTO CLIP  TO OUR MAIL ID .REMEDYVANS@gmail.com . SO THAT THE  EVENT PHOTO WILL BE PLACED IN YOUR PAGE FOR FREE AD.</p>
 
-        <p>FOR PANDIT IF HE JOIN AS A LIFE MEMBER HE NEED TO PAY THE YEARLY CHARGES TO OUR SITE.
-        </p>
-
-        <p>IF CUSTOMER BOOK ANY PANDIT FROM OUR SITE FOR ANY EVENT YOU NEED NOT TO PAY ANYTHING 
-
-          TO US.YOU NEED TO NEGOTIATE DIRECTLY TO CUSTOMER,FOR PAYMENT.
-        </p>
-
-        <p>ONCE YOU ARE CONDUCTING ANY EVENT YOU NEED TO TIE A COMPANY BANNER AT THAT EVENT PLACE 
-
-          AND YOU NEED TO SEND A PHOTO CLIP  TO OUR MAIL ID WWW.REMEDYVANS.COM . SO THAT THE 
-
-          EVENT PHOTO WILL BE PLACED IN YOUR PAGE FOR FREE AD.
-        </p>
-
-        <p>I HOPE THE PANDITS WILL UTILISE THIS OFFER FROM OUR SITE.PROMOCODE  WILL BE GENERATED TO 
-
-          THE PANDIT WHO WILL BECOME THE MEMBER IN OUR SITE.
+        <p>I HOPE THE PANDITS WILL UTILISE THIS OFFER FROM OUR SITE.PROMOCODE  WILL BE GENERATED TO THE PANDIT WHO WILL BECOME THE MEMBER IN OUR SITE.
         </p>
       </div>
       <div class="modal-footer">

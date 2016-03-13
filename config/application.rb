@@ -22,5 +22,9 @@ module Sample
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    # config.assets.paths << "#{Rails.root}/app/assets/pdf"
+    Dir.glob("#{Rails.root}/app/assets/pdf/**/").each do |path|
+      config.assets.paths << path
+  end
 end
 end
