@@ -1,52 +1,75 @@
 
 
-  <h1 class="page-header ">Dashboard</h1>
-  <br><br>
-  <div class="row text-center">
-    <div class="col-lg-3 col-sm-6 text-center">
-      <%= image_tag("numerology-out.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>
-      <h4><%= link_to "Numerology", numerologys_path %></h4>
-    </div>
+<h1 class="page-header ">Dashboard</h1>
+<br><br>
+<div class="row text-center">
+  <div class="col-lg-3 col-sm-6 text-center">
+    <%= image_tag("numerology-out.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>
+    <h4><%= link_to "Numerology", numerologys_path %></h4>
+  </div>
 
-    <div class="col-lg-3 col-sm-6 text-center">
-      <%= image_tag("astrology.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>       
-      <h4><a href="#">Astrology</a></h4>                 
-    </div>
+  <div class="col-lg-3 col-sm-6 text-center">
+    <%= image_tag("astrology.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>       
+    <h4><a href="#">Astrology</a></h4>                 
+  </div>
 
-    <div class="col-lg-3 col-sm-6 text-center">
-      <%= image_tag("babynames.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-      <h4><a href="#">Baby Names</a></h4>
-    </div>
+  <div class="col-lg-3 col-sm-6 text-center">
+    <%= image_tag("babynames.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+    <h4><a href="#">Baby Names</a></h4>
+  </div>
 
-    <div class="col-lg-3 col-sm-6 text-center">
-      <%= image_tag("products.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>        
-      <h4><a href="#">Products</a></h4>  
-    </div>
+  <div class="col-lg-3 col-sm-6 text-center">
+    <%= image_tag("products.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>        
+    <h4><a href="#">Products</a></h4>
+  </div>
 
-    <div class="col-md-offset-1 col-lg-3 col-sm-6 text-center">
-      <%= image_tag("vastu.png", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-      <h4><a href="#">Vastu</a></h4>           
-      
-    </div>
+  <div class="col-md-offset-1 col-lg-3 col-sm-6 text-center">
+    <%= image_tag("vastu.png", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+    <h4><a href="#">Vastu</a></h4>
+  </div>
 
-    <div class="col-lg-3 col-sm-6 text-center">
-      <%= image_tag("rasi-chakra.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-      <h4><a href="#">Matrimony</a></h4>             
-      
-    </div>
+  <div class="col-lg-3 col-sm-6 text-center">
+    <%= image_tag("rasi-chakra.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+    <h4 ><a >Matrimony</a></h4>
+  </div>
 
-    <div class="col-lg-3 col-sm-6 text-center">
-      <%= image_tag("mantras.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>    
-      <h4><a href="#">Mantras</a></h4>              
-    </div>
+  <div class="col-lg-3 col-sm-6 text-center">
+    <%= image_tag("mantras.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>    
+    <h4 data-toggle="modal" data-target="#mantras"><a href="#">Mantras</a></h4>              
+  </div>
 
-    <div class="col-md-offset-3 col-lg-3 col-sm-6 text-center">
-      <%= image_tag("remedies.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-      <h4><a href="#">Remedies</a></h4>
-    </div>
+  <div class="col-md-offset-3 col-lg-3 col-sm-6 text-center">
+    <%= image_tag("remedies.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+    <h4><a href="#">Remedies</a></h4>
+  </div>
 
-    <div class="col-lg-3 col-sm-6 text-center">
-      <%= image_tag("pandit.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-      <h4><a href="#">Pandit</a></h4>
+  <div class="col-lg-3 col-sm-6 text-center">
+    <%= image_tag("pandit.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
+    <h4><a href="#">Pandit</a></h4>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="mantras" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mantras</h4>
+      </div>
+      <div class="modal-body">            
+
+        <%= render 'mantras'%>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+      </div>
     </div>
   </div>
+</div>
