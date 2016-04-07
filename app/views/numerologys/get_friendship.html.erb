@@ -18,7 +18,7 @@
 					  <%= label_tag :date_of_birth, "Your Date of Birth" %>
 					  <% born_on = Time.now %>
 					  <div class="form-control">
-					  	<%= select_date(born_on, prefix: :your_dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }) %>	
+					  	<%= select_date(born_on, prefix: :your_dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' },:start_year=>Date.today.year-100) %>	
 					  </div>			      
 					</div>
 
@@ -32,7 +32,7 @@
 					  <%= label_tag :date_of_birth, "Friend's Date of Birth" %>
 					  <% born_on = Time.now %>
 					  <div class="form-control">
-					  	<%= select_date(born_on, prefix: :friend_dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }) %>	
+					  	<%= select_date(born_on, prefix: :friend_dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' },:start_year=>Date.today.year-100) %>	
 					  </div>			      
 					</div>
 

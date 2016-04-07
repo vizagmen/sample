@@ -2,842 +2,804 @@
   <!-- Intro Section -->
   <section id="intro" class="intro-section">
     <div class="box white wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 left">
-            <%= image_tag( "vinayaka.png", "data-wow-iteration": "infinite", class: "wow pulse img-responsive", style: "margin: 0 auto;") %>
-            <!-- <img src="images/vinayaka.png" data-wow-iteration="infinite" class="wow pulse img-responsive" style="margin: 0 auto;">              -->
-            <h1 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s">Sri Saii Laharri</h1>
-            <h3 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s">Numerology and Astrology Center</h3>
-            <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".6s">The city is nestled between the Eastern Ghats mountain range and the Bay of Bengal, and is often known as The Jewel of the East Coast, The City of Destiny and the Goa of the East Coast.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 left">
+          <%= image_tag( "god.jpg", "data-wow-iteration": "infinite", class: "wow pulse img-responsive", style: "margin: 0 auto; width:180px;") %>
+          <!-- <%= image_tag( "vinayaka.png", "data-wow-iteration": "infinite", class: "wow pulse img-responsive", style: "margin: 0 auto;") %>           -->
+          <h1 style="color: #056FA1;" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s">Sri Saii Laharri</h1>
+          <h3 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s">Numerology and Astrology Center</h3>
+          <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".6s">The city is nestled between the Eastern Ghats mountain range and the Bay of Bengal, and is often known as The Jewel of the East Coast, The City of Destiny and the Goa of the East Coast.</p>
 
 
-            <a class="btn btn-default page-scroll wow slideInLeft" data-wow-duration="1s" data-wow-delay=".9s" href="#about">Read more..!</a>
+          <audio controls autoplay loop id="audioplay">            
+            <source src="<%= asset_path('Om-Namah-Shivaya-108-Times Chanting-Shiva-Mantra.mp3') %>" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+
+
+            <a class="btn btn-default page-scroll wow slideInLeft" href="#about">Read more..!</a>
           </div>
           <div class="col-md-6 right wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
-          <%= image_tag "wheel.png", size: '350x350', class: "logo img-responsive", id: "img-rotate" %>
-           <!-- <img src="images/home.png" width="350" height="350" class="logo img-responsive" id="img-rotate" > -->
-           <%= image_tag "logo.jpg",size: '150x150', class: "logo img-responsive img-circle", style: "top:200px; left: 200px;" %>
-           <!-- <img src="images/logo.jpg" width="150" height="150" class="logo img-responsive img-circle" style="top:200px; left: 200px;"> -->
-         </div>
-       </div>
-     </div>
-   </section>
+            <%= image_tag "wheel.png", size: '350x350', class: "logo img-responsive", id: "img-rotate" %>
 
-     <!-- About Section -->
-     <section id="about" class="about-section">
-       <div class="box yellow"></div>
-       <div class="container">
+            <%= image_tag "logo.jpg",size: '150x150', class: "logo img-responsive img-circle", style: "top:200px; left: 200px;" %>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="box yellow"></div>
+      <div class="container">
         <h1 class="col-md-6 col-md-offset-6 col-xs-offset-4">About us</h1>
         <div class="row">
-         <div class="col-md-5">
-           <!-- <img src="images/about.png"> -->
-           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <div class="col-md-5">
+            <!-- <img src="images/about.png"> -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"  style="z-index:8; position: absolute;">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 
-            </ol>
+              </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <!-- <img src="images/slide1.jpg" alt="..."> -->
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <!-- <img src="images/slide1.jpg" alt="..."> -->
                   <%= image_tag "slide1.jpg"%>
-              </div>
-              <div class="item">
-                
-                <%= image_tag "slide2.jpg"%>
+                </div>
+                <div class="item">
+                  <%= image_tag "slide2.jpg"%>
+                </div>
+                <div class="item">
+                  <%= image_tag "slider1.jpg"%>
+                </div>
+                <div class="item">
+                  <%= image_tag "slider2.jpg"%>
+                </div>
               </div>
             </div>
           </div>
+
+          <div id="about" class="col-md-6 right-area wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+
+            <p>The <strong>Sri Saii Laharri</strong> numerology and astrology centre website launched on april8th2016  by <strong>DR.SRIPATNAIK NARAAYANAA</strong> who did MBA after Bsc with dual specialization of marketing &International Marketing .Fortunately, I became a Astro-Numerologist having wide experience of 11 years. By recognizing my talent in numerology,Astrology and Vaastu, I was given <strong>lifemembership in 25th international seminar-2015</strong> under the auspicious of <strong>Institute of vedic culture for public welfare &KRISHNA MURTI INSTITUTE OF ASTROLOGY KOLKATA AND MY REGISTERED SERIAL NO. KIA/LM/0124 </strong>. I have received a  DOCTORATE on January 24th 2016 .I also feel proud to be added as a member in <strong>www.worldastrologersdirectory.com</strong> - vedic numerology you  can watch my profile. This site belongs all facilities like numerology, astrology, vaastu, products, remedies, matrimony, pandit booking block, mantras, babynames and also special feature sweetmemories block.</p>
+
+            <p>The customer can enjoy with a <strong>free login</strong> and also <strong>Life Membership</strong>  in android mobile. Free login customer can enjoy  some fields only, after wards if he decided to become a life member he can pay through payroll option.</p>
+
+            <p>If once you become a life member you will get a life time free service, so your lifesign profile will be updated for every two months and for numerology, lifesign, you will get 4 pdf files ,in that we wil cover name correction pdf, lifesign,stone,6years predictions. Matrimony is a highlighted option in our site, in this matrimony u can check the matching and original data of my client in a free option and also u can choose your favourate  matching patner with points and with numerology matching also. If u want the address details of my  client you must become a life member of my site then only u will get remaining data. If once you become a life member in our website you will get contact numbers and addresses . you have a pandit option also to book a near by  pandit from our site if you are interested. once the wedding card was printed we will post the free ad of your wedding card in our site from admin. Here the couple need to pay 1% amount to our institute through pay role option from our site.  If suppose  they fail to pay 1%percent amount after marriage the customer page will be  blocked and the customers references of the particular pages will be cancelled with all promo codes. So they are not eligible for next process in our site. Vaastu , mantras, remedies blocks also you can enjoy more.</p>
+
+            <p>Another special feature is sweet memories specially added for students and also employees .In this block we concentrated  on students for get together the students below 24 yrs age can generate the profile in free to create their group to chat with their school or college mate friends. particularly the students who are facing problem for studies, job, love failure, careerstep we can guide them in a good way, if they attend for counseling and also they can ask any queries to pandit about their career in free of cost.if suppose if the student is not able to settled in their life before 25years then they can join as a life membership to know about their career In detail. </p>
+
+            <p>I hope my website will show u a colorful life to every customer and I pray my god shiridi sai baba to give me energy to do nice service to my customer god.</p>
+
+            <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
+          </div>                
         </div>
-
-        <div id="about" class="col-md-6 right-area wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-
-          <p>I P.V.NarayanaMurthy did MBA after Bsc with 
-
-specialization of marketing &International Marketing 
-
-.Fortunately I became aAstro-Numerologist having vide 
-
-experience of11 years.By recognizing my talent in 
-
-numerology,Astrology and Vastu, I was given lifemembership in 
-
-25th international seminar-2015 under the auspicious of 
-
-Institute of vedic culture for public welfare &KRISHNA MURTI 
-
-INSTITUTE OF ASTROLOGY KOLKATA AND MY REGISTERED 
-
-SERIAL NO. KIA/LM/0124 .I am aiming for DOCTORATE in the 
-
-said field.i also feel proud to be added as a member in WWW. 
-
-worldastrologersdirectory.com- vedic numerology you  can 
-
-watch my profile.</p>
-
-          <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-        </div>                
       </div>
-    </div>
-  </section>
-  
-  <%= image_tag "img2.jpg", id: "about-services-img"%>
-  <!-- Services Section -->
-  <section id="services" class="services-section">
-   <div class="anti-box red"></div>
-   <div class="container">
-     <h1>Services</h1>
-     <div class="row services-inner-box">
-       <ul class="ch-grid">
-         <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-          <div class="ch-item">	
-           <div class="ch-info">
-            <h3>Numerology</h3>
-            <p>Caption <a href="#" data-toggle="modal" data-target="#numerology">Read more</a></p>
-          </div>
-          <div class="ch-thumb ch-img-1"></div>
+    </section>
+    <%= image_tag "img2.jpg", id: "about-services-img"%>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="anti-box red"></div>
+      <div class="container">
+        <h1>Services</h1>
+        <div class="row services-inner-box">
+          <ul class="ch-grid">
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Numerology</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#numerology">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-1"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Astrology</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#astrology">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-2"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Baby Names</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#babynames">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-3"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Products</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#products">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-4"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Vastu</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#vastu">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-5"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Matrimony</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#matrimony">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-6"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Mantras</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#mantras">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-7"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Remedies</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#remedies">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-8"></div>
+              </div>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="ch-item">	
+                <div class="ch-info">
+                  <h3>Pandit</h3>
+                  <p>Caption <a href="#" data-toggle="modal" data-target="#pandit">Read more</a></p>
+                </div>
+                <div class="ch-thumb ch-img-9"></div>
+              </div>
+            </li>
+          </ul>
         </div>
-      </li>
-      <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-        <div class="ch-item">	
-         <div class="ch-info">
-          <h3>Astrology</h3>
-          <p>Caption <a href="#" data-toggle="modal" data-target="#astrology">Read more</a></p>
-        </div>
-        <div class="ch-thumb ch-img-2"></div>
       </div>
-    </li>
-    <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-      <div class="ch-item">	
-       <div class="ch-info">
-        <h3>Baby Names</h3>
-        <p>Caption <a href="#" data-toggle="modal" data-target="#babynames">Read more</a></p>
-      </div>
-      <div class="ch-thumb ch-img-3"></div>
-    </div>
-  </li>
-  <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-    <div class="ch-item">	
-     <div class="ch-info">
-      <h3>Products</h3>
-      <p>Caption <a href="#" data-toggle="modal" data-target="#products">Read more</a></p>
-    </div>
-    <div class="ch-thumb ch-img-4"></div>
-  </div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-  <div class="ch-item">	
-   <div class="ch-info">
-    <h3>Vastu</h3>
-    <p>Caption <a href="#" data-toggle="modal" data-target="#vastu">Read more</a></p>
-  </div>
-  <div class="ch-thumb ch-img-5"></div>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-  <div class="ch-item">	
-   <div class="ch-info">
-    <h3>Matrimony</h3>
-    <p>Caption <a href="#" data-toggle="modal" data-target="#matrimony">Read more</a></p>
-  </div>
-  <div class="ch-thumb ch-img-6"></div>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-  <div class="ch-item">	
-   <div class="ch-info">
-    <h3>Mantras</h3>
-    <p>Caption <a href="#" data-toggle="modal" data-target="#mantras">Read more</a></p>
-  </div>
-  <div class="ch-thumb ch-img-7"></div>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-  <div class="ch-item">	
-   <div class="ch-info">
-    <h3>Remedies</h3>
-    <p>Caption <a href="#" data-toggle="modal" data-target="#remedies">Read more</a></p>
-  </div>
-  <div class="ch-thumb ch-img-8"></div>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-  <div class="ch-item">	
-   <div class="ch-info">
-    <h3>Pandit</h3>
-    <p>Caption <a href="#" data-toggle="modal" data-target="#pandit">Read more</a></p>
-  </div>
-  <div class="ch-thumb ch-img-9"></div>
-</div>
-</li>
+    </section>
+    <%= image_tag "img3.jpg", id: "service-contact-img"%>
 
-</ul>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="box yellow"></div>
 
+      <%= image_tag "contact-bg.jpg", id: "contact-bg"%>
+      <div class="container">
+        <h1>Contact Section</h1>
+        <div class="row">
+          <div class="col-md-5 col-md-offset-1 left">
+            <form>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">									    
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+              </div>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">									    
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">									   
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Mobile">
+              </div>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">									   
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject">
+              </div>
 
-<!-- 
-              <div class="col-md-2 col-md-offset-2" data-wow-duration="1s" data-wow-delay="1s">
-              	<div class="circle">
-              		<span>Numeralogy</span>
-              		<img src="images/about-us.jpg" data-toggle="modal" data-target="#myModal">
-              		
-              	</div>
+              <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">									   
+                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
               </div>
-              <div class="col-md-2">
-              	<img src="images/home.png" class="img-circle img-responsive" type="button" data-toggle="modal" data-target="#myModal" type="button">
-              </div>
-              <div class="col-md-2">
-              	<img src="images/home.png" class="img-circle img-responsive" type="button" data-toggle="modal" data-target="#myModal" type="button">
-              </div>
-              <div class="col-md-2">
-                <img src="images/home.png" class="img-circle img-responsive" type="button" data-toggle="modal" data-target="#myModal" type="button">
-              </div>
+
+              <button type="submit" class="btn btn-default wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Submit</button>
+            </form>
           </div>
-
-          <div class="row">              
-              <div class="col-md-2  col-md-offset-1">
-              	<img src="images/home.png" class="img-circle img-responsive img-thumbnail" type="button" data-toggle="modal" data-target="#myModal" type="button">
-              </div>
-              <div class="col-md-2">
-              	<img src="images/home.png" class="img-circle img-responsive img-thumbnail" type="button" data-toggle="modal" data-target="#myModal" type="button">
-              </div>
-              <div class="col-md-2">
-              	<img src="images/home.png" class="img-circle img-responsive img-thumbnail" type="button" data-toggle="modal" data-target="#myModal" type="button">
-              </div>
-              <div class="col-md-2">
-              	<img src="images/home.png" class="img-circle img-responsive img-thumbnail" type="button" data-toggle="modal" data-target="#myModal" type="button">
-              </div>
-              <div class="col-md-2">
-              	<img src="images/home.png" class="img-circle img-responsive img-thumbnail" type="button" data-toggle="modal" data-target="#myModal" type="button">
-              </div>
-            </div> -->
-
-          </div>
-        </section>
-        <!-- <img src="images/img3.jpg" id="service-contact-img"> -->
-        <%= image_tag "img3.jpg", id: "service-contact-img"%>
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-         <div class="box yellow"></div>
-
-         <!-- <img src="images/contact-bg.jpg" id="contact-bg"> -->
-        <%= image_tag "contact-bg.jpg", id: "contact-bg"%>
-         <div class="container">
-         	<h1>Contact Section</h1>
-          <div class="row">
-            <div class="col-md-5 col-md-offset-1 left">
-              <form>
-               <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">									    
-                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
-               </div>
-               <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">									    
-                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-               </div>
-               <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">									   
-                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Mobile">
-               </div>
-               <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">									   
-                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject">
-               </div>
-
-               <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">									   
-                 <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-               </div>
-
-               <button type="submit" class="btn btn-default wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Submit</button>
-             </form>
-           </div>
-           <div class="col-md-5 col-md-offset-1 right">
+          <div class="col-md-5 col-md-offset-1 right">
             <address  class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-             D.NO.: XXXXXXXXX<br>
-             XXXXXXXXXXXXXXXXXXXXXX<br>
-             Visakhapatnam<br>
-             Andhra Pradesh - 530XXX<br><br>
+              <strong>DR.SRI PATNAIK NARAAYANAA</strong> <small>MBA</small>,<br>
+              ASTRO-NUMEROLOGIST<br>              
+              SRIKAKULAM<br>
+              Andhra Pradesh - 532001<br><br>
 
-             <strong>Email: </strong> example@gmail.com<br>
-             <strong>Phone: </strong> 9988xxxxxx
-           </address>
-         </div>
-       </div>
-     </div>
-   </section>
-
- </div><!-- Wrapper ENd --> 
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="numerology" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              <strong>Email: </strong> remedyvans@gmail.com, slcnaa28@gmail.com<br>
+              <strong>Phone: </strong> 9052551118, 7382118129
+            </address>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Numerology is another modern method of divination, one whot attempts to 
+    </section>
 
-discern the occult significance of numbers. It too is a popular form of 
+  </div><!-- Wrapper ENd --> 
 
-entertainment. Like palmistry, numerology is thousands of years old and 
 
-strongly associated with the occult. The practice of using tarot cards and the 
 
-cabala are rooted in numerology, and astrology also bears a relationship. 
+  <!-- Modal -->
+  <div class="modal fade" id="numerology" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>Numerology is another modern method of divination, one whot attempts to  discern the occult significance of numbers. It too is a popular form of entertainment. Like palmistry, numerology is thousands of years old and strongly associated with the occult. The practice of using tarot cards and the cabala are rooted in numerology, and astrology also bears a relationship. Numerologists claim to offer the following information or advice: choosing the correct marriage partner, vocation, city, or house in which to live; individual “compatibility” with the products one uses; understanding one’s mate and friends better; when to buy property or invest in a business; the best days to take a trip, apply for a new job, start a new venture, have surgery, and so on. In this site we are providing  free blocks to know about your Digital Relationship
+          </p>
 
-Numerologists claim to offer the following information or advice: choosing the 
+          <p>Friendship Percentage, lucky number ,Favourable Date.</p>
 
-correct marriage partner, vocation, city, or house in which to live; individual 
+          <p>If u become a life member in my site you can see   your name correction pdf 
 
-“compatibility” with the products one uses; understanding one’s mate and 
-
-friends better; when to buy property or invest in a business; the best days to 
-
-take a trip, apply for a new job, start a new venture, have surgery, and so on.
-
-In this site we are providing  free blocks to know about your Digital 
-
-Relationship</p>
-
-<p>Friendship Percentage, lucky number ,Favourable Date.</p>
-
-<p>If u become a life member in my site you can see   your name correction pdf 
-
-file.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+            file.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="astrology" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Astrology</h4>
-      </div>
-      <div class="modal-body">
-        <p>Astrology sees mankind as being not only influenced by hereditary factors and
+  <div class="modal fade" id="astrology" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Astrology</h4>
+        </div>
+        <div class="modal-body">
+          <p>Astrology sees mankind as being not only influenced by hereditary factors and
 
-the environment, but also by the state of our solar system at the moment of birth. 
+            the environment, but also by the state of our solar system at the moment of birth. 
 
-The planets are regarded as basic life-forces, the tools we live by as well as the 
+            The planets are regarded as basic life-forces, the tools we live by as well as the 
 
-basis of our very substance. These planetary forces take on different forms, 
+            basis of our very substance. These planetary forces take on different forms, 
 
-depending on their zodiacal position and on the way they relate to one another.</p>
+            depending on their zodiacal position and on the way they relate to one another.
+          </p>
 
-<p>The aspects formed between the planets describe 
+          <p>The aspects formed between the planets describe 
 
-these relationships, the positions of the planets in 
+            these relationships, the positions of the planets in 
 
-relation to the place of birth tell us of their expression 
+            relation to the place of birth tell us of their expression 
 
-in the spheres of life depicted by the astrological 
+            in the spheres of life depicted by the astrological 
 
-houses.</p>
+            houses.
+          </p>
 
-<p>By interpreting the roles of these players (the planets) and their qualities (the 
+          <p>By interpreting the roles of these players (the planets) and their qualities (the 
 
-elements, signs and houses) and creating a synthesis, astrology is able to 
+            elements, signs and houses) and creating a synthesis, astrology is able to 
 
-present a complete and comprehensive picture of the person and his potential, 
+            present a complete and comprehensive picture of the person and his potential, 
 
-based on the natal horoscope.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="babynames" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Baby Names</h4>
-      </div>
-      <div class="modal-body">
-        <p>IN THIS BLOCK FOR THE FIRST TIME WE ARE INTRODUCING THE  CHILD 
-
-NAMES FOR FREE  NUMEROLOGY CORRECTION UPTO 0-9 YRS CHILDHREN ONLY.
-
-<p>FOR  THIS YOU  NEED TO FILL THE FIELDS AND YOU NEED TO CHOOSE YOUR 
-
-FAVOURATE NAME ACCORDING TO STAR SOUND AND GRAHA SOUND.</p>
-
-<p>AFTER THAT U NEED TO SEARCH A NICE NAME TO YOUR KID. FOR THIS FIELD YOU 
-
-NEED NOT TO BECOME A LIFE MEMBER IN OUR SITE as IT IS FREE . </p>
-
-<p>FROM ABOVE 10YEARS CUSTOMER CAN CHECK THE PROBLEM OF YOUR NAME IN 
-
-FREE OF COST. IF U NEED TO HAVE A CORRECTION OF YOUR NAME THEN YOU  
-
-NEED TO BECOME A LIFE MEMBER IN OUR SITE.THEN YOU CAN GET YOUR NAME 
-
-CORRECTION PDF FILE TO YOUR  OWN PAGE. THIS NAME CORRECTION WILL 
-
-NEVER BE DONE INDIVIDUALLY IN OUR SITE. SO IF YOU BECOME A LIFE MEMBER 
-
-THE NAME CORRECTION IS ONE OF THE PART IN THAT  PACKAGE.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+            based on the natal horoscope.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="products" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Products</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+  <div class="modal fade" id="babynames" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Baby Names</h4>
+        </div>
+        <div class="modal-body">
+          <p>IN THIS BLOCK FOR THE FIRST TIME WE ARE INTRODUCING THE  CHILD 
 
-<div class="modal fade" id="vastu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Vastu</h4>
-      </div>
-      <div class="modal-body">
-        <p>VAASTU SHASTRA is an ancient Hindu practice which tells us how to  
+            NAMES FOR FREE  NUMEROLOGY CORRECTION UPTO 0-9 YRS CHILDHREN ONLY.
+          </p>
 
-construct buildings in harmony with natural forces for the  well being of 
+          <p>FOR  THIS YOU  NEED TO FILL THE FIELDS AND YOU NEED TO CHOOSE YOUR 
 
-an individual as well as  humanity as a whole. This precious  Hindu 
+            FAVOURATE NAME ACCORDING TO STAR SOUND AND GRAHA SOUND.
+          </p>
 
-philosophy forms the the basis of  the  traditional Indian system of 
+          <p>AFTER THAT U NEED TO SEARCH A NICE NAME TO YOUR KID. FOR THIS FIELD YOU 
 
-architecture.  Vaastu literally means the dwelling place. The rules of 
+            NEED NOT TO BECOME A LIFE MEMBER IN OUR SITE as IT IS FREE . 
+          </p>
 
-Vaastu are derived from 'Vaastu Purusha' who is depicted as a man lying 
+          <p>FROM ABOVE 10YEARS CUSTOMER CAN CHECK THE PROBLEM OF YOUR NAME IN 
 
-with his head pointing northeast, in a grid of usually 64 squares. The 
+            FREE OF COST. IF U NEED TO HAVE A CORRECTION OF YOUR NAME THEN YOU  
 
-different parts and directions are assigned to different Gods and 
+            NEED TO BECOME A LIFE MEMBER IN OUR SITE.THEN YOU CAN GET YOUR NAME 
 
-Guardians. The 'Vaastu Purusha' is said to be the spirit of the site.  
+            CORRECTION PDF FILE TO YOUR  OWN PAGE. THIS NAME CORRECTION WILL 
 
-Aesthetically correct dimensions of rooms, doors windows and even the 
+            NEVER BE DONE INDIVIDUALLY IN OUR SITE. SO IF YOU BECOME A LIFE MEMBER 
 
-structural parts like plinth and pillars can be determined on the concept of 
-
-‘Vaastu Purusha’. Vastu Purusha is described at the-end.</p>
-
- <p> The purpose of the vaastu  of  Vaastu shastra is to provide 
-
-guidelines for proper construction of houses, shops, commercial buildings 
-
-with brand name stores and   operating offices etc. Vaastu determines the 
-
-position of the house with regard to points of a compass and suggests the 
-
-points to keep in mind with respect to  buildings, lines, directions, skylines, 
-
-elongations, levels, slopes, water (underground and overhead), kitchen, 
-
-bedrooms, toilets, staircase, heights of ceilings and roofs, entrances, 
-
-location of doors and windows, compound walls etc.</p>
-
-<p>The importance of Vaastu shastra lies in the fact that it is a result-
-
-oriented science and gives desired results if applied properly. Vaastu 
-
-shastra suggests ways in which we can live in tune with the laws of nature, 
-
-so that we can be healthy, peaceful and efficiently and prosperous.</p>  
-
-        <p> We can describe some ideal situations of houses and buildings 
-
-according to VastuShastra.  According to this science, an ideal plot should 
-
-be a square. Its  all four sides are straight and equal in length and it has 
-
-equal angle of 90 degree at all four corners. Square is the best shape of a 
-
-plot.   A rectangular plot having its length not more that double the 
-
-breadth (length and breadth ratio not more than 1:2) is also a good plot. 
-
-While selecting a plot,  geographical surroundings & level of the land and 
-
-roads around the plot must given due importance.</p>
-
-                              
-
-   <p>Direction of a plot can be determined by  using a magnetic 
-
-compass. It is a device for finding direction. It has a freely moving needle 
-
-which always points to the magnetic North. Make two lines crossing each 
-
-other dividing a paper in four equal parts at 90-degree angle. Place a 
-
-compass on paper in the middle of your plot and align it with two lines in 
-
-the North and the South of the needle of the compass.</p>
-
- <p>Extend these lines on the plot and mark it to have exact direction.</p>
-
- <p> The size of length, breadth  both effect the fortune of the person who lives 
-
-in it.  The Southwest portion of the house is meant for bedroom for adults. 
-
-It may be located in the South, and will be congenial for comfortable living. 
-
-Master bedroom may be on the upper storey, if any, in the Southwest 
-
-portion of the house.  Direction of a person while sleeping also has 
-
-importance in Vaastu shastra. One should never sleep having head 
-
-towards the North Pole and legs towards the South Pole.</p>
-
-<p> However one may sleep having legs towards the West and head 
-
-towards the East for mental peace, good thoughts and spirituality.  </p>
-
-       <p>Children room should be in the northwest or West Side. To have a 
-
-better concentration they should have a separate study close to their 
-
-bedrooms.  Location of kitchen has health implications.</p>
-
- <p>Presiding deity of the Southeast is Agni, the God of fire; hence kitchen may 
-
-be located  the southeast corner of the house.</p>
-
-<p>The dining room should be located in the East or the West or the North 
-
-near the kitchen. Northwest corner is good for perishable goods. Dinning 
-
-room may be in the Northwest direction, which leads to quicker 
-
-consumption of food. Drawing room should be preferably in the Northeast 
-
-or the North or the East but not in the Southwest portion of the house. 
-
-More vacant space should be given in the Northeast corner of the drawing 
-
-room.. Door is preferable on the East-towards-the-Northeast-side. </p>   
-
-<p>While studying, one should face the North or the East or the Northeast  
-
-Therefore the best locations for study room are the north, east, or 
-
-northeast. These directions attract the positive effects of Mercury 
-
-increasing brain power, Jupiter increasing wisdom, Sun increasing 
-
-ambition and Venus helps in bringing about creativity in new thoughts 
-
-and ideas.  Books may be kept in the Southwest side of the room. Study 
-
-room may have door on the East or the North,orthe-Northeast
-
-As per Vaastushastra, the East is the place for the bathroom. Attached 
-
-bathroom may preferably be in the North, or the East of a bedroom. 
-
-Shower, bathing tub and wash basin in the bathroom may be in the 
-
-Northeast, or the North or the East direction. One may have bath in the 
-
-North or the East area in the bathroom. 
-
-Bathroom should never be constructed in the center or in the southwest 
-
-corner-of-the-house.</p>
-
-<p>Storeroom should be made in the Northwest or Southwest portion of the 
-
-house. It is very beneficial if grains and other provisions are stored in the 
-
-Northwest store. All heavy things should be kept in the Southwest of the 
-
-storeroom. Garbage may be collected in the Southern part of the house.      
-
- In this block first time in websites we design the Vaastu with images so it 
-
-will be useful for everyone to get some  awareness .if you want any front 
-
-elevation structures u can take an appointment of our engineering as 
-
-mention in our site.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
+            THE NAME CORRECTION IS ONE OF THE PART IN THAT  PACKAGE.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="matrimony" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Matrimony</h4>
-      </div>
-      <div class="modal-body">
-        <p>This is the first time we are introducing a free matrimony , which will be 
-
-useful to all categories. In this site you need to enter your details, after that 
-
-you can search your life partner matching  free of cost .After matching then 
-
-you need to choose second option for astrologer to check the deep steps of 
-
-the life signs and then you need to move for third option to contact the 
-
-particular status for address, upto the above option u have free choice, to 
-
-get address of your matching partner you need to become a life member in 
-
-our website.If once you become a life member in our website you will get 
-
-contact numbers and addresses . you have a pandit option also to book a 
-
-near by  pandit from our site if you are interested.once the wedding card was 
-
-printed we will post the free ad of your wedding card in our site from admin. 
-
-Here the couple need to pay 1% amount to our institute through pay role 
-
-option from our site.  If suppose  they fail to pay !%percent amount after 
-
-marriage the customer page will be  blocked and the customers references 
-
-of the particular pages will be cancelled with all promo codes. So they are 
-
-not eligible for next process in our site.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
+  <div class="modal fade" id="products" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Products</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="mantras" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <div class="modal fade" id="vastu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Vastu</h4>
+        </div>
+        <div class="modal-body">
+          <p>VAASTU SHASTRA is an ancient Hindu practice which tells us how to  
+
+            construct buildings in harmony with natural forces for the  well being of 
+
+            an individual as well as  humanity as a whole. This precious  Hindu 
+
+            philosophy forms the the basis of  the  traditional Indian system of 
+
+            architecture.  Vaastu literally means the dwelling place. The rules of 
+
+            Vaastu are derived from 'Vaastu Purusha' who is depicted as a man lying 
+
+            with his head pointing northeast, in a grid of usually 64 squares. The 
+
+            different parts and directions are assigned to different Gods and 
+
+            Guardians. The 'Vaastu Purusha' is said to be the spirit of the site.  
+
+            Aesthetically correct dimensions of rooms, doors windows and even the 
+
+            structural parts like plinth and pillars can be determined on the concept of 
+
+            ‘Vaastu Purusha’. Vastu Purusha is described at the-end.
+          </p>
+
+          <p> The purpose of the vaastu  of  Vaastu shastra is to provide 
+
+            guidelines for proper construction of houses, shops, commercial buildings 
+
+            with brand name stores and   operating offices etc. Vaastu determines the 
+
+            position of the house with regard to points of a compass and suggests the 
+
+            points to keep in mind with respect to  buildings, lines, directions, skylines, 
+
+            elongations, levels, slopes, water (underground and overhead), kitchen, 
+
+            bedrooms, toilets, staircase, heights of ceilings and roofs, entrances, 
+
+            location of doors and windows, compound walls etc.
+          </p>
+
+          <p>The importance of Vaastu shastra lies in the fact that it is a result-
+
+            oriented science and gives desired results if applied properly. Vaastu 
+
+            shastra suggests ways in which we can live in tune with the laws of nature, 
+
+            so that we can be healthy, peaceful and efficiently and prosperous.
+          </p>  
+
+          <p> We can describe some ideal situations of houses and buildings 
+
+            according to VastuShastra.  According to this science, an ideal plot should 
+
+            be a square. Its  all four sides are straight and equal in length and it has 
+
+            equal angle of 90 degree at all four corners. Square is the best shape of a 
+
+            plot.   A rectangular plot having its length not more that double the 
+
+            breadth (length and breadth ratio not more than 1:2) is also a good plot. 
+
+            While selecting a plot,  geographical surroundings & level of the land and 
+
+            roads around the plot must given due importance.
+          </p>
+
+
+
+          <p>Direction of a plot can be determined by  using a magnetic 
+
+            compass. It is a device for finding direction. It has a freely moving needle 
+
+            which always points to the magnetic North. Make two lines crossing each 
+
+            other dividing a paper in four equal parts at 90-degree angle. Place a 
+
+            compass on paper in the middle of your plot and align it with two lines in 
+
+            the North and the South of the needle of the compass.
+          </p>
+
+          <p>Extend these lines on the plot and mark it to have exact direction.
+          </p>
+
+          <p> The size of length, breadth  both effect the fortune of the person who lives 
+
+            in it.  The Southwest portion of the house is meant for bedroom for adults. 
+
+            It may be located in the South, and will be congenial for comfortable living. 
+
+            Master bedroom may be on the upper storey, if any, in the Southwest 
+
+            portion of the house.  Direction of a person while sleeping also has 
+
+            importance in Vaastu shastra. One should never sleep having head 
+
+            towards the North Pole and legs towards the South Pole.
+          </p>
+
+          <p> However one may sleep having legs towards the West and head 
+
+            towards the East for mental peace, good thoughts and spirituality.  
+          </p>
+
+          <p>Children room should be in the northwest or West Side. To have a 
+
+            better concentration they should have a separate study close to their 
+
+            bedrooms.  Location of kitchen has health implications.
+          </p>
+
+          <p>Presiding deity of the Southeast is Agni, the God of fire; hence kitchen may 
+
+            be located  the southeast corner of the house.
+          </p>
+
+          <p>The dining room should be located in the East or the West or the North 
+
+            near the kitchen. Northwest corner is good for perishable goods. Dinning 
+
+            room may be in the Northwest direction, which leads to quicker 
+
+            consumption of food. Drawing room should be preferably in the Northeast 
+
+            or the North or the East but not in the Southwest portion of the house. 
+
+            More vacant space should be given in the Northeast corner of the drawing 
+
+            room.. Door is preferable on the East-towards-the-Northeast-side. 
+          </p>   
+
+          <p>While studying, one should face the North or the East or the Northeast  
+
+            Therefore the best locations for study room are the north, east, or 
+
+            northeast. These directions attract the positive effects of Mercury 
+
+            increasing brain power, Jupiter increasing wisdom, Sun increasing 
+
+            ambition and Venus helps in bringing about creativity in new thoughts 
+
+            and ideas.  Books may be kept in the Southwest side of the room. Study 
+
+            room may have door on the East or the North,orthe-Northeast
+
+            As per Vaastushastra, the East is the place for the bathroom. Attached 
+
+            bathroom may preferably be in the North, or the East of a bedroom. 
+
+            Shower, bathing tub and wash basin in the bathroom may be in the 
+
+            Northeast, or the North or the East direction. One may have bath in the 
+
+            North or the East area in the bathroom. 
+
+            Bathroom should never be constructed in the center or in the southwest 
+
+            corner-of-the-house.
+          </p>
+
+          <p>Storeroom should be made in the Northwest or Southwest portion of the 
+
+            house. It is very beneficial if grains and other provisions are stored in the 
+
+            Northwest store. All heavy things should be kept in the Southwest of the 
+
+            storeroom. Garbage may be collected in the Southern part of the house.      
+
+            In this block first time in websites we design the Vaastu with images so it 
+
+            will be useful for everyone to get some  awareness .if you want any front 
+
+            elevation structures u can take an appointment of our engineering as 
+
+            mention in our site.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <div class="modal fade" id="matrimony" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Matrimony</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is the first time we are introducing a free matrimony , which will be 
 
-<div class="modal fade" id="remedies" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Remedies</h4>
-      </div>
-      <div class="modal-body">
-        <p>Colour is used to help restore energy balance to imbalanced parts of 
+            useful to all categories. In this site you need to enter your details, after that 
 
-the body. The imbalance can be physical, emotional, spiritual or mental. 
+            you can search your life partner matching  free of cost .After matching then 
 
-Most colour studies are psychological and are not based on strict and 
+            you need to choose second option for astrologer to check the deep steps of 
 
-scientifically designed research. I could not find any scientific journals or 
+            the life signs and then you need to move for third option to contact the 
 
-papers that back up the healing/beneficial qualities of colourology. There 
+            particular status for address, upto the above option u have free choice, to 
 
-are no degrees or licenses you need to obtain to become a colour therapist. 
+            get address of your matching partner you need to become a life member in 
 
-This means that anyone can be a colour therapist and the advice they are 
+            our website.If once you become a life member in our website you will get 
 
-giving out could be false. By taking a colour test, you can determine your 
+            contact numbers and addresses . you have a pandit option also to book a 
 
-short and long term emotional state.</p>
+            near by  pandit from our site if you are interested.once the wedding card was 
 
-              <p> The human eye sees green more than any other colour. We 
+            printed we will post the free ad of your wedding card in our site from admin. 
 
-are surrounded by foliage in various shades of green, from bright yellow 
+            Here the couple need to pay 1% amount to our institute through pay role 
 
-green, to subtle gray green and even the deep blue green of a lake. Green is 
+            option from our site.  If suppose  they fail to pay !%percent amount after 
 
-symbolic of nature and freshness and in today’s society; organic. It 
+            marriage the customer page will be  blocked and the customers references 
 
-physiologically affects the nervous system by causing us to breathe slowly 
+            of the particular pages will be cancelled with all promo codes. So they are 
 
-and deeply, which helps relax the heart.</p>
+            not eligible for next process in our site.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
- <p>Green is the most soothing colour to the human eye and is a 
-
-combination of the blue sky and yellow sun. Blue is associated with many 
-
-religions, for example, the blue cloak of the Virgin Mary. It is the colour of 
-
-tranquility and is used to represent dependability and loyalty. This colour 
-
-is the 1 choice in corporate branding and identification. </p>
-
-<p>Dark blues are much more serious and thought provoking. Brown is 
-
-the colour commonly associated with earth and is seen as benign and non-
-
-threatening. This colour speaks of a rustic nature and reminds us of 
-
-hearth and home. It is a wholesome colour and has connotations of being 
-
-organic that health food advertising has used to their advantage.</p> 
-
-<p>Brown also has a great appeal in food and drink. In relation to coffee 
-
-or chocolate, brown is hard to resist. Yellow is full of heat, vitality, energy 
-
-and light. It is the colour of greatest visibility and is a pure vibrant colour. 
-
-It is the colour used to express hope, joy and optimism. </p>
-
-<p>Yellow is effective for attention grabbing and combined with black, it 
-
-is even more commanding. Yellow light waves are said to stimulate the 
-
-brain, bring clear-headed thinking and decisive action. Softer shades of 
-
-yellow bring thoughts of comfort, relaxation and comfort. Gold is seen as 
-
-the colour of wealth and luxury and the perception of value always 
-
-intensifies with the use of this colour. </p>
-
-<p>The popularity of orange fell during the mid 20th century when the 
-
-colour was associated with fast food restaurants, not fine dining. 
-
-Since then, it has experienced wider exposure and is used in 
-
-industrial design and consumer products. Orange is an outgoing, 
-
-optimistic and energetic colour that has evolved into more sophisticated 
-
-colours like light peach tones or deep terra cotta hues. </p>
-
-<p>Orange is seen as a friendlier, less aggressive colour than red but 
-
-still calls for attention. The closer orange gets to red, the more sultry and 
-
-exotic it becomes. Lighter peach tones have connotations of warmth, sweet 
-
-scents and are a pleasant visual experience. Mid to deep orange hues, such 
-
-as clay, are associated with the earth and are wholesome, warm colours. </p>
-
-<p>Red is a viscerally vibrant hue that suggests life and strong 
-
-emotions. It is an aggressive colour that has a demanding presence and 
-
-grabs attention. Word association studies show that red is perceived as 
-
-the most sensual of colours. It is a provocative colour commonly used in 
-
-cosmetics, lingerie, sports cars, advertisements, packaging etc. Hot pinks, 
-
-magentas and fuchsias can also be used to capture attention. They radiate 
-
-youthful energy and are more playful. </p>
-
-</p>Lighter pinks have connotations of sweetness and girlishness and 
-
-are associated with love and romance. Deeper reds are connected to 
-
-thoughts of elegance, refinery and luxury. Earthy red shades bring 
-
-thoughts of warmth and homeliness.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="pandit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Pandit</h4>
-      </div>
-      <div class="modal-body">
-        <p>FOR THE FIRST TIME WE ARE GIVING A NICE OPPERTUNITY FOR PANDITS THOSE WHO ARE HAPPEN TO 
+  <div class="modal fade" id="mantras" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Mantras</h4>
+        </div>
+        <div class="modal-body">            
 
-BE A PART IN OUR SITE.</p>
 
-<p>THE PANDITS ARE GOING TO BE DIVIDED INTO 3 CATEGORIES IN THESE CATEGORIES THE FIRST ONE 
 
-BELONGS TO VEDAM CERTIFIED BRAHMINS WHO WILL ONLY DO HOMAM, MARRIAGES,ETC..</p>
 
-<p>SECOND CATEGORY PEOPLE  ARE BELONGS TO ASTROLOGER, VASTU,PALM.NUMEROLOGY ETC </p>
 
-<p>THIRD RUNNING CATEGORY PEOPLE ARE TO BOTH CATEGORIES.</p>
 
-<p>ACCORDING TO THE CUSTOMER CHOICE THE PANDIT WILL BOOK FROM DIFFERENT DISTRICT , STATE 
-
-WISE FOR THE ABOVE SCHEDULE.</p>
-
-<p>FOR PANDIT IF HE JOIN AS A LIFE MEMBER HE NEED TO PAY THE YEARLY CHARGES TO OUR SITE.</p>
-
-<p>IF CUSTOMER BOOK ANY PANDIT FROM OUR SITE FOR ANY EVENT YOU NEED NOT TO PAY ANYTHING 
-
-TO US.YOU NEED TO NEGOTIATE DIRECTLY TO CUSTOMER,FOR PAYMENT.</p>
-
-<p>ONCE YOU ARE CONDUCTING ANY EVENT YOU NEED TO TIE A COMPANY BANNER AT THAT EVENT PLACE 
-
-AND YOU NEED TO SEND A PHOTO CLIP  TO OUR MAIL ID WWW.REMEDYVANS.COM . SO THAT THE 
-
-EVENT PHOTO WILL BE PLACED IN YOUR PAGE FOR FREE AD.</p>
-
-<p>I HOPE THE PANDITS WILL UTILISE THIS OFFER FROM OUR SITE.PROMOCODE  WILL BE GENERATED TO 
-
-THE PANDIT WHO WILL BECOME THE MEMBER IN OUR SITE.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+
+  <div class="modal fade" id="remedies" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Remedies</h4>
+        </div>
+        <div class="modal-body">
+          <p>Colour is used to help restore energy balance to imbalanced parts of 
+
+            the body. The imbalance can be physical, emotional, spiritual or mental. 
+
+            Most colour studies are psychological and are not based on strict and 
+
+            scientifically designed research. I could not find any scientific journals or 
+
+            papers that back up the healing/beneficial qualities of colourology. There 
+
+            are no degrees or licenses you need to obtain to become a colour therapist. 
+
+            This means that anyone can be a colour therapist and the advice they are 
+
+            giving out could be false. By taking a colour test, you can determine your 
+
+            short and long term emotional state.
+          </p>
+
+          <p> The human eye sees green more than any other colour. We 
+
+            are surrounded by foliage in various shades of green, from bright yellow 
+
+            green, to subtle gray green and even the deep blue green of a lake. Green is 
+
+            symbolic of nature and freshness and in today’s society; organic. It 
+
+            physiologically affects the nervous system by causing us to breathe slowly 
+
+            and deeply, which helps relax the heart.
+          </p>
+
+          <p>Green is the most soothing colour to the human eye and is a 
+
+            combination of the blue sky and yellow sun. Blue is associated with many 
+
+            religions, for example, the blue cloak of the Virgin Mary. It is the colour of 
+
+            tranquility and is used to represent dependability and loyalty. This colour 
+
+            is the 1 choice in corporate branding and identification. 
+          </p>
+
+          <p>Dark blues are much more serious and thought provoking. Brown is 
+
+            the colour commonly associated with earth and is seen as benign and non-
+
+            threatening. This colour speaks of a rustic nature and reminds us of 
+
+            hearth and home. It is a wholesome colour and has connotations of being 
+
+            organic that health food advertising has used to their advantage.
+          </p> 
+
+          <p>Brown also has a great appeal in food and drink. In relation to coffee 
+
+            or chocolate, brown is hard to resist. Yellow is full of heat, vitality, energy 
+
+            and light. It is the colour of greatest visibility and is a pure vibrant colour. 
+
+            It is the colour used to express hope, joy and optimism. 
+          </p>
+
+          <p>Yellow is effective for attention grabbing and combined with black, it 
+
+            is even more commanding. Yellow light waves are said to stimulate the 
+
+            brain, bring clear-headed thinking and decisive action. Softer shades of 
+
+            yellow bring thoughts of comfort, relaxation and comfort. Gold is seen as 
+
+            the colour of wealth and luxury and the perception of value always 
+
+            intensifies with the use of this colour. 
+          </p>
+
+          <p>The popularity of orange fell during the mid 20th century when the 
+
+            colour was associated with fast food restaurants, not fine dining. 
+
+            Since then, it has experienced wider exposure and is used in 
+
+            industrial design and consumer products. Orange is an outgoing, 
+
+            optimistic and energetic colour that has evolved into more sophisticated 
+
+            colours like light peach tones or deep terra cotta hues. 
+          </p>
+
+          <p>Orange is seen as a friendlier, less aggressive colour than red but 
+
+            still calls for attention. The closer orange gets to red, the more sultry and 
+
+            exotic it becomes. Lighter peach tones have connotations of warmth, sweet 
+
+            scents and are a pleasant visual experience. Mid to deep orange hues, such 
+
+            as clay, are associated with the earth and are wholesome, warm colours. 
+          </p>
+
+          <p>Red is a viscerally vibrant hue that suggests life and strong 
+
+            emotions. It is an aggressive colour that has a demanding presence and 
+
+            grabs attention. Word association studies show that red is perceived as 
+
+            the most sensual of colours. It is a provocative colour commonly used in 
+
+            cosmetics, lingerie, sports cars, advertisements, packaging etc. Hot pinks, 
+
+            magentas and fuchsias can also be used to capture attention. They radiate 
+
+            youthful energy and are more playful. 
+          </p>
+
+          <p>Lighter pinks have connotations of sweetness and girlishness and 
+
+            are associated with love and romance. Deeper reds are connected to 
+
+            thoughts of elegance, refinery and luxury. Earthy red shades bring 
+
+            thoughts of warmth and homeliness.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pandit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Pandit</h4>
+        </div>
+        <div class="modal-body">
+          <p>FOR THE FIRST TIME WE ARE GIVING A NICE OPPERTUNITY FOR PANDITS THOSE WHO ARE HAPPEN TO BE A PART IN OUR SITE.</p>
+
+          <p>THE PANDITS ARE GOING TO BE DIVIDED INTO 3 CATEGORIES IN THESE CATEGORIES THE FIRST ONE BELONGS TO VEDAM CERTIFIED BRAHMINS WHO WILL ONLY DO HOMAM, MARRIAGES,ETC..</p>
+
+          <p>SECOND CATEGORY PEOPLE  ARE BELONGS TO ASTROLOGER, VASTU,PALM.NUMEROLOGY ETC </p>
+
+          <p>THIRD RUNNING CATEGORY PEOPLE ARE TO BOTH CATEGORIES.</p>
+
+          <p>ACCORDING TO THE CUSTOMER CHOICE THE PANDIT WILL BOOK FROM DIFFERENT DISTRICT , STATE        WISE FOR THE ABOVE SCHEDULE.</p>
+
+          <p>          FOR PANDIT IF HE JOIN AS A LIFE MEMBER HE NEED TO PAY THE YEARLY CHARGES TO OUR SITE.</p>
+
+          <p>IF CUSTOMER BOOK ANY PANDIT FROM OUR SITE FOR ANY EVENT YOU NEED NOT TO PAY ANYTHING         TO US.YOU NEED TO NEGOTIATE DIRECTLY TO CUSTOMER,FOR PAYMENT.</p>
+
+          <p>ONCE YOU ARE CONDUCTING ANY EVENT YOU NEED TO TIE A COMPANY BANNER AT THAT EVENT PLACE        AND YOU NEED TO SEND A PHOTO CLIP  TO OUR MAIL ID .REMEDYVANS@gmail.com . SO THAT THE  EVENT PHOTO WILL BE PLACED IN YOUR PAGE FOR FREE AD.</p>
+
+          <p>I HOPE THE PANDITS WILL UTILISE THIS OFFER FROM OUR SITE.PROMOCODE  WILL BE GENERATED TO THE PANDIT WHO WILL BECOME THE MEMBER IN OUR SITE.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+        </div>
+      </div>
+    </div>
+  </div>
+
+

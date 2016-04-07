@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+gem 'mysql2', '~> 0.3.18'
 
-gem 'mysql2', '~> 0.3.11'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-    gem 'sqlite3', '~>1.3.11'
+#    gem 'sqlite3', '~>1.3.11'
 end
 
 group :production do
@@ -45,6 +45,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'delayed_job_active_record'
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

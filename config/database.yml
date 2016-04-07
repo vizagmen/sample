@@ -1,9 +1,10 @@
 default: &default
-  adapter: mysql2
+  adapter: mysql2 
   encoding: utf8
   pool: 5
+  timeout: 5000
   username: root
-  password: saibaba44
+  password: p@ssw0rd
   socket: /var/run/mysqld/mysqld.sock
 
 development:
@@ -16,6 +17,24 @@ development:
 test:
   <<: *default
   database: sample_test
+
+production:
+  <<: *default
+  adapter: mysql2
+  database: sample_production
+  # host: localhost
+  # user: owning_user
+
+  #adapter: postgresql
+  #host: ec2-54-83-40-119.compute-1.amazonaws.com
+  #database: dbilf7vb6gt3lb
+  #encoding: utf8
+  #pool: 5
+  #username: zbmidzbehidkqt
+  #port: 5432
+  #password: 8L_WQe9d9axpJ8ynmgA2EfocPn
+  #url: postgres://zbmidzbehidkqt:8L_WQe9d9axpJ8ynmgA2EfocPn@ec2-54-83-40-119.compute-1.amazonaws.com:5432/dbilf7vb6gt3lb
+  timeout: 5000
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -36,11 +55,6 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: sample_production
-  username: sample
-  password: <%= ENV['SAMPLE_DATABASE_PASSWORD'] %>
 # =======
 #   # <<: *default
 #   # adapter: postgresql
@@ -58,4 +72,3 @@ production:
 #   password: 8L_WQe9d9axpJ8ynmgA2EfocPn
 #   url: postgres://zbmidzbehidkqt:8L_WQe9d9axpJ8ynmgA2EfocPn@ec2-54-83-40-119.compute-1.amazonaws.com:5432/dbilf7vb6gt3lb
 #   timeout: 5000
-# >>>>>>> 4fb9f0dcf17d7ce4145f017d6742591f21ef5bd2
