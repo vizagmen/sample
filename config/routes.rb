@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-  
+
+  resources :products
   resources :casts
-  resources :nakshatras
-  devise_for :users
+  resources :nakshatras  
+  # devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
   resources :welcome, only: :index
   resources :dashboard, only: :index
   resources :users
+  resources :registrations
+  resources :pandits
   
   resources :numerologys, only: :index do
     collection do

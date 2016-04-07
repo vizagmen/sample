@@ -1,0 +1,49 @@
+<div class="user-wrapper profile">
+  <ul class="list-group">
+    <% if current_user.avatar.present? %>
+    <%= image_tag current_user.avatar_url, class: "img-responsive" %>
+    <% elsif current_user.gender %>
+    <%= image_tag "profile-2.jpg", class: "img-responsive" %>
+    <% else %>
+    <%= image_tag "profile-1.jpg", class: "img-responsive" %>
+    <%end %>
+
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-4 text-right"><label><small> EMail</small></label></div>
+        <div class="col-xs-8"><%= current_user.email %></div>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-4 text-right"><label><small> Gender</small></label></div>
+        <div class="col-xs-8"><%= current_user.gender ? "Male" : "Female" %></div>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-4 text-right"><label><small> Phone</small></label></div>
+        <div class="col-xs-8"><%= current_user.phone %></div>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-4 text-right"><label><small> Aadhar</small></label></div>
+        <div class="col-xs-8"><%= current_user.aadhar_card %></div>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-4 text-right"><label><small> Address</small></label></div>
+        <div class="col-xs-8"><%= current_user.address %></div>
+      </div>
+    </li>
+    <div class="description text-right">          
+      <%= link_to "Edit", edit_user_registration_path, class: "btn btn-info btn-sm" %>
+    </div>
+  </ul>    
+</div>

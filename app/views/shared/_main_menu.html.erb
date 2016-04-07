@@ -8,18 +8,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>      
-      <%= link_to root_path(anchor: "page-top"), class: "navbar-brand page-scroll" do %>
-        Sri Saii <small>Laharri</small>
+      
+
+      <%= link_to dashboard_index_path, class: "navbar-brand page-scroll" do %>
+      Sri Saii <small>Laharri</small>
       <%end%>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
+
       <div class="navbar-right">
         <% unless user_signed_in? %>        
-          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn" %>
-          <%= link_to "Sign in", new_user_session_path, class: "btn btn-success navbar-btn" %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn" %>
+        <%= link_to "Sign in", new_user_session_path, class: "btn btn-success navbar-btn" %>
         <% end %>
       </div>
 
@@ -39,76 +42,81 @@
           <% #link_to "Contact", root_path(anchor: "#contact"), class: "page-scroll" %>
         </li> -->
 
-          <% if user_signed_in? && current_user.is_admin %>
-          <li class="dropdown">
-            <%= link_to numerologys_path,  class: "dropdown-toggle", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false", disabled: true do %>
-              <i class="fa fa-cog"></i> Admin Operations <span class="fa fa-chevron-down"></span>
-            <%end%>
-            
-            <ul class="dropdown-menu">                            
-              <li><%= link_to "Cast", casts_path %></li>              
-              <li><%= link_to "Users", users_path %></li>
-              <li><%= link_to "Nakshatras", nakshatras_path %></li>              
-            </ul>
-          </li>
+        <% if user_signed_in? && current_user.is_admin %>
+        <li class="dropdown">
+          <%= link_to numerologys_path,  class: "dropdown-toggle", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false", disabled: true do %>
+          <i class="fa fa-cog"></i> Admin Operations <span class="fa fa-chevron-down"></span>
           <%end%>
 
+          <ul class="dropdown-menu">                            
+            <li><%= link_to "Cast", casts_path %></li>              
+            <li><%= link_to "Users", users_path %></li>
+            <li><%= link_to "Nakshatras", nakshatras_path %></li>  
+            <li><%= link_to "Products", products_path %></li>              
+          </ul>
+        </li>
+        <%end%>
 
-          <% if user_signed_in? %>
-          <li class="dropdown">
-            <%= link_to numerologys_path,  class: "dropdown-toggle", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false", disabled: true do %>
-              <i class="fa fa-fw fa-bar-chart-o"></i> Numerologys <span class="fa fa-chevron-down"></span>
-            <%end%>
-            
-            <ul class="dropdown-menu">
-              <li>
-                <%= link_to "All Numerologies",numerologys_path %>
-              </li>
-              <li role="separator" class="divider"></li>
-              <li><%= link_to "Digital", get_digital_numerologys_path %></li>
-              <li><%= link_to "Friendship", get_friendship_numerologys_path %></li>
-              <li><%= link_to "Get Favorites", get_favorites_numerologys_path %></li>
-              <li><%= link_to "Lucky Number", lucky_number_numerologys_path %></li>
-              <li><%= link_to "Cell Number Matcr", cell_number_match_numerologys_path %></li>
-              <li><%= link_to "Vechicle Number Match", vechicle_number_match_numerologys_path %></li>            
-              <li><%= link_to "Name Correction", get_name_correction_numerologys_path %></li>            
-            </ul>
-          </li>
 
-          <li>            
-            <%= link_to matrimony_index_path do %>
-              <i class="fa fa-users"></i> Matrimony 
-            <%end%>
-          </li>
+        <% if user_signed_in? %>
+        <li class="dropdown">
+          <%= link_to numerologys_path,  class: "dropdown-toggle", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false", disabled: true do %>
+          <i class="fa fa-fw fa-bar-chart-o"></i> Numerologys <span class="fa fa-chevron-down"></span>
+          <%end%>
 
-         
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to "All Numerologies",numerologys_path %>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to "Digital", get_digital_numerologys_path %></li>
+            <li><%= link_to "Friendship", get_friendship_numerologys_path %></li>
+            <li><%= link_to "Get Favorites", get_favorites_numerologys_path %></li>
+            <li><%= link_to "Lucky Number", lucky_number_numerologys_path %></li>
+            <li><%= link_to "Cell Number Matcr", cell_number_match_numerologys_path %></li>
+            <li><%= link_to "Vechicle Number Match", vechicle_number_match_numerologys_path %></li>            
+            <li><%= link_to "Name Correction", get_name_correction_numerologys_path %></li>            
+          </ul>
+        </li>
 
-          <li class="dropdown">
-            <%= link_to  dashboard_index_path, class: "dropdown-toggle", "data-toggle": "dropdown", role: "button",  "aria-haspopup": "true", "aria-expanded": "false" do %>
-              <%= image_tag(current_user.avatar.thumb.url, class: "img-circle", size: "20x20") %>
-              <%= current_user.email %> <span class="fa fa-chevron-down"></span>
-            <%end%>            
-            <ul class="dropdown-menu">
-              <li>
-                <%= link_to user_path(current_user) do %>
-                    <i class="fa fa-fw fa-user"></i> Profile
-                <%end%> 
-              </li>
-              <li>
-                <%= link_to edit_user_registration_path do %>
-                    <i class="fa fa-edit"></i> Edit Profile
-                <%end%> 
-              </li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li>
-                <%= link_to destroy_user_session_path, :method => :delete do %>
-                  <i class="fa fa-fw fa-power-off"></i> Log Out
-                <% end %>
-              </li>
-            </ul>
-          </li>                    
+        <li>            
+          <%= link_to matrimony_index_path do %>
+          <i class="fa fa-users"></i> Matrimony 
+          <%end%>
+        </li>
+
+        <li>            
+          <%= link_to pandits_path do %>
+          <i class="fa fa-user"></i> Pandit 
+          <%end%>
+        </li>
+
+        <li class="dropdown">
+          <%= link_to  dashboard_index_path, class: "dropdown-toggle", "data-toggle": "dropdown", role: "button",  "aria-haspopup": "true", "aria-expanded": "false" do %>
+          <%= image_tag(current_user.avatar.thumb.url, class: "img-circle", size: "20x20") %>
+          <%= current_user.email %> <span class="fa fa-chevron-down"></span>
+          <%end%>            
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to user_path(current_user) do %>
+              <i class="fa fa-fw fa-user"></i> Profile
+              <%end%> 
+            </li>
+            <!-- <li>
+              <%= link_to edit_user_registration_path do %>
+              <i class="fa fa-edit"></i> Edit Profile
+              <%end%> 
+            </li> -->
+            <!-- <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li> -->
+            <li role="separator" class="divider"></li>
+            <li>
+              <%= link_to destroy_user_session_path, :method => :delete do %>
+              <i class="fa fa-fw fa-power-off"></i> Log Out
+              <% end %>
+            </li>
+          </ul>
+        </li>                    
         <% end %>              
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="fa fa-chevron-down"></span></a>
@@ -122,6 +130,6 @@
         </li> -->
       </ul>
       
-  </div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>

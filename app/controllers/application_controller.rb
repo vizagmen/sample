@@ -9,32 +9,32 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_devise_permitted_parameters
-    registration_params = [:name, :email, :password, :password_confirmation, :name, :aadhar_card, :phone, :reference, :address, :avatar,:gender, :serial_no, :dob]
-    
-    if params[:action] == 'update'
-      devise_parameter_sanitizer.for(:account_update) { 
-        |u| u.permit(registration_params << :current_password)
-      }
-    elsif params[:action] == 'create'
-      devise_parameter_sanitizer.for(:sign_up) { 
-        |u| u.permit(registration_params) 
-      }
-    end
-  end
+    registration_params = [:name, :email, :password, :password_confirmation, :name, :aadhar_card, :phone, :reference, :address, :avatar,:gender, :serial_no, :dob, :role]
 
-  def after_sign_up_path_for(resource)
-    dashboard_index_path
-  end
+    # if params[:action] == 'update'
+    #   devise_parameter_sanitizer.for(:account_update) { 
+    #     |u| u.permit(registration_params << :current_password)
+    #   }
+    # elsif params[:action] == 'create'
+    #   devise_parameter_sanitizer.for(:sign_up) { 
+    #     |u| u.permit(registration_params) 
+    #   }
+  # end
+end
 
-  def after_update_path_for(resource)
-    dashboard_index_path
-  end
+def after_sign_up_path_for(resource)
+  dashboard_index_path
+end
 
-  def after_sign_in_path_for(resource)
-    dashboard_index_path
-  end
+def after_update_path_for(resource)
+  dashboard_index_path
+end
 
-  def is_admin?
-    redirect_to root_path unless current_user.is_admin
-  end
+def after_sign_in_path_for(resource)
+  dashboard_index_path
+end
+
+def is_admin?
+  redirect_to root_path unless current_user.is_admin
+end
 end

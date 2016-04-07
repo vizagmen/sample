@@ -1,8 +1,72 @@
+<div class="row">
+  <div class="col-md-4 col-sm-4">  
+    <%= render '/users/profile'%>    
+  </div>
+  <div class="col-md-8 col-sm-8">
+    <h3 class="page-header ">Dashboard</h3>
+    <div class="row text-center">
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("numerology-out.jpg", class: "img-circle img-center", alt: "", size: "200x200") %>
+        <h4><%= link_to "Numerology", numerologys_path %></h4>
+        <br><br>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("astrology.jpg", class: "img-circle img-center", alt: "", size: "200x200") %>       
+        <h4><a href="#">Astrology</a></h4> 
+        <br><br>                
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("babynames.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>
+        <h4><a href="#">Baby Names</a></h4>
+        <br><br>
+      </div>
 
 
-<h1 class="page-header ">Dashboard</h1>
-<br><br>
-<div class="row text-center">
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("products.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>        
+        <h4><a href="#">Products</a></h4>
+        <br><br>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("vastu.png", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>
+        <h4><a href="#">Vastu</a></h4>
+        <br><br>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("matrimony.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>
+        <h4 ><a >Matrimony</a></h4>
+        <br><br>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("mantras.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>    
+        <h4 data-toggle="modal" data-target="#mantras"><a href="#">Mantras</a></h4>
+        <br><br>              
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("remedies.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>
+        <h4><a href="#">Remedies</a></h4>
+        <br><br>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <%= image_tag("pandit.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>
+        <h4><a href="#">Pandit</a></h4>
+        <br><br>
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+
+
+<!-- <div class="row text-center">
   <div class="col-lg-3 col-sm-6 text-center">
     <%= image_tag("numerology-out.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>
     <h4><%= link_to "Numerology", numerologys_path %></h4>
@@ -47,7 +111,7 @@
     <%= image_tag("pandit.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
     <h4><a href="#">Pandit</a></h4>
   </div>
-</div>
+</div> -->
 
 
 

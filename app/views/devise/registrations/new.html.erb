@@ -3,12 +3,12 @@
   <!-- <div class="col-sm-6 hidden-xs">
   <%= image_tag "sign-up.jpg", class: "img-responsive" %>
 </div> -->
-
+<h2 class="page-header">Sign up</h2>
 
 <div class="row">
   <div class="col-sm-6 hidden-xs">
-    <h2 class="page-header">Sign up</h2>
-    <%= image_tag "sign-up.jpg", class: "img-responsive" %>
+
+    <%= image_tag "ugadi.jpg", class: "img-responsive" %>
 
     <h3>Help Note</h3>
     <ul class="list-unstyle">
@@ -29,20 +29,46 @@
 
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#free" aria-controls="free" role="tab" data-toggle="tab">Free User</a></li>
-        <li role="presentation"><a href="#lifetime" aria-controls="lifetime" role="tab" data-toggle="tab">Life Time User</a></li>
+        <li role="presentation" class="active"><a onclick="$('.serial-no').hide();" href="#free" aria-controls="free" role="tab" data-toggle="tab">Free User</a></li>
+        <li role="presentation"><a onclick="$('.serial-no').hide();" href="#lifetime" aria-controls="lifetime" role="tab" data-toggle="tab">Life Time User</a></li>
+        <li role="presentation"><a onclick="$('.serial-no').hide();" href="#pandit" aria-controls="pandit" role="tab" data-toggle="tab">Pandit</a></li>
       </ul>
 
       <!-- Tab panes -->
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="free">
-          <br>
-          <%= form_for(resource, as: resource_name, url: registration_path(resource_name), multipart: true) do |f| %>
+          <br>          
+          <%= form_for(resource, as: resource_name, url: user_registration_path(resource_name), multipart: true) do |f| %>
           <%= devise_error_messages! %>
+          <%= f.hidden_field :role, :value => User::TYPE_FREE_USER %>
+
+          <div class="form-group">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password %>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
+          </div>
 
           <div class="form-group">
             <%= f.label :name %>
             <%= f.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :avatar, "Photo" %>
+            <%= f.file_field :avatar  %>
+            <p class="help-block">Upload pic for your profile.</p>
           </div>
 
           <div class="form-group">
@@ -85,7 +111,7 @@
             </div>
           </div>
 
-          <div class="form-group" id="serial-no">
+          <div class="form-group serial-no">
             <%= f.label :serial_no, "Serial Number" %>
             <%= f.text_field :serial_no, class: "form-control", placeholder: "Enter the serial number" %>
           </div>
@@ -102,25 +128,6 @@
             <%= f.label :phone %>
             <%= f.text_field :phone,class: "form-control", placeholder: "Phone" %>
           </div>
-
-          <div class="form-group">
-            <%= f.label :email %><br />
-            <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
-          </div>
-
-          <div class="form-group">
-            <%= f.label :password %>
-            <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
-          </div>
-
-          <div class="form-group">
-            <%= f.label :password_confirmation %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
-          </div>
-
 
 
           <!-- <div class="form-group">
@@ -152,22 +159,41 @@
 
 
           <% end %>
-
         </div>
-
-
-
-
-
 
         <div role="tabpanel" class="tab-pane fade" id="lifetime">
           <br>
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name), multipart: true) do |f| %>
           <%= devise_error_messages! %>
+          <%= f.hidden_field :role, :value => User::TYPE_PAID_USER %>
+
+          <div class="form-group">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password %>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
+          </div>
 
           <div class="form-group">
             <%= f.label :name %>
             <%= f.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :avatar, "Photo" %>
+            <%= f.file_field :avatar  %>
+            <p class="help-block">Upload pic for your profile.</p>
           </div>
 
           <div class="form-group">
@@ -210,7 +236,7 @@
             </div>
           </div>
 
-          <div class="form-group" id="serial-no">
+          <div class="form-group serial-no">
             <%= f.label :serial_no, "Serial Number" %>
             <%= f.text_field :serial_no, class: "form-control", placeholder: "Enter the serial number" %>
           </div>
@@ -233,34 +259,14 @@
             <%= f.text_field :phone,class: "form-control", placeholder: "Phone" %>
           </div>
 
-          <div class="form-group">
-            <%= f.label :email %><br />
-            <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
-          </div>
 
-          <div class="form-group">
-            <%= f.label :password %>
-            <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
-          </div>
-
-          <div class="form-group">
-            <%= f.label :password_confirmation %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
-          </div>
 
           <div class="form-group">
             <%= f.label :aadhar_card %>
             <%= f.text_field :aadhar_card, class: "form-control", placeholder: "Aadhar Card Number" %>
           </div>
 
-          <div class="form-group">
-            <%= f.label :avatar, "Photo" %>
-            <%= f.file_field :avatar  %>
-            <p class="help-block">Upload pic for your profile.</p>
-          </div>
+          
 
           <!-- <div class="form-group">
             <%= label_tag :option, "Choose Your Type" %>
@@ -298,7 +304,137 @@
 
 
           <% end %>
+        </div> 
 
+        <div role="tabpanel" class="tab-pane fade" id="pandit">
+          <br>
+          <%= form_for(resource, as: resource_name, url: user_registration_path(resource_name), multipart: true) do |f| %>
+          <%= devise_error_messages! %>
+          <% resource.build_pandit %>
+          
+          <%= f.hidden_field :role, :value => User::TYPE_PANDIT %>
+
+          <div class="form-group">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password %>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
+          </div>          
+
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :avatar, "Photo" %>
+            <%= f.file_field :avatar  %>
+            <p class="help-block">Upload pic for your profile.</p>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :gender %>
+            <div class="row">     
+              <div class="col-xs-3">
+                <div class="radio">
+                  <%= label_tag do %>
+                  <%= f.radio_button :gender, true %> Male
+                  <%end%>
+                </div>
+              </div>
+              <div class="col-xs-9">
+                <div class="radio">
+                  <%= label_tag  do %>
+                  <%= f.radio_button :gender, false %> Female
+                  <%end%>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+          <div class="form-group">
+            <%= label_tag :dob, "Your Date of Birth" %>
+            <% born_on = Time.now %>
+            <div class="form-control">
+              <%= f.date_select( :dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, :start_year=>Date.today.year-100) %> 
+            </div>            
+          </div>
+
+          <div class="form-group" id="reference-no">
+            <%= f.label :reference_no, "Reference Number (If any one give you a reference)" %>
+            <%= f.text_field :reference_no, class: "form-control", placeholder: "Reference number or Advertisment" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :phone %>
+            <%= f.text_field :phone,class: "form-control", placeholder: "Phone" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :aadhar_card %>
+            <%= f.text_field :aadhar_card, class: "form-control", placeholder: "Aadhar Card Number" %>
+          </div>
+
+          <%= f.fields_for :pandit do |build| %>          
+          
+          <div class="form-group">
+            <%= build.label :astrologers, 'Are you Astrologer? ', class: 'control-label' %>
+            <%= build.check_box :astrologers, {},true, false %>          
+          </div>
+          <div class="form-group">
+            <%= build.label :numerologist, 'Are you Numerologist? ', class: 'control-label' %>
+            <%= build.check_box :numerologist, {},true, false %>          
+          </div>
+          
+
+
+          <div class="row">
+            <div class="col-sm-12">
+              <label>Address</label>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= build.label :door_no, 'Door No', class: 'control-label sr-only' %>
+                <%= build.text_field :door_no, class: "form-control", placeholder: "Door No" %>          
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= build.label :street, 'Street', class: 'control-label sr-only' %>
+                <%= build.text_field :street, class: "form-control", placeholder: "Street" %>          
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= build.label :state, 'State', class: 'control-label sr-only' %>
+                <%= build.text_field :state, class: "form-control", placeholder: "State" %>          
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= build.label :zip_code, 'ZIP Code', class: 'control-label sr-only' %>
+                <%= build.text_field :zip_code, class: "form-control", placeholder: "ZIP Code" %>          
+              </div>
+            </div>
+          </div>          
+          <% end %>
+
+          <div class="actions">
+            <%= f.submit "Sign up", class: "btn btn-success btn-block btn-lg" %>
+          </div>
+
+          <% end %>
         </div>       
       </div>
 
@@ -313,15 +449,21 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
-    $('#serial-no').hide();
 
-    $('input[type=radio][name=customer_type]').change(function() {
-      if (this.value == 'old') {            
-        $('#serial-no').show();            
-      }
-      else if (this.value == 'new') {
-        $('#serial-no').hide();
-      }
-    });
+    function oldCustomer(){
+      $('.serial-no').hide();
+
+      $('input[type=radio][name=customer_type]').change(function() {
+        if (this.value == 'old') {            
+          $('.serial-no').show();            
+        }
+        else if (this.value == 'new') {
+          $('.serial-no').hide();
+        }
+      });      
+    }
+
+    oldCustomer();
+
   });
 </script>
