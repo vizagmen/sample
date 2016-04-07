@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'babyname/index'
+
+  post 'babyname/namecorrection'
+
   resources :casts
   resources :nakshatras
   devise_for :users
