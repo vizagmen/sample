@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :products
+  resources :products  
+  get 'babyname/index'
+
+  post 'babyname/namecorrection'
+
   resources :casts
   resources :nakshatras  
   # devise_for :users
