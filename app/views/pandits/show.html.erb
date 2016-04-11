@@ -1,2 +1,43 @@
-<h1>Pandits#show</h1>
-<p>Find me in app/views/pandits/show.html.erb</p>
+<div class="row">
+	<div class="col-sm-6">	
+		<h4 class="page-header"><%= @pandit.user.name.capitalize %></h4>
+
+		<dl class="dl-horizontal">
+			<dt>Photo</dt>
+			<dd><%= image_tag(@pandit.user.avatar.url, class: "img-responsive") %></dd>
+		</dl>
+		<dl class="dl-horizontal">
+			<dt>Email</dt>
+			<dd><%=@pandit.user.email%></dd>
+		</dl>
+		<dl class="dl-horizontal">
+			<dt>Contact</dt>
+			<dd><%=@pandit.user.phone%></dd>
+		</dl>
+		<dl class="dl-horizontal">
+			<dt>Date of Birt</dt>
+			<dd><%=@pandit.user.dob%></dd>
+		</dl>
+		<dl class="dl-horizontal">
+			<dt>Address</dt>
+			<dd><%= "#{@pandit.door_no}" if @pandit.door_no.present?%>
+				<%= ", #{@pandit.street}" if @pandit.street.present?%>
+				<%= ", #{@pandit.city}" if @pandit.city.present?%>
+				<%= ", #{@pandit.state}" if @pandit.state.present?%>
+				<%= " - #{@pandit.zip_code}" if @pandit.zip_code.present?%>
+			</dd>
+		</dl>
+		<dl class="dl-horizontal">
+			<dt>Aadhar Number</dt>
+			<dd><%=@pandit.user.aadhar_card%></dd>
+		</dl>
+		<dl class="dl-horizontal">
+			<dt>Deals</dt>
+			<dd><%=@pandit.deals %></dd>
+		</dl>
+	</div>
+	<div class="col-sm-6">
+		<h4 class="page-header">Want To Book This Pandit <small>Then Click Book now</small></h4>
+	</div>
+</div>
+

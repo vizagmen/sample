@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160407141044) do
+ActiveRecord::Schema.define(version: 20160411171351) do
 
   create_table "casts", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -79,16 +79,19 @@ ActiveRecord::Schema.define(version: 20160407141044) do
   end
 
   create_table "pandits", force: :cascade do |t|
-    t.boolean  "astrologers"
-    t.boolean  "numerologist"
-    t.string   "door_no",      limit: 255
-    t.string   "street",       limit: 255
-    t.string   "city",         limit: 255
-    t.string   "state",        limit: 255
-    t.string   "zip_code",     limit: 255
-    t.integer  "user_id",      limit: 4
+    t.string   "deals",      limit: 255
+    t.string   "door_no",    limit: 255
+    t.string   "street",     limit: 255
+    t.string   "city",       limit: 255
+    t.string   "state",      limit: 255
+    t.string   "zip_code",   limit: 255
+    t.integer  "user_id",    limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.string   "working_as", limit: 255
+    t.string   "experience", limit: 255
+    t.text     "address",    limit: 65535
+    t.string   "district",   limit: 255
   end
 
   add_index "pandits", ["user_id"], name: "index_pandits_on_user_id", using: :btree

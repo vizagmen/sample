@@ -37,8 +37,8 @@
       </div>
 
       <div class="col-lg-4 col-sm-6">
-        <%= image_tag("matrimony.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>
-        <h4 ><a >Matrimony</a></h4>
+        <%= image_tag("matrimony.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>        
+        <h4><%= link_to "Matrimony", matrimony_index_path %></h4>  
         <br><br>
       </div>
 
@@ -56,7 +56,7 @@
 
       <div class="col-lg-4 col-sm-6">
         <%= image_tag("pandit.jpg", class: "img-circle img-center", alt: "Edit Entry", size: "200x200") %>
-        <h4><a href="#">Pandit</a></h4>
+        <h4><%= link_to "Pandit", pandits_path %></h4>        
         <br><br>
       </div>
     </div>

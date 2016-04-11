@@ -10,19 +10,35 @@
 
     <%= image_tag "ugadi.jpg", class: "img-responsive" %>
 
-    <h3>Help Note</h3>
-    <ul class="list-unstyle">
-      <li>Nullam quis risus eget urna mollis ornare vel eu leo.</li>
-      <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</li>
-      <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-      <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
+    <h3>READ BEFORE YOU SIGN UP</h3>
 
-      <li>Nullam quis risus eget urna mollis ornare vel eu leo.</li>
-      <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</li>
-      <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-      <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
-    </ul>
-    <p class="small">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>    
+    <p>This is the first time we are introducing the free sign up for pandits through out the world.</p>
+
+    <p>In this we are providing 3 blocks for pandit.</p>
+
+    <ol>
+      <li>Vedam certified pandits ( homams,marriages,gruhapravesham  etc )</li>
+      <li>Consultancy pandits  ( vaastu, astrology, numerology,palmistry  etc)</li>
+      <li>Both category pandits (homams, astrology etc)</li>
+    </ol>
+
+    <p>We are requesting the pandits  to join in our site for public service in an easy way.</p>
+
+    <p>The people who are joining in our site can choose their options according to their choice.</p>
+
+    <p>From  different states,districts, cities,town and villages people can easily choose their option and book the pandit according to their convenience to fulfil their motive.</p>
+
+    <p>It s an easy communication between the pandit and customer to select their own choice and to negotiate the pandit according to their wish.</p>
+
+    <p>The pandit after negotiation they need not to pay ay commission to our company,but they need to tie our banner in the function where they attend. </p>
+
+    <p>For your page maintainance  pandit need to pay 1000rs yearly to our company.</p>
+
+    <p>For consultancy pandits they can purchase the products from our site in a bulk to provide the items to their customers in an easy way. We are also providing the pandit  parishkarr  book which will be helpful to purchase the remedies for your customers. Special promo codes will be given to the pandit  when they reach the targets in purchasing products in our site.</p>
+
+    <p>In your special page we are providing you a advertise block which you utilize to promote your ads, books magazine etc . ( for this charges will be taken according to packages)</p>
+
+    <p>No credits will be given to purchasing of  products.</p>
   </div>
   <div class="col-sm-6">
     <div>
@@ -306,7 +322,7 @@
           <% end %>
         </div> 
 
-        <div role="tabpanel" class="tab-pane fade" id="pandit">
+        <div role="tabpanel" class="tab-pane fade well" id="pandit">
           <br>
           <%= form_for(resource, as: resource_name, url: user_registration_path(resource_name), multipart: true) do |f| %>
           <%= devise_error_messages! %>
@@ -315,32 +331,8 @@
           <%= f.hidden_field :role, :value => User::TYPE_PANDIT %>
 
           <div class="form-group">
-            <%= f.label :email %><br />
-            <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
-          </div>
-
-          <div class="form-group">
-            <%= f.label :password %>
-            <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
-          </div>
-
-          <div class="form-group">
-            <%= f.label :password_confirmation %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
-          </div>          
-
-          <div class="form-group">
             <%= f.label :name %>
             <%= f.text_field :name, class: "form-control", placeholder: "Enter Name" %>
-          </div>
-
-          <div class="form-group">
-            <%= f.label :avatar, "Photo" %>
-            <%= f.file_field :avatar  %>
-            <p class="help-block">Upload pic for your profile.</p>
           </div>
 
           <div class="form-group">
@@ -371,71 +363,97 @@
             </div>            
           </div>
 
-          <div class="form-group" id="reference-no">
-            <%= f.label :reference_no, "Reference Number (If any one give you a reference)" %>
-            <%= f.text_field :reference_no, class: "form-control", placeholder: "Reference number or Advertisment" %>
+          <div class="form-group">
+            <%= f.label :avatar, "Photo" %>
+            <%= f.file_field :avatar  %>
+            <p class="help-block">Upload pic for your profile.</p>
+          </div>
+
+          <%= f.fields_for :pandit do |build| %>
+          <div class="form-group">
+            <label>Choose your option</label>
+            <div class="radio">
+              <label class="radio-inline">
+                <%= build.radio_button :deals, "Vedam Pandit" %> Vedam Pandit
+              </label>              
+              
+              <label class="radio-inline">
+                <%= build.radio_button :deals, "Consultancy Pandit" %> Consultancy Pandit
+              </label>              
+              
+              <label class="radio-inline">
+                <%= build.radio_button :deals, "Vedam Pandit & Consultancy Pandit" %> Both
+              </label>
+            </div>          
+          </div>
+
+
+          <div class="form-group">
+            <%= build.label :working_as,  class: 'control-label ' %>
+            <%= build.text_field :working_as, class: "form-control", placeholder: "Working As" %>          
           </div>
 
           <div class="form-group">
-            <%= f.label :phone %>
-            <%= f.text_field :phone,class: "form-control", placeholder: "Phone" %>
+            <%= build.label :experience, class: 'control-label ' %>
+            <%= build.number_field :experience, class: "form-control", placeholder: "Experience" %>          
           </div>
+
+          <div class="form-group">
+            <%= build.label :city, 'Location', class: 'control-label ' %>
+            <%= build.text_field :city, class: "form-control", placeholder: "City / Town / Village" %>          
+          </div>
+
+          <div class="form-group">
+            <%= build.label :district, class: 'control-label ' %>
+            <%= build.text_field :district, class: "form-control", placeholder: "District" %>          
+          </div>
+
+          <div class="form-group">
+            <%= build.label :state, 'State', class: 'control-label ' %>
+            <%= build.text_field :state, class: "form-control", placeholder: "State" %>          
+          </div>
+
+          <div class="form-group">
+            <%= build.label :address, class: 'control-label ' %>
+            <%= build.text_area :address, class: "form-control", placeholder: "Address" %>          
+          </div>
+
+          <% end %>
 
           <div class="form-group">
             <%= f.label :aadhar_card %>
             <%= f.text_field :aadhar_card, class: "form-control", placeholder: "Aadhar Card Number" %>
           </div>
 
-          <%= f.fields_for :pandit do |build| %>          
-          
           <div class="form-group">
-            <%= build.label :astrologers, 'Are you Astrologer? ', class: 'control-label' %>
-            <%= build.check_box :astrologers, {},true, false %>          
+            <%= f.label :phone, 'Contact Number' %>
+            <%= f.text_field :phone,class: "form-control", placeholder: "Phone" %>
           </div>
+
           <div class="form-group">
-            <%= build.label :numerologist, 'Are you Numerologist? ', class: 'control-label' %>
-            <%= build.check_box :numerologist, {},true, false %>          
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
           </div>
-          
 
+          <div class="form-group">
+            <%= f.label :password %>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
+          </div>
 
-          <div class="row">
-            <div class="col-sm-12">
-              <label>Address</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <%= build.label :door_no, 'Door No', class: 'control-label sr-only' %>
-                <%= build.text_field :door_no, class: "form-control", placeholder: "Door No" %>          
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <%= build.label :street, 'Street', class: 'control-label sr-only' %>
-                <%= build.text_field :street, class: "form-control", placeholder: "Street" %>          
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <%= build.label :state, 'State', class: 'control-label sr-only' %>
-                <%= build.text_field :state, class: "form-control", placeholder: "State" %>          
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <%= build.label :zip_code, 'ZIP Code', class: 'control-label sr-only' %>
-                <%= build.text_field :zip_code, class: "form-control", placeholder: "ZIP Code" %>          
-              </div>
-            </div>
-          </div>          
-          <% end %>
+          <div class="form-group">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
+          </div>
 
           <div class="actions">
             <%= f.submit "Sign up", class: "btn btn-success btn-block btn-lg" %>
           </div>
 
           <% end %>
-        </div>       
+        </div>
       </div>
 
     </div>
