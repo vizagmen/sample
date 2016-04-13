@@ -340,7 +340,7 @@ class NumerologysController < ApplicationController
   def name_correction
   	#raise params.inspect
   	arr1 = []
-    hash = {"A" => 1, "I" => 1, "J" => 1, "Q" => 1, "Y" => 1, "B" => 2, "K" => 2, "R" => 2, "C" => 3, "G" => 3, "L" => 3, "S" => 3, "D" => 4, "M" => 4, "T" => 4,"E" => 5, "H" => 5, "N" => 5, "X" => 5, "U" => 6, "V" => 6, "W" => 6, "O" => 7, "Z" => 7, "P" => 8, "F" => 9}
+    hash = {"A" => 1, "I" => 1, "J" => 1, "Q" => 1, "Y" => 1, "B" => 2, "K" => 2, "R" => 2, "C" => 3, "G" => 3, "L" => 3, "S" => 3, "D" => 4, "M" => 4, "T" => 4,"E" => 5, "H" => 5, "N" => 5, "X" => 5, "U" => 6, "V" => 6, "W" => 6, "O" => 7, "Z" => 7, "P" => 8, "F" => 9, "." => 0}
   	@name = params[:name].upcase
     @date = params[:your_dob][:day].to_i
     while  @date > 9
@@ -349,7 +349,7 @@ class NumerologysController < ApplicationController
   	end
     #raise @date.inspect
   	@name.split("").compact.each do|e|
-  	  arr1 << hash["#{e}"] if e.present?
+  	  arr1 << hash["#{e}"] if e.present? 
       p arr1
   	end
 #aise arr1.inspect
