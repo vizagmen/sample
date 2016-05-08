@@ -1,7 +1,7 @@
 <div class="wrapper">
   <!-- Intro Section -->
   <section id="intro" class="intro-section">
-    <div class="box white wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s"></div>
+    <div class="box white" data-wow-duration="1s" data-wow-delay="0s"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-6 left">
@@ -9,184 +9,197 @@
           <!-- <%= image_tag( "vinayaka.png", "data-wow-iteration": "infinite", class: "wow pulse img-responsive", style: "margin: 0 auto;") %>           -->
           <h1 style="color: #056FA1;" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s">Sri Saii Laharri</h1>
           <h3 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s">Numerology and Astrology Center</h3>
-          <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".6s">The city is nestled between the Eastern Ghats mountain range and the Bay of Bengal, and is often known as The Jewel of the East Coast, The City of Destiny and the Goa of the East Coast.</p>
+          <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".6s">Dr.sri patnaik Naraayanaa MBA astro –numerologist <br>  
+            13-9-14/5, Kaki street, Near Kinnera Theatre,          
+            Srikakulam-532001.</p>
 
 
-          <audio controls autoplay loop id="audioplay">            
-            <source src="<%= asset_path('backgroud-music.mp3') %>" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
+            <audio controls autoplay loop id="audioplay">            
+              <source src="<%= asset_path('backgroud-music.mp3') %>" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
 
 
-            <a class="btn btn-default page-scroll wow slideInLeft" href="#about">Read more..!</a>
-          </div>
-          <div class="col-md-6 right wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
-            <%= image_tag "wheel.png", size: '350x350', class: "logo img-responsive", id: "img-rotate" %>
+              <a class="btn btn-default page-scroll wow slideInLeft" href="#about">Read more..!</a>
+            </div>
+            <div class="col-md-6 right wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
+              <%= image_tag "wheel.png", size: '350x350', class: "logo img-responsive", id: "img-rotate" %>
 
-            <%= image_tag "logo.jpg",size: '150x150', class: "logo img-responsive img-circle", style: "top:200px; left: 200px;" %>
+              <%= image_tag "logo.jpg",size: '150x150', class: "logo img-responsive img-circle", style: "top:200px; left: 200px;" %>
 
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <div class="box yellow"></div>
-      <div class="container">
-        <h1 class="col-md-6 col-md-offset-6 col-xs-offset-4">About us</h1>
-        <div class="row">
-          <div class="col-md-5">
-            <!-- <img src="images/about.png"> -->
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"  style="z-index:8; position: absolute;">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="box yellow"></div>
+        <div class="container">
+          <h1 class="col-md-6 col-md-offset-6 col-xs-offset-4">About us</h1>
+          <div class="row">
+            <div class="col-md-5">
+              <!-- <img src="images/about.png"> -->
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"  style="z-index:8; position: absolute;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
 
-              </ol>
+                </ol>
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <!-- <img src="images/slide1.jpg" alt="..."> -->
-                  <%= image_tag "slide1.jpg"%>
-                </div>
-                <div class="item">
-                  <%= image_tag "slide2.jpg"%>
-                </div>
-                <div class="item">
-                  <%= image_tag "slider1.jpg"%>
-                </div>
-                <div class="item">
-                  <%= image_tag "slider2.jpg"%>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <!-- <img src="images/slide1.jpg" alt="..."> -->
+                    <%= image_tag "slide1.jpg", heigth: '450px'%>
+                  </div>
+                  <div class="item">
+                    <%= image_tag "slide2.jpg", heigth: '450px'%>
+                  </div>
+                  <div class="item">
+                    <%= image_tag "slider1.jpg", heigth: '450px'%>
+                  </div>
+                  <div class="item">
+                    <%= image_tag "slider2.jpg", heigth: '450px'%>
+                  </div>
+                  <div class="item">
+                    <%= image_tag "image7.jpg", heigth: '450px'%>
+                  </div>
+                  <div class="item">
+                    <%= image_tag "image8.jpg", heigth: '450px'%>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div id="about" class="col-md-6 right-area wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+
+              <p>The <strong>Sri Saii Laharri</strong> numerology and astrology centre website launched on april8th2016  by <strong>DR.SRIPATNAIK NARAAYANAA</strong> who did MBA after Bsc with dual specialization of marketing &International Marketing .Fortunately, I became a Astro-Numerologist having wide experience of 11 years. By recognizing my talent in numerology,Astrology and Vaastu, I was given <strong>lifemembership in 25th international seminar-2015</strong> under the auspicious of <strong>Institute of vedic culture for public welfare &KRISHNA MURTI INSTITUTE OF ASTROLOGY KOLKATA AND MY REGISTERED SERIAL NO. KIA/LM/0124 </strong>. I have received a  DOCTORATE on January 24th 2016 .I also feel proud to be added as a member in <strong>www.worldastrologersdirectory.com</strong> - vedic numerology you  can watch my profile. This site belongs all facilities like numerology, astrology, vaastu, products, remedies, matrimony, pandit booking block, mantras, babynames and also special feature sweetmemories block.</p>
+
+              <p>The customer can enjoy with a <strong>free login</strong> and also <strong>Life Membership</strong>  in android mobile. Free login customer can enjoy  some fields only, after wards if he decided to become a life member he can pay through payroll option.</p>
+
+              <p>If once you become a life member you will get a life time free service, so your lifesign profile will be updated for every two months and for numerology, lifesign, you will get 4 pdf files ,in that we wil cover name correction pdf, lifesign,stone,6years predictions. Matrimony is a highlighted option in our site, in this matrimony u can check the matching and original data of my client in a free option and also u can choose your favourate  matching patner with points and with numerology matching also. If u want the address details of my  client you must become a life member of my site then only u will get remaining data. If once you become a life member in our website you will get contact numbers and addresses . you have a pandit option also to book a near by  pandit from our site if you are interested. once the wedding card was printed we will post the free ad of your wedding card in our site from admin. Here the couple need to pay 1% amount to our institute through pay role option from our site.  If suppose  they fail to pay 1%percent amount after marriage the customer page will be  blocked and the customers references of the particular pages will be cancelled with all promo codes. So they are not eligible for next process in our site. Vaastu , mantras, remedies blocks also you can enjoy more.</p>
+
+              <p>Another special feature is sweet memories specially added for students and also employees .In this block we concentrated  on students for get together the students below 24 yrs age can generate the profile in free to create their group to chat with their school or college mate friends. particularly the students who are facing problem for studies, job, love failure, careerstep we can guide them in a good way, if they attend for counseling and also they can ask any queries to pandit about their career in free of cost.if suppose if the student is not able to settled in their life before 25years then they can join as a life membership to know about their career In detail. </p>
+
+              <p>I hope my website will show u a colorful life to every customer and I pray my god shiridi sai baba to give me energy to do nice service to my customer god.</p>
+
+              <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
+            </div>                
           </div>
-
-          <div id="about" class="col-md-6 right-area wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-
-            <p>The <strong>Sri Saii Laharri</strong> numerology and astrology centre website launched on april8th2016  by <strong>DR.SRIPATNAIK NARAAYANAA</strong> who did MBA after Bsc with dual specialization of marketing &International Marketing .Fortunately, I became a Astro-Numerologist having wide experience of 11 years. By recognizing my talent in numerology,Astrology and Vaastu, I was given <strong>lifemembership in 25th international seminar-2015</strong> under the auspicious of <strong>Institute of vedic culture for public welfare &KRISHNA MURTI INSTITUTE OF ASTROLOGY KOLKATA AND MY REGISTERED SERIAL NO. KIA/LM/0124 </strong>. I have received a  DOCTORATE on January 24th 2016 .I also feel proud to be added as a member in <strong>www.worldastrologersdirectory.com</strong> - vedic numerology you  can watch my profile. This site belongs all facilities like numerology, astrology, vaastu, products, remedies, matrimony, pandit booking block, mantras, babynames and also special feature sweetmemories block.</p>
-
-            <p>The customer can enjoy with a <strong>free login</strong> and also <strong>Life Membership</strong>  in android mobile. Free login customer can enjoy  some fields only, after wards if he decided to become a life member he can pay through payroll option.</p>
-
-            <p>If once you become a life member you will get a life time free service, so your lifesign profile will be updated for every two months and for numerology, lifesign, you will get 4 pdf files ,in that we wil cover name correction pdf, lifesign,stone,6years predictions. Matrimony is a highlighted option in our site, in this matrimony u can check the matching and original data of my client in a free option and also u can choose your favourate  matching patner with points and with numerology matching also. If u want the address details of my  client you must become a life member of my site then only u will get remaining data. If once you become a life member in our website you will get contact numbers and addresses . you have a pandit option also to book a near by  pandit from our site if you are interested. once the wedding card was printed we will post the free ad of your wedding card in our site from admin. Here the couple need to pay 1% amount to our institute through pay role option from our site.  If suppose  they fail to pay 1%percent amount after marriage the customer page will be  blocked and the customers references of the particular pages will be cancelled with all promo codes. So they are not eligible for next process in our site. Vaastu , mantras, remedies blocks also you can enjoy more.</p>
-
-            <p>Another special feature is sweet memories specially added for students and also employees .In this block we concentrated  on students for get together the students below 24 yrs age can generate the profile in free to create their group to chat with their school or college mate friends. particularly the students who are facing problem for studies, job, love failure, careerstep we can guide them in a good way, if they attend for counseling and also they can ask any queries to pandit about their career in free of cost.if suppose if the student is not able to settled in their life before 25years then they can join as a life membership to know about their career In detail. </p>
-
-            <p>I hope my website will show u a colorful life to every customer and I pray my god shiridi sai baba to give me energy to do nice service to my customer god.</p>
-
-            <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
-          </div>                
         </div>
-      </div>
-    </section>
-    <%= image_tag "img2.jpg", id: "about-services-img"%>
+      </section>
+      <%= image_tag "img2.jpg", id: "about-services-img"%>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-      <div class="anti-box red"></div>
-      <div class="container">
-        <h1>Services</h1>
-        <div class="row services-inner-box">
-          <ul class="ch-grid">
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Numerology</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#numerology">Read more</a></p>
+      <!-- Services Section -->
+      <section id="services" class="services-section">
+        <div class="anti-box red"></div>
+        <div class="container">
+          <h1>Services</h1>
+          <div class="row services-inner-box">
+            <ul class="ch-grid">
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Numerology</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#numerology">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-1"></div>
                 </div>
-                <div class="ch-thumb ch-img-1"></div>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Astrology</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#astrology">Read more</a></p>
+              </li>
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Astrology</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#astrology">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-2"></div>
                 </div>
-                <div class="ch-thumb ch-img-2"></div>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Baby Names</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#babynames">Read more</a></p>
+              </li>
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Baby Names</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#babynames">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-3"></div>
                 </div>
-                <div class="ch-thumb ch-img-3"></div>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Products</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#products">Read more</a></p>
+              </li>
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Products</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#products">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-4"></div>
                 </div>
-                <div class="ch-thumb ch-img-4"></div>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Vastu</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#vastu">Read more</a></p>
+              </li>
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Vastu</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#vastu">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-5"></div>
                 </div>
-                <div class="ch-thumb ch-img-5"></div>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Matrimony</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#matrimony">Read more</a></p>
+              </li>
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Matrimony</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#matrimony">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-6"></div>
                 </div>
-                <div class="ch-thumb ch-img-6"></div>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Mantras</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#mantras">Read more</a></p>
+              </li>
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Mantras</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#mantras">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-7"></div>
                 </div>
-                <div class="ch-thumb ch-img-7"></div>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Remedies</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#remedies">Read more</a></p>
+              </li>
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Remedies</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#remedies">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-8"></div>
                 </div>
-                <div class="ch-thumb ch-img-8"></div>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-              <div class="ch-item">	
-                <div class="ch-info">
-                  <h3>Pandit</h3>
-                  <p>Caption <a href="#" data-toggle="modal" data-target="#pandit">Read more</a></p>
+              </li>
+              <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="ch-item">	
+                  <div class="ch-info">
+                    <h3>Pandit</h3>
+                    <p>Caption <a href="#" data-toggle="modal" data-target="#pandit">Read more</a></p>
+                  </div>
+                  <div class="ch-thumb ch-img-9"></div>
                 </div>
-                <div class="ch-thumb ch-img-9"></div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-    <%= image_tag "img3.jpg", id: "service-contact-img"%>
-
+      </section>
+      <!-- 
+      <%= image_tag "img3.jpg", id: "service-contact-img"%>
+    -->
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <div class="box yellow"></div>
+<!-- 
+        <%= image_tag "image7.jpg", id: "contact-bg"%>
+      -->
 
-      <%= image_tag "contact-bg.jpg", id: "contact-bg"%>
       <div class="container">
-        <h1>Contact Section</h1>
+        <h1>Queries Section</h1>
         <div class="row">
           <div class="col-md-5 col-md-offset-1 left">
             <form>
@@ -223,6 +236,7 @@
           </div>
         </div>
       </div>
+      <br><br><br>
     </section>
 
   </div><!-- Wrapper ENd --> 

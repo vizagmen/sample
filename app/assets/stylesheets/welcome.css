@@ -10,9 +10,9 @@ html, body {
     display: block;
     position: absolute;
     top: 0;
-    -ms-transform: skewY(-20deg); /* IE 9 */
-    -webkit-transform: skewY(-20deg); /* Safari */
-    transform: skewY(-20deg); /* Standard syntax */
+    /*-ms-transform: skewY(-20deg);*/ /* IE 9 */
+    /*-webkit-transform: skewY(-20deg);*/ /* Safari */
+    /*transform: skewY(-20deg);*/ /* Standard syntax */
   }
   .anti-box{
 
@@ -20,21 +20,21 @@ html, body {
     display: block;
     position: absolute;
     top: 0;
-    -ms-transform: skewY(20deg); /* IE 9 */
-    -webkit-transform: skewY(20deg); /* Safari */
-    transform: skewY(20deg); /* Standard syntax */
+    /*-ms-transform: skewY(20deg);*/ /* IE 9 */
+    /*-webkit-transform: skewY(20deg);*/ /* Safari */
+    /*transform: skewY(20deg);*/ /* Standard syntax */
   }
 }
 .box {
   min-height: 100%;
   width: 100%;
-  background: #f0e68c;
+  /*background: #f0e68c;*/
   
 }
 .anti-box{
   min-height: 100%;
   width: 100%;
-  background: #f0e68c;
+  /*background: #f0e68c;*/
   
 }
 .wrapper{
@@ -56,13 +56,14 @@ html, body {
  background-color: #f0d645;
 }    
 .white{
- background-color: #ebe5d7;
+ /*background-color: #ebe5d7;*/
+ 
 }
 .yellow{
- background-color: #f0d645;
+ /*background-color: #f0d645;*/
 }
 .red{
- background-color: #cd3220;
+ /*background-color: #cd3220;*/
 }
 .mydiv{
  -ms-transform: skewY(20deg); /* IE 9 */

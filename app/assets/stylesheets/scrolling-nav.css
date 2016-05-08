@@ -43,6 +43,8 @@ of those sections to manage the look and feel of the site. */
     z-index: 3;
     text-align: left;
     clear: both;
+    background-image: url('image4.jpg');
+    background-size: cover;
 }
 .intro-section h1{
     font-size: 75px;
@@ -53,6 +55,9 @@ of those sections to manage the look and feel of the site. */
 .intro-section .left{
     /*margin-top: 50px;*/
     display: block;
+}
+.intro-section .left p{
+    color: yellow;
 }
 .intro-section .right{
     padding: 100px;
@@ -68,6 +73,8 @@ of those sections to manage the look and feel of the site. */
     z-index: 3;
     text-align: left;
     position: relative;
+    background-image: url('image5.jpg');
+    background-size: cover;
 }
 .about-section .left-area{
     padding: 20px;
@@ -78,6 +85,9 @@ of those sections to manage the look and feel of the site. */
     overflow-y: scroll;
     height: 350px;
 }
+.about-section .right-area p, .about-section h1{    
+    color: #fff;
+}
 .services-section {
     height: auto;
     text-align: center;
@@ -87,6 +97,8 @@ of those sections to manage the look and feel of the site. */
     position: relative;
     z-index: 2;
     color: #f6e8df;
+    background-image: url('image2.jpg');
+    background-size: cover;
 }
 .services-inner-box{
     padding-top: 50px;
@@ -120,7 +132,7 @@ of those sections to manage the look and feel of the site. */
     transform: scale(2,2); /* Standard syntax */
 }
 .circle span{
- 
+
     color: #cc311f;
     text-transform: uppercase;
     font-weight: bold;
@@ -147,6 +159,8 @@ of those sections to manage the look and feel of the site. */
     /*background: #eee;*/
     position: relative;
     z-index: 3;
+    background-image: url('image4.jpg');
+    background-size: cover;
 }
 .contact-section .left{
     text-align: left;
@@ -155,6 +169,9 @@ of those sections to manage the look and feel of the site. */
 .contact-section .right{
     text-align: left;
     padding-top: 50px;
+}
+.contact-section h1, .contact-section .right address{
+    color: #FFF;
 }
 #about-bg{
     z-index: -11;
