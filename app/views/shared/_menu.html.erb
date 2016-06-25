@@ -9,26 +9,32 @@
         <span class="icon-bar"></span>
       </button>
       <!-- <a class="navbar-brand page-scroll" href="#page-top">Sri Saii Laharri</a> -->
-      <%= link_to "Sri Saii Laharri", root_path(anchor: "intro"), class: "navbar-brand page-scroll" %>
+      <%# link_to "Sri Saii Laharri", root_path(anchor: "intro"), class: "navbar-brand page-scroll" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <li class="hidden">
-          <a class="page-scroll" href="#page-top"></a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#about">About</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#services">Services</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#contact">Contact</a>
-        </li>
+        
+        <a class="page-scroll btn navbar-btn btn-default" href="#page-top">Home</a>
+        
+        <a class="page-scroll btn navbar-btn btn-default" href="#about">About</a>
+        <% unless user_signed_in? %>
+        <%= link_to "Sign In", new_user_session_path,  class: "btn navbar-btn btn-default" %> 
+
+        <%= link_to "Sign Up", new_user_registration_path,  class: "btn navbar-btn btn-default " %>
+        <%end%>
+
+
+        <a class="page-scroll btn navbar-btn btn-default" href="#gallery">Photo Gallery</a>        
+                
+        <a class="page-scroll btn navbar-btn btn-default" href="#contact">Contact</a>
+
+        <a class="page-scroll btn navbar-btn btn-default" href="#services">Queries</a>        
+
       </ul>
+
 
       <ul class="nav navbar-nav navbar-right">
         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
@@ -45,12 +51,6 @@
           </li>
           <% end %>
         </ul>
-        <% unless user_signed_in? %>
-        <ul class="nav navbar-nav navbar-right">
-          <%= link_to "Sign Up", new_user_registration_path,  class: "btn navbar-btn btn-warning " %>
-          <%= link_to "Sign In", new_user_session_path,  class: "btn navbar-btn btn-primary" %>
-        </ul>
-        <%end%>
         
       </div>
 
