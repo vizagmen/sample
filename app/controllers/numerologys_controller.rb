@@ -444,7 +444,73 @@ def luckynumber
     respond_to do |format|
       format.js
     end
+end
+def get_job_predictions
+  
+end
+
+def get_fav_years_for_marriages
+  
+end
+
+def get_job_prediction
+  @date = params[:your_dob][:day].to_i
+  #@date[2] #date is calculated 
+  case @date
+   when 1,10,19,28
+     @fav_dates = [19,22,28,31,32,37,39,40,46,49,53,55,56,58,64]  
+   when 2,11,20,29
+     @fav_dates = [18,22,23,26,27,29,32,36,37,40,45,46,52,54,55,63]
+   when 3,12,21,30
+     @fav_dates = [21,22,25,27,29,30,36,37,39,43,45,48,54,57]
+   when 4,13,22,31
+     @fav_dates = [22,23,27,28,30,31,32,34,35,37,39,40,45,49,50,53,55,56,58,64,67,76]
+   when 5,14,23
+     @fav_dates = [22,24,28,30,31,32,41,50,59]
+   when 6,15,24
+     @fav_dates = [15,17,19,22,23,24,27,32,33,35,42,44,51,53,61,62,69]
+   when 7,16,25
+     @fav_dates = [14,19,20,23,25,28,29,32,34,36,37,43,47,52,56,61,63,64,70,73]
+   when 8,17,26
+     @fav_dates = [15,17,23,24,26,32,33,35,42,44,49,53,62,71]
+   when  9,18,27
+     @fav_dates = [18,20,22,23,24,27,29,30,32,33,36,38,41,42,45,48,50,54,55,56,63,68]
+end
+
+respond_to do|format|
+  format.js
+end
+  
+end
+
+def get_fav_years_for_marriage
+  @date = params[:your_dob][:day].to_i
+  #@date[2] #date is calculated 
+  case @date
+    when 1,10,19,28
+      @fav_dates = [19,22,28,31,32,37,39,40,46]  
+    when 2,11,20,29
+      @fav_dates = [18,22,23,26,27,29,32,36,37,40,45,46]
+    when 3,12,21,30
+      @fav_dates = [21,22,25,27,29,30,36,37,39,43,45]
+    when 4,13,22,31
+      @fav_dates = [22,23,27,28,30,31,32,34,35,37,39,40,45]
+    when 5,14,23
+      @fav_dates = [22,24,28,30,31,32,41]
+    when 6,15,24
+      @fav_dates = [15,17,19,22,23,24,27,32,33,35,42]
+    when 7,16,25
+      @fav_dates = [14,19,20,23,25,28,29,32,34,36,37,43,47]
+    when 8,17,26
+      @fav_dates = [15,17,23,24,26,32,33,35,42,44]
+    when  9,18,27
+      @fav_dates = [18,20,22,23,24,27,29,30,32,33,36,38,41,42,45]
   end
+  respond_to do|format|
+    format.js
+  end
+end
+
 
   private 
   def luckynum

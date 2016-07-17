@@ -24,6 +24,8 @@ Rails.application.routes.draw do
       get 'cell_number_match'
       get 'vechicle_number_match'
       get 'get_name_correction'
+      get 'get_job_predictions'
+      get 'get_fav_years_for_marriages'
     end
   end
 
@@ -39,6 +41,8 @@ Rails.application.routes.draw do
   get 'numerologys/friendship', defaults: { format: 'js' }
   get 'numerologys/getfavs', defaults: { format: 'js' }
   get 'numerologys/name_correction', defaults: {format: 'js'}
+  get 'numerologys/get_job_prediction', defaults: {format: 'js'}
+  get 'numerologys/get_fav_years_for_marriage', defaults: {format: 'js'}
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
