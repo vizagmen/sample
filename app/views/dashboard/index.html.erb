@@ -1,9 +1,40 @@
+<div class="row text-center">
+  <div class="col-sm-4"><h4>FREEUSER COUNT: <span class="label label-info">00</span></h4></div>
+  <div class="col-sm-4"><h4>LIFEMEMBERSHIP</h4></div>  
+</div>
+
 <div class="row">
-  <div class="col-md-4 col-sm-4">  
-    <%= render '/users/profile'%>    
+  <div class="col-sm-4 profile">
+    <ul class="list-group">
+      <% if current_user.avatar.present? %>
+      <%= image_tag current_user.avatar_url, class: "img-responsive" %>
+      <% elsif current_user.gender %>
+      <%= image_tag "profile-2.jpg", class: "img-responsive" %>
+      <% else %>
+      <%= image_tag "profile-1.jpg", class: "img-responsive" %>
+      <%end %>
+
+      <li class="list-group-item">
+        <div class="row">        
+          <div class="col-xs-12"><%= current_user.name %></div>
+        </div>
+      </li>
+    </ul>
   </div>
-  <div class="col-md-8 col-sm-8">
-    <h3 class="page-header ">Dashboard</h3>
+  <div class="col-sm-4 text-center">
+    <%= image_tag "logo.jpg", size: '150x150'%>    
+
+  </div>
+  <div class="col-sm-4 text-left">
+
+    <%= image_tag "customer-page.jpg", size: '200x200', class: "rotate-image"%>    
+
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">  
     <ul class="ch-grid">
       <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
         <div class="ch-item"> 
@@ -87,6 +118,10 @@
         </div>
       </li>
     </ul>
+  </div>
+  <div class="col-md-7">
+    <h3 class="page-header ">Dashboard</h3>
+
     <!-- <div class="row text-center">
       <div class="col-lg-4 col-sm-6">
         <%= image_tag("numerology-out.jpg", class: "img-circle img-center", alt: "", size: "200x200") %>
@@ -144,6 +179,9 @@
       </div>
     </div> -->
   </div>  
+  <div class="col-md-2">
+
+  </div>
 </div>
 
 

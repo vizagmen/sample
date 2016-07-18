@@ -26,7 +26,7 @@
       <%= render 'shared/main_menu' %>    
       
       
-      <div class="well ">
+      <div class="well">
         <% if notice.present?  %>
         <div class="alert alert-success" role="alert"><p class="notice"><%= notice %></p></div>
         <% end %>
@@ -48,17 +48,17 @@
             </ul>
           </div>
           <div class="col-sm-6">
-            <div class="owl-carousel">
-              <div><%= image_tag "slide1.jpg", heigth: '250px', class: 'img-responsive'%></div>
-              <div><%= image_tag "slide2.jpg", heigth: '250px', class: 'img-responsive'%></div>
-              <div> <%= image_tag "slider1.jpg", heigth: '250px', class: 'img-responsive'%></div>
-              <div><%= image_tag "slider2.jpg", heigth: '250px', class: 'img-responsive'%></div>
-              <div><%= image_tag "image7.jpg", heigth: '250px', class: 'img-responsive'%></div>
-              <div><%= image_tag "image8.jpg", heigth: '250px', class: 'img-responsive'%></div>
+            <div class="owl-carousel" id="owl-demo">
+              <div class="item"><%= image_tag "slide1.jpg"%></div>
+              <div class="item"><%= image_tag "slide2.jpg"%></div>
+              <div class="item"> <%= image_tag "slider1.jpg"%></div>
+              <div class="item"><%= image_tag "slider2.jpg"%></div>
+              <div class="item"><%= image_tag "image7.jpg"%></div>
+              <div class="item"><%= image_tag "image8.jpg"%></div>
             </div>
           </div>
           <div class="col-sm-3 well">
-            <h4>CR REFER NO: <%= current_user.reference_no %> <span class="label label-primary">25623</span> </h4>
+            <h4>CR REFER NO: <span class="label label-primary"><%= current_user.reference_no %></span></h4>
           </div>
         </div>
 
@@ -155,11 +155,21 @@
       <script>
         new WOW().init();
         $(".owl-carousel").owlCarousel({
+          autoPlay: 3000, //Set AutoPlay to 3 seconds          
           items : 2,
-
-          autoPlay : true,
-          stopOnHover : true,
+          itemsDesktop : [1199,3],
+          itemsDesktopSmall : [979,3]
         });
       </script>
+      <style>
+        #owl-demo .item{
+          margin: 3px;
+        }
+        #owl-demo .item img{
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      </style>
     </body>
     </html>

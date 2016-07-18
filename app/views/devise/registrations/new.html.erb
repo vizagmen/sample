@@ -162,6 +162,13 @@
             </div>
           </div>
         </div> -->
+        
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> I Agree the <a data-toggle="modal" data-target="#terms">Terms and Conditions</a>
+          </label>
+        </div>
+
         <%= f.hidden_field :paid, :value => false %>
 
 
@@ -320,6 +327,11 @@
         <div class="form-group">
           <%= f.label :address %>
           <%= f.text_area :address, class: "form-control", placeholder: "Enter the reference number" %>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> I Agree the <a data-toggle="modal" data-target="#terms">Terms and Conditions</a>
+          </label>
         </div>
 
 
@@ -493,6 +505,11 @@
           <%= f.label :password_confirmation %><br />
           <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
         </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> I Agree the <a data-toggle="modal" data-target="#terms">Terms and Conditions</a>
+          </label>
+        </div>
 
         <div class="actions">
           <%= f.submit "Sign up", class: "btn btn-success btn-block btn-lg" %>
@@ -535,6 +552,41 @@
           <li>Products like stones, fengshui items etc all original items will be provided in our page.  </li>
         </ol>
 
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
+      </div>
+      <div class="modal-body">
+
+        <p>I Agree the below terms and conditions to join as a membership for free user, life time user and pandit user ,According to our mutual wish.</p>
+        <ol>
+          <li>Once you become a life time user you need to keep your registered umber carefully. Once you loss your registered number you need to repay the full amount to get back the same registered number.</li>
+          <li>Once you purchase the product in our site no replacement of items or refund of money.</li>
+          <li>If any dues list are noticed, your page will be blocked within 30days of your due date.If you need to deactivate the page you have to contact the Admin.</li>
+          <li>Please note In the matrimony block we will provide data path only.For remaining problems Admin is not at all responsible.</li>
+          <li>For free users the customer page will be processed upto one month only.To continue with life time process you have to pay the full amount.</li>
+          <li>In astrology block for every two months review service, we can have, but for any unforeseen event admin is not responsible.</li>
+          <li>If you cannot mobilize 100 customers you will loose your promocode gift and nobody can either claim or continue the same.</li>
+          <li>You are here by inform for the pandit block the pandits have to contribute Rs1000 per annum,failing  which the name of pandit account will be deleted.</li>
+          <li>The above terms and conditions are purely for the sake of smooth functioning of www.sairemedy vani.com and they will be considered , accordingly on your acceptance only.</li>
+        </ol>
+
+        <p><strong>Note:</strong> I accept the Admin has right to change or modify any of the above terms and conditions.</p>
 
 
 
