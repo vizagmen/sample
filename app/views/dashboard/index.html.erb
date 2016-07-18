@@ -186,32 +186,40 @@
     
   </div>  
   <div class="col-md-3">
-    <ul class="list-group">
-      <li class="list-group-item active">
-        <div class="row">        
-          <div class="col-xs-12">REFERENCE USERS</div>
-        </div>
-      </li>
 
+   <ul class="list-group">
+    <li class="list-group-item active">
+      <div class="row">        
+        <div class="col-xs-12">REFERENCE USERS</div>
+      </div>
+    </li>
+    <li class="list-group-item active">
 
-      <% @refered_users.each do |user| %>
-      <li class="list-group-item">
-        <div class="row">        
-          <div class="col-xs-12"><%= user.name %></div>
-        </div>
-      </li>
-      <% end %>
+      <%= rating_for @current_user, 'user',cancel: true,disable_after_rate: true %>
       
-    </ul>
-  </div>
+    </li>
+
+
+    <% @refered_users.each do |user| %>
+    <li class="list-group-item">
+      <div class="row">        
+        <div class="col-xs-12"><%= user.name %></div>
+      </div>
+    </li>
+    <% end %>
+
+  </ul>
+</div>
 </div>
 
 <div class="row">
   <div class="col-sm-2">
-    
+    <div class="indicate-box red"></div>
+    <div class="indicate-box yellow"></div>
+    <div class="indicate-box green"></div>
   </div>
   <div class="col-sm-10 text-center">
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-info" role="alert">
       <p class="notice">Birth Day wished Panel</p>
     </div>
   </div>
@@ -219,6 +227,24 @@
 </div>
 
 
+<style>
+  .indicate-box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  .red{
+    background-color: red;    
+  }
+  .yellow{
+    background-color: yellow;     
+  }
+  .green{
+    background-color: green;      
+  }
+</style>
 
 
 <!-- <div class="row text-center">

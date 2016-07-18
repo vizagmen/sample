@@ -17,4 +17,6 @@ class User < ActiveRecord::Base
 
   accepts_nested_attributes_for :pandit, allow_destroy: true
   # accepts_nested_attributes_for :pandits, reject_if: lambda { |args| args['category_id'].blank?  }, allow_destroy: true
+  ratyrate_rater
+  ratyrate_rateable "user"
 end
