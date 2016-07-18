@@ -2,7 +2,6 @@
   <div class="col-sm-4"><h4>FREEUSER COUNT: <span class="label label-info"><%= @references_count || 0 %></span></h4></div>
   <div class="col-sm-4"><h4>LIFEMEMBERSHIP</h4></div>  
 </div>
-
 <div class="row">
   <div class="col-sm-4 profile">
     <ul class="list-group">
@@ -120,6 +119,7 @@
     </ul>
   </div>
   <div class="col-md-6">
+
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active"><a href="#inbox" aria-controls="inbox" role="tab" data-toggle="tab">Inbox</a></li>
@@ -140,7 +140,7 @@
                 </a>
               </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
               </div>
@@ -176,9 +176,72 @@
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane" id="outbox">...</div>
+      <div role="tabpanel" class="tab-pane" id="outbox">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div role="tabpanel" class="tab-pane" id="messages">...</div>
-      <div role="tabpanel" class="tab-pane" id="queries">...</div>
+      <div role="tabpanel" class="tab-pane" id="queries">
+        <br>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Customer Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Customer Id</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Problem</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
     </div>
 
 
@@ -190,7 +253,7 @@
    <ul class="list-group">
     <li class="list-group-item active">
       <div class="row">        
-        <div class="col-xs-12">REFERENCE USERS</div>
+        <div class="col-xs-12">REFERENCE USERS: <%= @references_count || 0 %>/100</div>
       </div>
     </li>
     <li class="list-group-item active">
@@ -214,9 +277,13 @@
 
 <div class="row">
   <div class="col-sm-2">
+    <% unless @current_user.is_paid %>
     <div class="indicate-box red"></div>
-    <div class="indicate-box yellow"></div>
+    <% end %>
+
+    <% if @current_user.is_paid %>
     <div class="indicate-box green"></div>
+    <% end %>
   </div>
   <div class="col-sm-10 text-center">
     <div class="alert alert-info" role="alert">
@@ -246,53 +313,6 @@
   }
 </style>
 
-
-<!-- <div class="row text-center">
-  <div class="col-lg-3 col-sm-6 text-center">
-    <%= image_tag("numerology-out.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>
-    <h4><%= link_to "Numerology", numerologys_path %></h4>
-  </div>
-
-  <div class="col-lg-3 col-sm-6 text-center">
-    <%= image_tag("astrology.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "") %>       
-    <h4><a href="#">Astrology</a></h4>                 
-  </div>
-
-  <div class="col-lg-3 col-sm-6 text-center">
-    <%= image_tag("babynames.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-    <h4><a href="#">Baby Names</a></h4>
-  </div>
-
-  <div class="col-lg-3 col-sm-6 text-center">
-    <%= image_tag("products.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>        
-    <h4><a href="#">Products</a></h4>
-  </div>
-
-  <div class="col-md-offset-1 col-lg-3 col-sm-6 text-center">
-    <%= image_tag("vastu.png", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-    <h4><a href="#">Vastu</a></h4>
-  </div>
-
-  <div class="col-lg-3 col-sm-6 text-center">
-    <%= image_tag("rasi-chakra.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-    <h4 ><a >Matrimony</a></h4>
-  </div>
-
-  <div class="col-lg-3 col-sm-6 text-center">
-    <%= image_tag("mantras.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>    
-    <h4 data-toggle="modal" data-target="#mantras"><a href="#">Mantras</a></h4>              
-  </div>
-
-  <div class="col-md-offset-3 col-lg-3 col-sm-6 text-center">
-    <%= image_tag("remedies.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-    <h4><a href="#">Remedies</a></h4>
-  </div>
-
-  <div class="col-lg-3 col-sm-6 text-center">
-    <%= image_tag("pandit.jpg", class: "img-circle img-responsive img-thumbnail img-center", alt: "Edit Entry") %>
-    <h4><a href="#">Pandit</a></h4>
-  </div>
-</div> -->
 
 
 
