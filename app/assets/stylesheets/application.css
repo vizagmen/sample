@@ -13,110 +13,112 @@
  *= require_tree .
  *= require_self
  *= require bootstrap-slider
+ *= require owl.carousel
+ *= require owl.theme
  */
 
-/* USER PROFILE STYLES */
-.profile{
-    /*border: 1px solid #E0E0E0;*/
+ /* USER PROFILE STYLES */
+ .profile{
+  /*border: 1px solid #E0E0E0;*/
 }
 .user-wrapper .btn {
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    margin: 5px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  margin: 5px;
 }
 
 .user-wrapper .description {
-    padding: 10px 10px;
-    background-color: #EEEEEE;
+  padding: 10px 10px;
+  background-color: #EEEEEE;
 }
 .user-wrapper img {
-    width:100%;
+  width:100%;
 }
 @media(max-width: 768px){
-    .description{
-        margin-bottom: 0px;
-        margin-top: 20px;
-    }
+  .description{
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
 }
 
 .btn-social {
-    color: white;
-    opacity: 0.8;
+  color: white;
+  opacity: 0.8;
 }
 
 .btn-social:hover {
-    color: white;
-    opacity: 1;
-    text-decoration: none;
+  color: white;
+  opacity: 1;
+  text-decoration: none;
 }
 
 .btn-facebook {
-    background-color: #3b5998;
+  background-color: #3b5998;
 }
 
 .btn-twitter {
-    background-color: #00aced;
+  background-color: #00aced;
 }
 
 .btn-linkedin {
-    background-color: #0e76a8;
+  background-color: #0e76a8;
 }
 
 .btn-google {
-    background-color: #c32f10;
+  background-color: #c32f10;
 }
 
 
 .db-user-wrapper {
-    font-family: Verdana;
-    overflow-y: scroll;
-    height: 800px;
+  font-family: Verdana;
+  overflow-y: scroll;
+  height: 800px;
 
 }
 .media, .media .media {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 .db-user-wrapper .media-list li {
-    padding: 5px 2px;
-    background-color: #FFFDE7;
-    color: #FFFFFF;
-    border: 5px solid #FFF9C4;
+  padding: 5px 2px;
+  background-color: #FFFDE7;
+  color: #FFFFFF;
+  border: 5px solid #FFF9C4;
 }
 
 .db-user-wrapper .media-list li img {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .db-user-wrapper .media-list li a, .db-user-wrapper ul li a:hover {
-    color: #000;
-    background-color: transparent;
+  color: #000;
+  background-color: transparent;
 }
 
 .db-user-wrapper .media-list .media-body {
-    padding-top: 5px;
+  padding-top: 5px;
 }
 
 .db-user-wrapper .media-list .media-body p {
-    padding-top: 0px;
-    color: #424242;
-    margin-bottom: 0px;
+  padding-top: 0px;
+  color: #424242;
+  margin-bottom: 0px;
 }
 
 .db-user-wrapper .media-list .media-body .user-name {
-    color: #3B3B3C;
-    font-weight: 900;
+  color: #3B3B3C;
+  font-weight: 900;
 }
 
 .list-group{
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;    
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;    
 }
 
 
