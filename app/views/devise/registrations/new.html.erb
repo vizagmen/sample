@@ -20,7 +20,7 @@
   <div role="tabpanel" class="tab-pane fade in active" id="free">
     <div class="row">
       <div class="col-sm-6">
-        <%= image_tag "ugadi.jpg", class: "img-responsive" %>
+        <%= image_tag "signin.jpg", class: "img-responsive" %>
 
         <h3>READ BEFORE YOU SIGN UP</h3>
 
@@ -75,9 +75,22 @@
         </div>
 
         <div class="form-group">
+          <%= label_tag :dob, "Your Date of Birth" %>
+          <% born_on = Time.now %>
+          <div class="form-control">
+            <%= f.date_select( :dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, :start_year=>Date.today.year-100) %> 
+          </div>            
+        </div>
+
+        <div class="form-group">
           <%= f.label :avatar, "Photo" %>
           <%= f.file_field :avatar  %>
           <p class="help-block">Upload pic for your profile.</p>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :phone %>
+          <%= f.text_field :phone,class: "form-control", placeholder: "Phone" %>
         </div>
 
         <div class="form-group">
@@ -104,43 +117,11 @@
 
 
 
-        <div class="form-group">
-          <%= label_tag :option, "Choose Your Option" %>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="radio">
-                <%= label_tag do %>
-                <%= radio_button_tag 'customer_type', 'old' %> Old Customer
-                <%end%>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="radio">
-                <%= label_tag do %>
-                <%= radio_button_tag 'customer_type', 'new' %> New Customer
-                <%end%>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="form-group serial-no">
-          <%= f.label :serial_no, "Serial Number" %>
-          <%= f.text_field :serial_no, class: "form-control", placeholder: "Enter the serial number" %>
-        </div>
 
-        <div class="form-group">
-          <%= label_tag :dob, "Your Date of Birth" %>
-          <% born_on = Time.now %>
-          <div class="form-control">
-            <%= f.date_select( :dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, :start_year=>Date.today.year-100) %> 
-          </div>            
-        </div>
 
-        <div class="form-group">
-          <%= f.label :phone %>
-          <%= f.text_field :phone,class: "form-control", placeholder: "Phone" %>
-        </div>
+
+
 
 
         <!-- <div class="form-group">
@@ -188,7 +169,7 @@
     <div class="row">
       <div class="col-sm-6">
 
-        <%= image_tag "ugadi.jpg", class: "img-responsive" %>
+        <%= image_tag "signin.jpg", class: "img-responsive" %>
 
         <h3>READ BEFORE YOU SIGN UP</h3>
         <ol>
@@ -201,27 +182,9 @@
         </ol>
       </div>
       <div class="col-sm-6">
-        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), multipart: true) do |f| %>
+        <%= form_for(resource, as: resource_name, url: user_registration_path(resource_name), multipart: true) do |f| %>
         <%= devise_error_messages! %>
         <%= f.hidden_field :role, :value => User::TYPE_PAID_USER %>
-
-        <div class="form-group">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
-        </div>
-
-        <div class="form-group">
-          <%= f.label :password %>
-          <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
-          <% end %><br />
-          <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
-        </div>
-
-        <div class="form-group">
-          <%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
-        </div>
 
         <div class="form-group">
           <%= f.label :name %>
@@ -229,9 +192,8 @@
         </div>
 
         <div class="form-group">
-          <%= f.label :avatar, "Photo" %>
-          <%= f.file_field :avatar  %>
-          <p class="help-block">Upload pic for your profile.</p>
+          <%= f.label :surname %>
+          <%= f.text_field :name, class: "form-control", placeholder: "Enter Name" %>
         </div>
 
         <div class="form-group">
@@ -253,6 +215,31 @@
             </div>
           </div>  
         </div>
+
+        <div class="form-group">
+          <%= label_tag :dob, "Your Date of Birth" %>
+          <% born_on = Time.now %>
+          <div class="form-control">
+            <%= f.date_select( :dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, :start_year=>Date.today.year-100) %> 
+          </div>            
+        </div>
+
+        <div class="form-group">
+          <%= f.label :avatar, "Photo" %>
+          <%= f.file_field :avatar  %>
+          <p class="help-block">Upload pic for your profile.</p>
+        </div>
+
+
+
+
+
+
+        <div class="form-group" id="reference-no">
+          <%= f.label :reference_no, "Reference Number" %>
+          <%= f.text_field :reference_no, class: "form-control", placeholder: "Reference number or Advertisment" %>
+        </div>
+
 
         <div class="form-group">
           <%= label_tag :option, "Choose Your Option" %>
@@ -277,20 +264,7 @@
         <div class="form-group serial-no">
           <%= f.label :serial_no, "Serial Number" %>
           <%= f.text_field :serial_no, class: "form-control", placeholder: "Enter the serial number" %>
-        </div>
-
-        <div class="form-group">
-          <%= label_tag :dob, "Your Date of Birth" %>
-          <% born_on = Time.now %>
-          <div class="form-control">
-            <%= f.date_select( :dob, order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, :start_year=>Date.today.year-100) %> 
-          </div>            
-        </div>
-
-        <div class="form-group" id="reference-no">
-          <%= f.label :reference_no, "Reference Number" %>
-          <%= f.text_field :reference_no, class: "form-control", placeholder: "Reference number or Advertisment" %>
-        </div>
+        </div>        
 
         <div class="form-group">
           <%= f.label :phone %>
@@ -300,6 +274,24 @@
         <div class="form-group">
           <%= f.label :aadhar_card %>
           <%= f.text_field :aadhar_card, class: "form-control", placeholder: "Aadhar Card Number" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>    
+        </div>
+
+        <div class="form-group">
+          <%= f.label :password %>
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter Password" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "off",class: "form-control", placeholder: "Re-enter Password" %>
         </div>
 
         <!-- <div class="form-group">
@@ -349,7 +341,7 @@
   <div role="tabpanel" class="tab-pane fade" id="pandit">
     <div class="row">
       <div class="col-sm-6">
-        <%= image_tag "ugadi.jpg", class: "img-responsive" %>
+        <%= image_tag "signin.jpg", class: "img-responsive" %>
 
         <h3>READ BEFORE YOU SIGN UP</h3>        
 

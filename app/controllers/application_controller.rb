@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_devise_permitted_parameters
-    registration_params = [:name, :email, :password, :password_confirmation, :name, :aadhar_card, :phone, :reference, :address, :avatar,:gender, :serial_no, :dob, :role]
+    registration_params = [:name, :email, :password, :password_confirmation, :aadhar_card, :phone, :reference, :address, :avatar,:gender, :serial_no, :dob, :role]
 
     # if params[:action] == 'update'
     #   devise_parameter_sanitizer.for(:account_update) { 
@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
     #   devise_parameter_sanitizer.for(:sign_up) { 
     #     |u| u.permit(registration_params) 
     #   }
-  # end
+    # end
 end
 
 def after_sign_up_path_for(resource)

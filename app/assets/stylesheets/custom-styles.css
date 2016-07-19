@@ -7,8 +7,8 @@ body{
 body#gallexy-bg{
 	padding-top: 100px;
 	padding-bottom: 50px;
-	background-image: url("/assets/bg.jpg");
-	background: url("/assets/bg.jpg") no-repeat center center fixed; 
+	background-image: url("/assets/blue-bg.jpg");
+	background: url("/assets/blue-bg.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
