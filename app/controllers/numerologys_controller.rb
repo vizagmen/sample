@@ -366,7 +366,7 @@ when 1
  if [2,3,5,9].include?(@result)
   @msg= "Matched"
 else
-  @msg = "Name Correction is Neeed"
+  @msg = "Name Correction is Needed"
 end
 
 
@@ -374,7 +374,7 @@ when 2
  if [1,3,5,6,8,9].include?(@result)
   @msg= "Matched"
 else
-  @msg = "Name Correction is Neeed"
+  @msg = "Name Correction is Needed"
 end
 
 when 3
