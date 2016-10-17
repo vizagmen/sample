@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
   post '/rate' => 'rater#create', :as => 'rate'
-  resources :products  
+  resources :products
   get 'babyname/index'
 
   post 'babyname/namecorrection'
 
   resources :casts
-  resources :nakshatras  
+  resources :nakshatras
   # devise_for :users
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :welcome, only: :index
@@ -15,12 +15,12 @@ Rails.application.routes.draw do
   resources :users
   resources :registrations
   resources :pandits
-  
+
   resources :numerologys, only: :index do
     collection do
       get 'get_digital'
       get 'get_friendship'
-      get 'get_favorites'      
+      get 'get_favorites'
       get 'lucky_number'
       get 'cell_number_match'
       get 'vechicle_number_match'
@@ -32,12 +32,14 @@ Rails.application.routes.draw do
 
   resources :matrimony
 
+  resources :mantras
+
   match "/matrimony/life_partner_match_report" => "matrimony#life_partner_match_report", via: [:get, :post]
   root 'welcome#index'
 
   get 'numerologys/luckynumber', defaults: { format: 'js' }
   get 'numerologys/cellnumbermatch' , defaults: { format: 'js' }
-  get 'numerologys/vehiclenumbermatch', defaults: { format: 'js' } 
+  get 'numerologys/vehiclenumbermatch', defaults: { format: 'js' }
   get 'numerologys/digital', defaults: { format: 'js' }
   get 'numerologys/friendship', defaults: { format: 'js' }
   get 'numerologys/getfavs', defaults: { format: 'js' }
