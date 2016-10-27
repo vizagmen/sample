@@ -1,6 +1,6 @@
 class PanditsController < ApplicationController
 	def index
-		@pandits = Pandit.all.includes(:user)
+		#@pandits = Pandit.all.includes(:user)
 		# Item.all.includes(:categories)
 		# @pandits = Pandit.all.includes(:user)
 	end
