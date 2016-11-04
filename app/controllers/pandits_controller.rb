@@ -11,10 +11,10 @@ class PanditsController < ApplicationController
 	end
 
 	def getpandits
-raise params.inspect
-		#@pandits = Pandit.all.includes(:user)
+#raise params.inspect
+		@pandits = Pandit.all.includes(:user)
 		#Item.all.includes(:categories)
-		@pandits = User.where(role: User::Pandit).includes(:pandit).map(&:pandits)
+		#@pandits = User.where(role: User::Pandit).includes(:pandit)
 
        #@users = User.all.paginate(:page=> params[:page], :per_page=>3)
 	   if params[:commit]=="search"

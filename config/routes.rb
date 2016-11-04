@@ -46,6 +46,7 @@ Rails.application.routes.draw do
   get 'numerologys/name_correction', defaults: {format: 'js'}
   get 'numerologys/get_job_prediction', defaults: {format: 'js'}
   get 'numerologys/get_fav_years_for_marriage', defaults: {format: 'js'}
+  match '/getpandits' => "pandits#getpandits", via: [:get]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
