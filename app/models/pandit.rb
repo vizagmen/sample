@@ -1,3 +1,11 @@
 class Pandit < ActiveRecord::Base
   belongs_to :user
-end
+    searchable do
+      #searching on particular fields
+       string :deals
+       string :city
+       string :state
+     end
+   end
+
+

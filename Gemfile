@@ -49,7 +49,13 @@ gem 'delayed_job_active_record'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'puma'
-
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+ gem 'sunspot_rails'
+  group :development do
+    gem 'sunspot_solr'
+    gem 'progress_bar'
+  end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
