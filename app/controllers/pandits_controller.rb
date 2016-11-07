@@ -9,6 +9,34 @@ class PanditsController < ApplicationController
 	def show
 		@pandit = User.find(params[:id])
 	end
+   
+    def book_pandit(pandit_id)
+    	@pandit = Pandit.find(params[:pandit_id])
+    	@pandit.offers.create(description: params[:description], active_offer: true, status: "Pending")
+    end
+
+    def accept_or_reject_offer(status, offer_id)
+    	@offer = Offer.find(params[:offer_id])
+        
+        if status == "accept"
+
+    	@offer.update(active_offer: false, status: "accepted");
+        
+        else
+         @offer.update(active_offer: false, status: "rejected");	
+        end
+
+
+    end
+
+
+    def show_offers
+      	
+    	
+    end
+
+
+
 
 	def index
 		# raise params.inspect
