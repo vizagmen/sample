@@ -123,7 +123,8 @@
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#inbox" aria-controls="inbox" role="tab" data-toggle="tab">Inbox</a></li>
+      <li role="presentation" class="active"><a href="#offer" aria-controls="offer" role="tab" data-toggle="tab">Offers</a></li>
+      <li role="presentation"><a href="#inbox" aria-controls="inbox" role="tab" data-toggle="tab">Inbox</a></li>
       <li role="presentation"><a href="#outbox" aria-controls="outbox" role="tab" data-toggle="tab">Outbox</a></li>
       <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Alert Messages</a></li>
       <li role="presentation"><a href="#queries" aria-controls="queries" role="tab" data-toggle="tab">Queries</a></li>
@@ -131,7 +132,28 @@
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="inbox">
+      <div role="tabpanel" class="tab-pane active" id="offer">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+          <% @offers.each_with_index do |offer, index| %>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading<%= index %>">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index%>" aria-expanded="true" aria-controls="collapse<%= index%>">
+                  <strong>From:</strong> <%= offer.description %>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse<%= index%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<%= index %>">
+              <div class="panel-body">
+                <%= offer.description %>
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="inbox">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">

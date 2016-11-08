@@ -41,17 +41,16 @@
       <small>Then Click Book now</small>
     </h4>
 
-    <%= form_tag  pandits_path, :method => :get , class: "well-sm" do %>
+    <%= form_tag  book_pandit_pandit_path, :method => :post , class: "well-sm" do %>
 
     <div class="form-group">
       <label class="sr-only" for="exampleInputEmail3">State</label>
-      <textarea name="note" rows="8" cols="40" id="note" placeholder="Note"></textarea>
+      <textarea name="description" rows="8" cols="40" id="description" placeholder="Note"></textarea>
     </div>
 
-    <button type="search" class="btn btn-primary">Search</button>
+    <button type="search" class="btn btn-success">Book Now</button>
 
     <% end %>
 
-    <%= link_to "Book Now",'', class: "btn btn-success" %>
   </div>
 </div>

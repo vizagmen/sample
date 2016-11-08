@@ -14,7 +14,13 @@ Rails.application.routes.draw do
   resources :dashboard, only: :index
   resources :users
   resources :registrations
-  resources :pandits
+  # resources :pandits
+
+  resources :pandits do
+      member do
+        post 'book_pandit'
+      end
+    end
 
   resources :numerologys, only: :index do
     collection do
