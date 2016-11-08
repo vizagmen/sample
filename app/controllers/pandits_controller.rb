@@ -5,7 +5,7 @@ class PanditsController < ApplicationController
 # 		# @pandits = User.where(role: User::Pandit).includes(:pandit)
 #
 # 	end
-
+require 'will_paginate/array'
 	def show
 		@pandit = User.find(params[:id])
 	end
@@ -40,7 +40,7 @@ class PanditsController < ApplicationController
 
 	def index
 		# raise params.inspect
-		@pandits = User.where(role: User::Pandit).paginate(:page => params[:page], :per_page => 2)
+		@pandits = Pandit.includes(:user).map(&:user).paginate(:page => params[:page], :per_page => 2)
     # Post.paginate(:page => params[:page])
 		#Item.all.includes(:categories)
 		#@pandits = User.where(role: User::Pandit).includes(:pandit)
