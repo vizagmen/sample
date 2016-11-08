@@ -9,7 +9,7 @@ class PanditsController < ApplicationController
 	def show
 		@pandit = User.find(params[:id])
 	end
-   
+
     def book_pandit(pandit_id)
     	@pandit = Pandit.find(params[:pandit_id])
     	@pandit.offers.create(description: params[:description], active_offer: true, status: "Pending")
@@ -17,13 +17,13 @@ class PanditsController < ApplicationController
 
     def accept_or_reject_offer(status, offer_id)
     	@offer = Offer.find(params[:offer_id])
-        
+
         if status == "accept"
 
     	@offer.update(active_offer: false, status: "accepted");
-        
+
         else
-         @offer.update(active_offer: false, status: "rejected");	
+         @offer.update(active_offer: false, status: "rejected");
         end
 
 
@@ -31,8 +31,8 @@ class PanditsController < ApplicationController
 
 
     def show_offers
-      	
-    	
+
+
     end
 
 
@@ -40,7 +40,7 @@ class PanditsController < ApplicationController
 
 	def index
 		# raise params.inspect
-		@pandits = User.where(role: User::Pandit).paginate(:page => params[:page], :per_page => 2)
+		@pandits = Pandit.all.includes(:user).map(&:user).paginate(:page => params[:page], :per_page => 2)
     # Post.paginate(:page => params[:page])
 		#Item.all.includes(:categories)
 		#@pandits = User.where(role: User::Pandit).includes(:pandit)
