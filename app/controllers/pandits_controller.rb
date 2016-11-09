@@ -5,7 +5,7 @@ class PanditsController < ApplicationController
 # 		# @pandits = User.where(role: User::Pandit).includes(:pandit)
 #
 # 	end
-require 'will_paginate/array'
+    require 'will_paginate/array'
 	def show
 		@pandit = User.find(params[:id])
 	end
@@ -35,7 +35,7 @@ require 'will_paginate/array'
     	
     end
 
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 
 	def index
@@ -75,15 +75,6 @@ require 'will_paginate/array'
 
 	   #paginate :page => page, :per_page => per_page
 	  end
-
-
-
-
-
-
-
-
-
 
 
 
