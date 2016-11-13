@@ -127,9 +127,16 @@
       <li role="presentation" class="active"><a href="#offer" aria-controls="offer" role="tab" data-toggle="tab">My Pandits</a></li>
       <% end %>
 
-      
+      <% if [User::TYPE_PANDIT].include?(@current_user.role) %>
       <li role="presentation"><a href="#inbox" aria-controls="inbox" role="tab" data-toggle="tab">Inbox</a></li>
+      <% end %>
+
+
+
+
+      <% if [User::TYPE_ADMIN, User::TYPE_PAID_USER, User::TYPE_FREE_USER].include?(@current_user.role) %>
       <li role="presentation"><a href="#outbox" aria-controls="outbox" role="tab" data-toggle="tab">Outbox</a></li>
+      <% end %>
       <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Alert Messages</a></li>
       <li role="presentation"><a href="#queries" aria-controls="queries" role="tab" data-toggle="tab">Queries</a></li>
     </ul>
@@ -139,18 +146,18 @@
       <div role="tabpanel" class="tab-pane active" id="offer">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-          <% @offers.each_with_index do |offer, index| %>
+          <% @pandits.each_with_index do |pandit, index| %>
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="heading<%= index %>">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index%>" aria-expanded="true" aria-controls="collapse<%= index%>">
-                  <strong>From:</strong> <%= offer.description %>
+                  <strong>Pandit Name: </strong> <%= pandit.user.name %>
                 </a>
               </h4>
             </div>
             <div id="collapse<%= index%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<%= index %>">
               <div class="panel-body">
-                <%= offer.description %>
+                <%= pandit.inspect %>
               </div>
             </div>
           </div>
@@ -158,19 +165,30 @@
         </div>
       </div>
       <div role="tabpanel" class="tab-pane" id="inbox">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel-group" id="accordion" role="tablst" aria-multiselectable="true">
+
           <% @offers.each_with_index do |offer, index| %>
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="heading<%= index %>">
               <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index%>" aria-expanded="true" aria-controls="collapse<%= index%>">
-                  <strong>From:</strong> <%= offer.description %>
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#inbox-collapse<%= index%>" aria-expanded="true" aria-controls="inbox-collapse<%= index%>">
+                  <strong>From:</strong> <%= offer.inspect%>
+
                 </a>
               </h4>
             </div>
-            <div id="collapse<%= index%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<%= index %>">
+            <div id="inbox-collapse<%= index%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<%= index %>">
               <div class="panel-body">
                 <%= offer.description %>
+                <br><br>
+                <% if offer.status == "Pending"%>
+
+                <%= link_to "Accept", offer_action_dashboard_path(offer, :request_action => "Accepted"), method: :post, class: 'btn btn-success' %>
+
+                <%= link_to "Reject", offer_action_dashboard_path(offer, :request_action => "Rejected"), method: :post, class: 'btn btn-danger' %>
+                <% else %>
+                <strong>Status:</strong> <%= offer.status %>
+                <% end %>
               </div>
             </div>
           </div>
@@ -179,48 +197,24 @@
       </div>
       <div role="tabpanel" class="tab-pane" id="outbox">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <% @sent_request.each_with_index do |sent_request, index| %>
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
               <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Collapsible Group Item #1
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#sent-collapse<%=index%>" aria-expanded="true" aria-controls="sent-collapse<%=index%>">
+                  <strong>To: </strong> <%= sent_request.pandit.user.name %>
                 </a>
               </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="sent-collapse<%=index%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <%= sent_request.offer.description %>
+                <br><br>
+                <strong>Status:</strong> <%= sent_request.offer.status %>
               </div>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Collapsible Group Item #2
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item #3
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
+          <%end %>
         </div>
       </div>
       <div role="tabpanel" class="tab-pane" id="messages">...</div>

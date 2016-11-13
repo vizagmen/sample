@@ -1,39 +1,39 @@
 <div class="row">
   <div class="col-sm-6">
-    <h4 class="page-header"><%= @pandit.name.capitalize %></h4>
+    <h4 class="page-header"><%= @pandit.user.name.capitalize %></h4>
 
     <dl class="dl-horizontal">
       <dt>Photo</dt>
-      <dd><%= image_tag(@pandit.avatar.url, class: "img-responsive") %></dd>
+      <dd><%= image_tag(@pandit.user.avatar.url, class: "img-responsive") %></dd>
     </dl>
-    <dl class="dl-horizontal">
+    <!-- <dl class="dl-horizontal">
       <dt>Email</dt>
-      <dd><%=@pandit.email%></dd>
+      <dd><%=@pandit.user.email%></dd>
     </dl>
     <dl class="dl-horizontal">
       <dt>Contact</dt>
-      <dd><%=@pandit.phone%></dd>
-    </dl>
+      <dd><%=@pandit.user.phone%></dd>
+    </dl> -->
     <dl class="dl-horizontal">
       <dt>Date of Birt</dt>
-      <dd><%=@pandit.dob%></dd>
+      <dd><%=@pandit.user.dob%></dd>
     </dl>
     <dl class="dl-horizontal">
       <dt>Address</dt>
-      <dd><%= "#{@pandit.pandit.door_no}" if @pandit.pandit.door_no.present?%>
-        <%= ", #{@pandit.pandit.street}" if @pandit.pandit.street.present?%>
-        <%= ", #{@pandit.pandit.city}" if @pandit.pandit.city.present?%>
-        <%= ", #{@pandit.pandit.state}" if @pandit.pandit.state.present?%>
-        <%= " - #{@pandit.pandit.zip_code}" if @pandit.pandit.zip_code.present?%>
+      <dd><%= "#{@pandit.door_no}" if @pandit.door_no.present?%>
+        <%= ", #{@pandit.street}" if @pandit.street.present?%>
+        <%= ", #{@pandit.city}" if @pandit.city.present?%>
+        <%= ", #{@pandit.state}" if @pandit.state.present?%>
+        <%= " - #{@pandit.zip_code}" if @pandit.zip_code.present?%>
       </dd>
     </dl>
     <dl class="dl-horizontal">
       <dt>Aadhar Number</dt>
-      <dd><%=@pandit.aadhar_card%></dd>
+      <dd><%=@pandit.user.aadhar_card%></dd>
     </dl>
     <dl class="dl-horizontal">
       <dt>Deals</dt>
-      <dd><%=@pandit.pandit.deals %></dd>
+      <dd><%=@pandit.deals %></dd>
     </dl>
   </div>
   <div class="col-sm-6">

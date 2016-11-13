@@ -7,12 +7,14 @@ class PanditsController < ApplicationController
 # 	end
     require 'will_paginate/array'
 	def show
-		@pandit = User.find(params[:id])
+		@pandit = Pandit.find(params[:id])
 	end
 
     def book_pandit
     	@pandit = Pandit.find(params[:id])
     	offer = @pandit.offers.new(description: params[:description], active_offer: true, status: "Pending")
+      offer.pandit_offers.new(user_id: current_user.id, pandit_id: @pandit.id);
+
       if offer.save
         redirect_to pandits_path
         flash[:notice] = "Notification sent to the pandit"
@@ -36,19 +38,15 @@ class PanditsController < ApplicationController
 
 
     def show_offers
-
-
     end
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-
-
-	def index
+    def index
 		# raise params.inspect
-		@pandits = Pandit.all.paginate(:page => params[:page], :per_page => 2)
-    @pandits.each do |pandit|
-      pandit.user = pandit.user
-    end
+		@pandits = Pandit.all.eager_load(:user).paginate(:page => params[:page], :per_page => 2)
+    # raise @pandits.first.user.inspect
+    # @pandits.each do |pandit|
+    #   pandit[:user] = pandit.user
+    # end
     # Post.paginate(:page => params[:page])
 		#Item.all.includes(:categories)
 		#@pandits = User.where(role: User::Pandit).includes(:pandit)

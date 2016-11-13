@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   # devise_for :users
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :welcome, only: :index
-  resources :dashboard, only: :index
+  resources :dashboard do
+    member do
+      post 'offer_action'
+    end
+  end
   resources :users
   resources :registrations
   # resources :pandits
