@@ -11,8 +11,7 @@ class DashboardController < ApplicationController
     @sent_request =  PanditOffer.where(user_id: current_user.id)
 
     @offers = current_user.role == User::TYPE_PANDIT ? current_user.pandit.offers.map(&:pandit_offers).flatten : []
-    @pandits = Pandit.all
-
+    @pandits = PanditOffer.includes(:offer).where(user_id: current_user.id)
   end
 
 
