@@ -123,20 +123,9 @@
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-      <% if [User::TYPE_ADMIN, User::TYPE_PAID_USER, User::TYPE_FREE_USER].include?(@current_user.role) %>
       <li role="presentation" class="active"><a href="#offer" aria-controls="offer" role="tab" data-toggle="tab">My Pandits</a></li>
-      <% end %>
-
-      <% if [User::TYPE_PANDIT].include?(@current_user.role) %>
       <li role="presentation"><a href="#inbox" aria-controls="inbox" role="tab" data-toggle="tab">Inbox</a></li>
-      <% end %>
-
-
-
-
-      <% if [User::TYPE_ADMIN, User::TYPE_PAID_USER, User::TYPE_FREE_USER].include?(@current_user.role) %>
       <li role="presentation"><a href="#outbox" aria-controls="outbox" role="tab" data-toggle="tab">Outbox</a></li>
-      <% end %>
       <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Alert Messages</a></li>
       <li role="presentation"><a href="#queries" aria-controls="queries" role="tab" data-toggle="tab">Queries</a></li>
     </ul>
@@ -172,27 +161,27 @@
             <div class="panel-heading" role="tab" id="heading<%= index %>">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#inbox-collapse<%= index%>" aria-expanded="true" aria-controls="inbox-collapse<%= index%>">
-                  <strong>From:</strong> <%= offer.inspect%>
+                  <strong>From:</strong> <%= offer.user.name%>
 
                 </a>
               </h4>
             </div>
             <div id="inbox-collapse<%= index%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<%= index %>">
               <div class="panel-body">
-                <%= offer.description %>
+                <%= offer.offer.description %>
                 <br><br>
-                <% if offer.status == "Pending"%>
+                <% if offer.offer.status == "Pending"%>
 
-                <%= link_to "Accept", offer_action_dashboard_path(offer, :request_action => "Accepted"), method: :post, class: 'btn btn-success' %>
+                <%= link_to "Accept", offer_action_dashboard_path(offer.offer, :request_action => "Accepted"), method: :post, class: 'btn btn-success' %>
 
-                <%= link_to "Reject", offer_action_dashboard_path(offer, :request_action => "Rejected"), method: :post, class: 'btn btn-danger' %>
+                <%= link_to "Reject", offer_action_dashboard_path(offer.offer, :request_action => "Rejected"), method: :post, class: 'btn btn-danger' %>
                 <% else %>
-                <strong>Status:</strong> <%= offer.status %>
+                <strong>Status:</strong> <%= offer.offer.status %>
                 <% end %>
               </div>
             </div>
           </div>
-          <% end %>
+          <% end if current_user.role == User::TYPE_PANDIT %>
         </div>
       </div>
       <div role="tabpanel" class="tab-pane" id="outbox">

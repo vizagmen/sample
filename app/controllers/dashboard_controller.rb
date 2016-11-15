@@ -5,13 +5,14 @@ class DashboardController < ApplicationController
   def index
 
   	@references_count  = User.where(reference_no: current_user.serial_no).count
+
     @refered_users = User.where(reference_no: current_user)
 
     @sent_request =  PanditOffer.where(user_id: current_user.id)
 
-    @offers = current_user.pandit.offers
-
+    @offers = current_user.role == User::TYPE_PANDIT ? current_user.pandit.offers.map(&:pandit_offers).flatten : []
     @pandits = Pandit.all
+
   end
 
 
