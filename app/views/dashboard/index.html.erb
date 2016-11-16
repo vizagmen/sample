@@ -134,22 +134,24 @@
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="offer">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
+        <% if @pandits.present? %>
           <% @pandits.each_with_index do |pandit, index| %>
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="heading<%= index %>">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index%>" aria-expanded="true" aria-controls="collapse<%= index%>">
-                  <strong>Pandit Name: </strong> <%= pandit.user.name %>
+                  <strong>Pandit Name: </strong> <%= pandit.pandit.user.name %>
                 </a>
               </h4>
             </div>
             <div id="collapse<%= index%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<%= index %>">
               <div class="panel-body">
-                <%= pandit.inspect %>
+               Email: <%= pandit.pandit.user.email %></br>
+               Phone: <%= pandit.pandit.user.phone %>
               </div>
             </div>
           </div>
+          <% end %>
           <% end %>
         </div>
       </div>
