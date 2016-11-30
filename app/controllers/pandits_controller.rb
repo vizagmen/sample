@@ -42,7 +42,7 @@ class PanditsController < ApplicationController
 
     def index
 		# raise params.inspect
-		@pandits = Pandit.all.eager_load(:user).paginate(:page => params[:page], :per_page => 2)
+		#@pandits = Pandit.all.eager_load(:user).paginate(:page => params[:page], :per_page => 2)
     # raise @pandits.first.user.inspect
     # @pandits.each do |pandit|
     #   pandit[:user] = pandit.user
@@ -56,14 +56,14 @@ class PanditsController < ApplicationController
 	# raise params.inspect
 
          #@msg="sdfa"
-	  name=params[:deals]
+	  deals=params[:type] 
 	  city=params[:city]
 	  state=params[:state]
 	  page= params[:page]
-	  per_page=6
+	  per_page=2
 
-	@pandit = Sunspot.search(Pandit) do
-	    if name.present?
+	@pandits = Sunspot.search(Pandit) do
+	    if deals.present?
 	      with(:deals, deals)
 	    end
 	    if city.present?
