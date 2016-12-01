@@ -19,6 +19,7 @@ class PanditsController < ApplicationController
         redirect_to pandits_path
         flash[:notice] = "Notification sent to the pandit"
       else
+        flash[:notice] = "Notification not sent"
       end
     end
 
@@ -42,7 +43,7 @@ class PanditsController < ApplicationController
 
     def index
 		# raise params.inspect
-		#@pandits = Pandit.all.eager_load(:user).paginate(:page => params[:page], :per_page => 2)
+		@pandits = Pandit.all.eager_load(:user).paginate(:page => params[:page], :per_page => 2)
     # raise @pandits.first.user.inspect
     # @pandits.each do |pandit|
     #   pandit[:user] = pandit.user
@@ -56,7 +57,7 @@ class PanditsController < ApplicationController
 	# raise params.inspect
 
          #@msg="sdfa"
-	  deals=params[:type] 
+	  deals=params[:type]
 	  city=params[:city]
 	  state=params[:state]
 	  page= params[:page]
