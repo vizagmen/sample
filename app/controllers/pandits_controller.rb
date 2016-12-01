@@ -13,7 +13,7 @@ class PanditsController < ApplicationController
     def book_pandit
     	@pandit = Pandit.find(params[:id])
     	offer = @pandit.offers.new(description: params[:description], active_offer: true, status: "Pending")
-      offer.pandit_offers.new(user_id: current_user.id, pandit_id: @pandit.id);
+        offer.pandit_offers.new(user_id: current_user.id, pandit_id: @pandit.id);
 
       if offer.save
         redirect_to pandits_path
