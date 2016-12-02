@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161130173015) do
+ActiveRecord::Schema.define(version: 20161202165027) do
 
   create_table "average_caches", force: :cascade do |t|
     t.integer  "rater_id",      limit: 4
@@ -93,6 +93,7 @@ ActiveRecord::Schema.define(version: 20161130173015) do
     t.boolean  "active_offer"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.date     "booking_date"
   end
 
   create_table "overall_averages", force: :cascade do |t|

@@ -11,8 +11,9 @@ class PanditsController < ApplicationController
 	end
 
     def book_pandit
+      # raise params.inspect
     	@pandit = Pandit.find(params[:id])
-    	offer = @pandit.offers.new(description: params[:description], active_offer: true, status: "Pending")
+    	offer = @pandit.offers.new(booking_date: params[:booking_date],description: params[:description], active_offer: true, status: "Pending")
         offer.pandit_offers.new(user_id: current_user.id, pandit_id: @pandit.id);
 
       if offer.save
