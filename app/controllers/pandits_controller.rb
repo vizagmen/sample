@@ -11,10 +11,11 @@ class PanditsController < ApplicationController
 	end
 
     def book_pandit
-      # raise params.inspect
+       #raise params.inspect
     	@pandit = Pandit.find(params[:id])
-    	offer = @pandit.offers.new(booking_date: params[:booking_date],description: params[:description], active_offer: true, status: "Pending")
-        offer.pandit_offers.new(user_id: current_user.id, pandit_id: @pandit.id,booking_date: params[:booking_date]);
+    	booking_date = params["user"]["born_on"]
+    	offer = @pandit.offers.new(booking_date: booking_date,description: params[:description], active_offer: true, status: "Pending")
+        offer.pandit_offers.new(user_id: current_user.id, pandit_id: @pandit.id,booking_date: booking_date);
 
       if offer.save
         redirect_to pandits_path
