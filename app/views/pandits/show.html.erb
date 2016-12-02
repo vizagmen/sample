@@ -46,7 +46,9 @@
     <div class="form-group">
       <label for="exampleInputEmail3">Booking Date</label>
       <div class="form-control">
-        <%= date_select("booking_date", order: [ :day,:month,:year], html_options: {class: "form-control"}, date_separator: '-',  prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, :start_year=>Date.today.year-100) %>
+    
+
+        <%= datetime_select :booking_date, { ampm: true, order: [:day, :month, :year] }, { class: "form-control" } %>
       </div>
   </div>
 

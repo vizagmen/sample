@@ -93,7 +93,7 @@ ActiveRecord::Schema.define(version: 20161202165027) do
     t.boolean  "active_offer"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
-    t.date     "booking_date"
+    t.datetime "booking_date"
   end
 
   create_table "overall_averages", force: :cascade do |t|
