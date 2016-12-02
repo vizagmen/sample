@@ -172,6 +172,7 @@
               <div class="panel-body">
                 <%= offer.offer.description %>
                 <br><br>
+                <strong>Date:</strong> <%= offer.booking_date %><br>
                 <% if offer.offer.status == "Pending"%>
 
                 <%= link_to "Accept", offer_action_dashboard_path(offer.offer, :request_action => "Accepted"), method: :post, class: 'btn btn-success' %>
