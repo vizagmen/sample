@@ -17,4 +17,17 @@ class UsersController < ApplicationController
 	def update
 		
 	end
+    
+  def astro_upload
+  	
+    @user = User.find(params[:id])   	
+  end
+
+  def add_pdf
+  	@user = User.find(params[:user_id])
+    @user.astro_pdfs.create(avatar: params[:file])
+    redirect_to users_url
+  end
+
+ 
 end

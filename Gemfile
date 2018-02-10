@@ -23,7 +23,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'therubyracer', platforms: :ruby
 gem 'owlcarousel-rails'
 gem 'ratyrate'
-
+gem 'carrierwave'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -51,9 +51,9 @@ gem 'delayed_job_active_record'
 gem 'puma'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
- gem 'sunspot_rails'
+ #gem 'sunspot_rails'
   group :development do
-    gem 'sunspot_solr'
+#    gem 'sunspot_solr'
     gem 'progress_bar'
   end
 # Use Capistrano for deployment

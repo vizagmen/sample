@@ -55,7 +55,7 @@ class PanditsController < ApplicationController
 		#@pandits = User.where(role: User::Pandit).includes(:pandit)
 
        #@users = User.all.paginate(:page=> params[:page], :per_page=>3)
-	   if params[:commit]=="search"
+	  # if params[:commit]=="search"
 	# raise params.inspect
 
          #@msg="sdfa"
@@ -65,21 +65,21 @@ class PanditsController < ApplicationController
 	  page= params[:page]
 	  per_page=2
 
-	@pandits = Sunspot.search(Pandit) do
-	    if deals.present?
-	      with(:deals, deals)
-	    end
-	    if city.present?
-	      with(:city, city)
-	    end
-	     if state.present?
-	      with(:state, state)
-	    end
+	#@pandits = Sunspot.search(Pandit) do
+	    #if deals.present?
+	     # with(:deals, deals)
+	    #end
+	    #if city.present?
+	     # with(:city, city)
+	    #end
+	     #if state.present?
+	      #with(:state, state)
+	    #end
 
-	    paginate :page => page, :per_page => per_page
+	    #paginate :page => page, :per_page => per_page
 
 
-	  end.results
+	  #end.results
 
 
 	   #paginate :page => page, :per_page => per_page
@@ -89,4 +89,4 @@ class PanditsController < ApplicationController
 
 
 	end
-end
+#end

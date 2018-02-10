@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_one :matrimony
   has_one :pandit, dependent: :destroy
   has_many :pandit_offers
+  has_many :astro_pdfs
   TYPE_ADMIN = "Admin"
   TYPE_PANDIT = "Pandit"
   TYPE_PAID_USER = "Paid User"

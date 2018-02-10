@@ -31,7 +31,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   #   # do something
   # end
   
-  process resize_to_fit: [400, 400]
+ # process resize_to_fit: [400, 400]
 
   # Create different versions of your uploaded files:
   version :thumb do

@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
   resources :products
   get 'babyname/index'
-
+  post '/add_pdf' => 'users#add_pdf'
   post 'babyname/namecorrection'
+  get '/astro_upload' => "users#astro_upload"
+  get '/download_atro_pdf' => "astrologies#download_atro_pdf"
+
 
   resources :casts
   resources :nakshatras
@@ -43,6 +46,7 @@ Rails.application.routes.draw do
   resources :matrimony
 
   resources :mantras
+  resources :astrologies
 
   match "/matrimony/life_partner_match_report" => "matrimony#life_partner_match_report", via: [:get, :post]
   root 'welcome#index'

@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161202165027) do
+ActiveRecord::Schema.define(version: 20180210065052) do
+
+  create_table "astro_pdfs", force: :cascade do |t|
+    t.string   "avatar",     limit: 255
+    t.integer  "user_id",    limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "astrologies", force: :cascade do |t|
+    t.string   "first_sign",  limit: 255
+    t.string   "second_sign", limit: 255
+    t.string   "remedy",      limit: 255
+    t.string   "pdf_path",    limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
 
   create_table "average_caches", force: :cascade do |t|
     t.integer  "rater_id",      limit: 4
